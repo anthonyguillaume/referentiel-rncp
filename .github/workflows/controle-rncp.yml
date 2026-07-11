@@ -70,12 +70,15 @@ jobs:
       # L'état n'est enregistré QU'APRÈS l'envoi réussi : si le mail échoue,
       # le job s'arrête en erreur et les mêmes changements seront re-signalés
       # à la prochaine exécution (aucune alerte perdue).
-      - name: Enregistrer l'état et le rapport dans le dépôt
+      # Le classeur annoté REMPLACE le fichier de base : data/ contient donc
+      # toujours la dernière version, l'équipe n'a rien à redéposer.
+      - name: Mettre à jour le fichier de base et l'état dans le dépôt
         if: steps.controle.outputs.changes == 'true'
         run: |
+          cp output/Liens_CPF_controle.xlsx "${{ steps.controle.outputs.fichier }}"
           git config user.name "controle-rncp[bot]"
           git config user.email "actions@users.noreply.github.com"
-          git add state output
+          git add state data
           git diff --cached --quiet || git commit -m "Contrôle RNCP $(date -u +%F) — ${{ steps.controle.outputs.resume }}"
           git pull --rebase origin "$GITHUB_REF_NAME" || true
           git push

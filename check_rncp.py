@@ -531,6 +531,19 @@ def annoter_classeur(chemin_source: Path, chemin_sortie: Path, watch: dict,
 
     ws = wb[watch["master"]]
     ligne_entete = watch["ligne_entete"]
+
+    # Idempotence : si le fichier de base est lui-même un classeur annoté
+    # (colonnes de contrôle déjà présentes), on les retire avant de les
+    # régénérer. Le fichier produit peut ainsi servir de fichier de base au
+    # contrôle suivant sans accumulation de colonnes, même si l'équipe a
+    # inséré ses propres colonnes entre-temps.
+    noms_controle = set(NOUVELLES_COLONNES)
+    cols_ctrl = [c for c in range(1, ws.max_column + 1)
+                 if isinstance(ws.cell(row=ligne_entete, column=c).value, str)
+                 and ws.cell(row=ligne_entete, column=c).value.strip() in noms_controle]
+    for c in reversed(cols_ctrl):
+        ws.delete_cols(c)
+
     premiere_nouvelle = ws.max_column + 1
 
     # En-têtes des nouvelles colonnes
@@ -591,13 +604,23 @@ def annoter_classeur(chemin_source: Path, chemin_sortie: Path, watch: dict,
         min_c, min_r, max_c, max_r = range_boundaries(table_maitre.ref)
         nouveau_ref = (f"{get_column_letter(min_c)}{min_r}:"
                        f"{get_column_letter(derniere_col)}{max(max_r, ws.max_row)}")
-        noms_existants = {c.name for c in table_maitre.tableColumns}
-        prochain_id = max((int(c.id) for c in table_maitre.tableColumns), default=0) + 1
-        for titre in NOUVELLES_COLONNES:
-            if titre in noms_existants:
-                continue
-            table_maitre.tableColumns.append(TableColumn(id=prochain_id, name=titre))
-            prochain_id += 1
+        # Les colonnes du tableau sont reconstruites depuis la ligne d'en-tête
+        # réelle : robuste même si l'équipe a ajouté/déplacé ses propres
+        # colonnes (un désaccord nom/nombre rendrait le classeur invalide).
+        noms, vus = [], set()
+        for i in range(min_c, derniere_col + 1):
+            brut = ws.cell(row=ligne_entete, column=i).value
+            nom = brut if isinstance(brut, str) and brut != "" else f"Colonne{i}"
+            base, k = nom, 2
+            while nom in vus:
+                nom = f"{base} ({k})"
+                k += 1
+            vus.add(nom)
+            noms.append(nom)
+            if nom != brut:
+                ws.cell(row=ligne_entete, column=i, value=nom)
+        table_maitre.tableColumns = [TableColumn(id=j + 1, name=n)
+                                     for j, n in enumerate(noms)]
         table_maitre.ref = nouveau_ref
         if table_maitre.autoFilter is not None:
             table_maitre.autoFilter.ref = nouveau_ref
@@ -785,7 +808,8 @@ def construire_resumes(meta: dict, events: list[dict], evaluations: dict,
     return md, html, sujet
 
 
-def ecrire_github_output(changes: bool, sujet: str, resume: str) -> None:
+def ecrire_github_output(changes: bool, sujet: str, resume: str,
+                          fichier: Path) -> None:
     import os
     chemin = os.environ.get("GITHUB_OUTPUT")
     if not chemin:
@@ -796,6 +820,7 @@ def ecrire_github_output(changes: bool, sujet: str, resume: str) -> None:
         f.write(f"changes={'true' if changes else 'false'}\n")
         f.write(f"sujet={sujet}\n")
         f.write(f"resume={resume}\n")
+        f.write(f"fichier={fichier.as_posix()}\n")
 
 
 # --------------------------------------------------------------------------- #
@@ -920,7 +945,7 @@ def main() -> None:
               f"{compteurs['ORANGE']} orange(s)")
     if premiere_execution:
         resume = "initialisation, " + resume
-    ecrire_github_output(changements, sujet, resume)
+    ecrire_github_output(changements, sujet, resume, chemin_excel)
 
     import os
     step_summary = os.environ.get("GITHUB_STEP_SUMMARY")
