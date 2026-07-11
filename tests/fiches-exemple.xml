@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mini-export de test : permet de valider la chaîne complète sans télécharger
+     le vrai export (python check_rncp.py \-\-xml tests/fiches-exemple.xml \-\-min-couverture 0).
+     Les fiches RNCP9000x sont fictives. -->
+<FICHES VERSION_FLUX="4.1">
+
+  <!-- ORANGE attendu : fiche active mais successeur publié + échéance proche (cas réel au 07/2026) -->
+  <FICHE>
+    <ID_FICHE>21484</ID_FICHE>
+    <NUMERO_FICHE>RNCP35803</NUMERO_FICHE>
+    <INTITULE>BTS - Métiers de la mesure</INTITULE>
+    <ABREGE><CODE>BTS</CODE><LIBELLE>Brevet de technicien supérieur</LIBELLE></ABREGE>
+    <ETAT_FICHE>Publiée</ETAT_FICHE>
+    <TYPE_ENREGISTREMENT>Enregistrement de droit</TYPE_ENREGISTREMENT>
+    <DATE_FIN_ENREGISTREMENT>2026-08-31</DATE_FIN_ENREGISTREMENT>
+    <ACTIF>Oui</ACTIF>
+    <NOUVELLE_CERTIFICATION>RNCP41832</NOUVELLE_CERTIFICATION>
+    <FORMACODE><CODE>11421</CODE><LIBELLE>Thermométrie</LIBELLE></FORMACODE>
+    <FORMACODE><CODE>11523</CODE><LIBELLE>Analyse chimique</LIBELLE></FORMACODE>
+    <FORMACODE><CODE>24351</CODE><LIBELLE>Instrument mesure</LIBELLE></FORMACODE>
+  </FICHE>
+
+  <!-- Successeur actif de la fiche précédente (hors fichier suivi) -->
+  <FICHE>
+    <ID_FICHE>99001</ID_FICHE>
+    <NUMERO_FICHE>RNCP41832</NUMERO_FICHE>
+    <INTITULE>BTS - Métiers de la mesure</INTITULE>
+    <ABREGE><CODE>BTS</CODE><LIBELLE>Brevet de technicien supérieur</LIBELLE></ABREGE>
+    <ETAT_FICHE>Publiée</ETAT_FICHE>
+    <DATE_FIN_ENREGISTREMENT>2031-08-31</DATE_FIN_ENREGISTREMENT>
+    <ACTIF>Oui</ACTIF>
+    <FORMACODE><CODE>11421</CODE><LIBELLE>Thermométrie</LIBELLE></FORMACODE>
+    <FORMACODE><CODE>24354</CODE><LIBELLE>Métrologie</LIBELLE></FORMACODE>
+  </FICHE>
+
+  <!-- VERT attendu : rien à signaler -->
+  <FICHE>
+    <NUMERO_FICHE>RNCP41030</NUMERO_FICHE>
+    <INTITULE>Titre ingénieur - Diplôme d'ingénieur d'Efrei Paris (Université Paris- Panthéon Assas)</INTITULE>
+    <ETAT_FICHE>Publiée</ETAT_FICHE>
+    <DATE_FIN_ENREGISTREMENT>2029-08-31</DATE_FIN_ENREGISTREMENT>
+    <ACTIF>Oui</ACTIF>
+    <FORMACODE><CODE>31026</CODE><LIBELLE>Informatique</LIBELLE></FORMACODE>
+  </FICHE>
+
+  <!-- VERT attendu : l'intitulé du fichier inclut le préfixe « BTS - » porté par ABREGE -->
+  <FICHE>
+    <NUMERO_FICHE>RNCP36966</NUMERO_FICHE>
+    <INTITULE>Motorisations toutes énergies</INTITULE>
+    <ABREGE><CODE>BTS</CODE><LIBELLE>Brevet de technicien supérieur</LIBELLE></ABREGE>
+    <ETAT_FICHE>Publiée</ETAT_FICHE>
+    <DATE_FIN_ENREGISTREMENT>2028-08-31</DATE_FIN_ENREGISTREMENT>
+    <ACTIF>Oui</ACTIF>
+    <FORMACODE><CODE>23637</CODE><LIBELLE>Mécanique automobile</LIBELLE></FORMACODE>
+  </FICHE>
+
+  <!-- ORANGE attendu : intitulé officiel modifié (« des données » au lieu de « de données ») -->
+  <FICHE>
+    <NUMERO_FICHE>RNCP40167</NUMERO_FICHE>
+    <INTITULE>Expert en ingénierie des données massives et intelligence artificielle</INTITULE>
+    <ETAT_FICHE>Publiée</ETAT_FICHE>
+    <DATE_FIN_ENREGISTREMENT>2027-10-01</DATE_FIN_ENREGISTREMENT>
+    <ACTIF>Oui</ACTIF>
+    <FORMACODE><CODE>31025</CODE><LIBELLE>Data science</LIBELLE></FORMACODE>
+  </FICHE>
+
+  <!-- ROUGE attendu : fiche inactive, remplacée (forme imbriquée), chaîne sur 2 niveaux -->
+  <FICHE>
+    <NUMERO_FICHE>RNCP38620</NUMERO_FICHE>
+    <INTITULE>CQP Concepteur modélisateur numérique de produits ou de systèmes mécaniques</INTITULE>
+    <ETAT_FICHE>Publiée</ETAT_FICHE>
+    <DATE_FIN_ENREGISTREMENT>2025-12-31</DATE_FIN_ENREGISTREMENT>
+    <ACTIF>Non</ACTIF>
+    <NOUVELLE_CERTIFICATION>
+      <NUMERO_FICHE>RNCP90001</NUMERO_FICHE>
+    </NOUVELLE_CERTIFICATION>
+    <FORMACODE><CODE>23662</CODE><LIBELLE>CAO</LIBELLE></FORMACODE>
+  </FICHE>
+
+  <!-- Maillon intermédiaire fictif : lui-même remplacé -->
+  <FICHE>
+    <NUMERO_FICHE>RNCP90001</NUMERO_FICHE>
+    <INTITULE>CQP Concepteur modélisateur numérique (v2)</INTITULE>
+    <ETAT_FICHE>Publiée</ETAT_FICHE>
+    <DATE_FIN_ENREGISTREMENT>2026-03-31</DATE_FIN_ENREGISTREMENT>
+    <ACTIF>Non</ACTIF>
+    <NOUVELLE_CERTIFICATION>RNCP90002</NOUVELLE_CERTIFICATION>
+  </FICHE>
+
+  <!-- Terminal actif fictif de la chaîne -->
+  <FICHE>
+    <NUMERO_FICHE>RNCP90002</NUMERO_FICHE>
+    <INTITULE>CQP Concepteur modélisateur numérique (v3)</INTITULE>
+    <ETAT_FICHE>Publiée</ETAT_FICHE>
+    <DATE_FIN_ENREGISTREMENT>2030-06-30</DATE_FIN_ENREGISTREMENT>
+    <ACTIF>Oui</ACTIF>
+    <FORMACODE><CODE>23662</CODE><LIBELLE>CAO</LIBELLE></FORMACODE>
+    <FORMACODE><CODE>31052</CODE><LIBELLE>Modélisation 3D</LIBELLE></FORMACODE>
+  </FICHE>
+
+  <!-- ROUGE attendu : fiche expirée sans successeur -->
+  <FICHE>
+    <NUMERO_FICHE>RNCP37707</NUMERO_FICHE>
+    <INTITULE>BTS - Métiers du géomètre-topographe et de la modélisation numérique</INTITULE>
+    <ETAT_FICHE>Publiée</ETAT_FICHE>
+    <DATE_FIN_ENREGISTREMENT>2025-08-31</DATE_FIN_ENREGISTREMENT>
+    <ACTIF>Non</ACTIF>
+    <FORMACODE><CODE>22254</CODE><LIBELLE>Topographie</LIBELLE></FORMACODE>
+  </FICHE>
+
+</FICHES>

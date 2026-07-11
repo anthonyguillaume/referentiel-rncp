@@ -1,0 +1,73 @@
+name: Contrôle RNCP
+
+on:
+  schedule:
+    - cron: "30 4 * * *"        # tous les jours, 06:30 Paris l'été
+  workflow_dispatch:
+    inputs:
+      force_email:
+        description: "Envoyer le mail même sans changement"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: controle-rncp
+  cancel-in-progress: false
+
+jobs:
+  controle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      HAS_MAIL: ${{ secrets.MAIL_SERVER != '' }}
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Contrôler les fiches RNCP        # génère le xlsx + summary + snapshot
+        id: controle
+        run: python check_rncp.py
+
+      - name: Publier le rapport en artefact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapport-rncp-${{ github.run_number }}
+          path: output/
+          retention-days: 90
+
+      - name: Envoyer l'e-mail
+        if: (steps.controle.outputs.changes == 'true' || inputs.force_email == true) && env.HAS_MAIL == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.MAIL_SERVER }}
+          server_port: ${{ secrets.MAIL_PORT }}
+          # secure: true                        # si TLS implicite (port 465)
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "[Contrôle RNCP] ${{ steps.controle.outputs.sujet }}"
+          to: ${{ vars.MAIL_TO || secrets.MAIL_TO }}
+          from: "Contrôle RNCP <${{ secrets.MAIL_FROM || secrets.MAIL_USERNAME }}>"
+          html_body: "file://output/summary.html"
+          attachments: output/Liens_CPF_controle.xlsx
+
+      - name: Enregistrer l'état et le rapport dans le dépôt
+        if: steps.controle.outputs.changes == 'true'
+        run: |
+          git config user.name "controle-rncp[bot]"
+          git config user.email "actions@users.noreply.github.com"
+          git add state output
+          git diff --cached --quiet || git commit -m "Contrôle RNCP $(date -u +%F) — ${{ steps.controle.outputs.resume }}"
+          git pull --rebase origin "$GITHUB_REF_NAME" || true
+          git push
