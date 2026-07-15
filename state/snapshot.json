@@ -1,6 +1,6 @@
 {
- "derniere_execution": "2026-07-11T09:57:09.017478+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-07-11.zip",
+ "derniere_execution": "2026-07-15T08:34:07.613175+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-07-15.zip",
  "codes": {
   "RNCP35185": {
    "statut": "ORANGE",
@@ -425,8 +425,8 @@
    ]
   },
   "RNCP35634": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Concepteur designer UI",
    "date_fin": "2026-07-13",
    "successeurs": [
@@ -10266,6 +10266,20 @@
    "type": "Initialisation du suivi",
    "avant": "",
    "apres": "1411 codes suivis"
+  },
+  {
+   "date": "2026-07-15",
+   "code": "RNCP35634",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-15",
+   "code": "RNCP35634",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
   }
  ]
 }
