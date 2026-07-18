@@ -1,6 +1,6 @@
 {
- "derniere_execution": "2026-07-15T08:34:07.613175+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-07-15.zip",
+ "derniere_execution": "2026-07-18T08:26:15.929585+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-07-18.zip",
  "codes": {
   "RNCP35185": {
    "statut": "ORANGE",
@@ -829,7 +829,9 @@
    "actif": true,
    "intitule": "CQP Ajusteur assembleur de structures aéronefs",
    "date_fin": "2026-12-15",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42657"
+   ]
   },
   "RNCP36101": {
    "statut": "VERT",
@@ -3242,7 +3244,9 @@
    "actif": true,
    "intitule": "Développeur de solutions numériques sécurisées",
    "date_fin": "2026-07-19",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42620"
+   ]
   },
   "RNCP37779": {
    "statut": "ORANGE",
@@ -3864,7 +3868,9 @@
    "actif": true,
    "intitule": "Développeur concepteur logiciel",
    "date_fin": "2026-09-20",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42641"
+   ]
   },
   "RNCP38046": {
    "statut": "VERT",
@@ -5914,7 +5920,9 @@
    "actif": false,
    "intitule": "Data engineer",
    "date_fin": "2026-04-26",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42655"
+   ]
   },
   "RNCP38931": {
    "statut": "VERT",
@@ -10280,6 +10288,34 @@
    "type": "État de la fiche",
    "avant": "Active",
    "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-18",
+   "code": "RNCP36086",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42657"
+  },
+  {
+   "date": "2026-07-18",
+   "code": "RNCP37778",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42620"
+  },
+  {
+   "date": "2026-07-18",
+   "code": "RNCP38038",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42641"
+  },
+  {
+   "date": "2026-07-18",
+   "code": "RNCP38919",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42655"
   }
  ]
 }
