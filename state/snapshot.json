@@ -1,6 +1,6 @@
 {
- "derniere_execution": "2026-07-18T08:26:15.929585+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-07-18.zip",
+ "derniere_execution": "2026-07-21T08:45:36.514013+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-07-21.zip",
  "codes": {
   "RNCP35185": {
    "statut": "ORANGE",
@@ -3174,15 +3174,15 @@
    "successeurs": []
   },
   "RNCP37734": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "CQP Rectifieur sur machine conventionnelle et/ou numérique",
    "date_fin": "2026-07-19",
    "successeurs": []
   },
   "RNCP37742": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Initiateur aux arts du cirque",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3190,8 +3190,8 @@
    ]
   },
   "RNCP37745": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Modéliste international du vêtement",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3199,8 +3199,8 @@
    ]
   },
   "RNCP37748": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Manager des ressources humaines",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3208,15 +3208,15 @@
    ]
   },
   "RNCP37758": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Entraineur de football",
    "date_fin": "2026-07-19",
    "successeurs": []
   },
   "RNCP37775": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Manager de la communication de marque",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3224,8 +3224,8 @@
    ]
   },
   "RNCP37776": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Manager du contenu - content manager",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3233,15 +3233,15 @@
    ]
   },
   "RNCP37777": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Responsable de communication",
    "date_fin": "2026-07-19",
    "successeurs": []
   },
   "RNCP37778": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Développeur de solutions numériques sécurisées",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3249,15 +3249,15 @@
    ]
   },
   "RNCP37779": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Conseiller en emploi accompagné",
    "date_fin": "2026-07-19",
    "successeurs": []
   },
   "RNCP37780": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Assistant de vie dépendance",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3265,15 +3265,15 @@
    ]
   },
   "RNCP37785": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Expert en numérisation des systèmes et processus de production industriels",
    "date_fin": "2026-07-19",
    "successeurs": []
   },
   "RNCP37786": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Chargé de marketing et communication",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3281,8 +3281,8 @@
    ]
   },
   "RNCP37787": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Responsable commerce retail",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3290,8 +3290,8 @@
    ]
   },
   "RNCP37792": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Employé familial",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3299,8 +3299,8 @@
    ]
   },
   "RNCP37793": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Manager de la stratégie digitale",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3308,8 +3308,8 @@
    ]
   },
   "RNCP37795": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Assistant maternel / Garde d'enfants",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3317,8 +3317,8 @@
    ]
   },
   "RNCP37796": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Gestionnaire de la sécurité des données, des réseaux et des systèmes",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3326,8 +3326,8 @@
    ]
   },
   "RNCP37799": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Coach professionnel",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3349,8 +3349,8 @@
    "successeurs": []
   },
   "RNCP37824": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Expert-conseil en stratégie des filières agricoles et agroalimentaires",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3358,8 +3358,8 @@
    ]
   },
   "RNCP37828": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Designer créateur de produit de mode et textile",
    "date_fin": "2026-07-19",
    "successeurs": []
@@ -3372,8 +3372,8 @@
    "successeurs": []
   },
   "RNCP37842": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Chef de projet design d'espace et produit",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -3395,36 +3395,38 @@
    "successeurs": []
   },
   "RNCP37849": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Responsable du développement commercial",
    "date_fin": "2026-07-19",
    "successeurs": []
   },
   "RNCP37851": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Manager des ressources humaines",
    "date_fin": "2026-07-19",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42638"
+   ]
   },
   "RNCP37853": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Opérateur son",
    "date_fin": "2026-07-19",
    "successeurs": []
   },
   "RNCP37854": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Opérateur de prise de vue",
    "date_fin": "2026-07-19",
    "successeurs": []
   },
   "RNCP37865": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Responsable en gestion d'activité opérationnelle",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -6668,8 +6670,8 @@
    "successeurs": []
   },
   "RNCP39392": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Assistant réalisateur",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -6677,8 +6679,8 @@
    ]
   },
   "RNCP39395": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Responsable d'agence et de commerce",
    "date_fin": "2026-07-19",
    "successeurs": [
@@ -10316,6 +10318,419 @@
    "type": "Successeur(s) modifié(s)",
    "avant": "",
    "apres": "RNCP42655"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37734",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37734",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37742",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37742",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37745",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37745",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37748",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37748",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37758",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37758",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37775",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37775",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37776",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37776",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37777",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37777",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37778",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37778",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37779",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37779",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37780",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37780",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37785",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37785",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37786",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37786",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37787",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37787",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37792",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37792",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37793",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37793",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37795",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37795",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37796",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37796",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37799",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37799",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37824",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37824",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37828",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37828",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37842",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37842",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37849",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37849",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37851",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37851",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37851",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42638"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37853",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37853",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37854",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37854",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37865",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP37865",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP39392",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP39392",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP39395",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-07-21",
+   "code": "RNCP39395",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
   }
  ]
 }
