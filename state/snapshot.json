@@ -1,6 +1,6 @@
 {
- "derniere_execution": "2026-07-21T08:45:36.514013+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-07-21.zip",
+ "derniere_execution": "2026-07-22T09:05:40.104069+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-07-22.zip",
  "codes": {
   "RNCP35185": {
    "statut": "ORANGE",
@@ -672,7 +672,9 @@
    "actif": true,
    "intitule": "Sommelier-conseil, caviste",
    "date_fin": "2026-09-15",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42644"
+   ]
   },
   "RNCP35864": {
    "statut": "ORANGE",
@@ -3253,7 +3255,9 @@
    "actif": false,
    "intitule": "Conseiller en emploi accompagné",
    "date_fin": "2026-07-19",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42656"
+   ]
   },
   "RNCP37780": {
    "statut": "ROUGE",
@@ -4019,7 +4023,9 @@
    "actif": true,
    "intitule": "Chargé de développement d’une structure sportive associative",
    "date_fin": "2026-10-18",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42635"
+   ]
   },
   "RNCP38143": {
    "statut": "ORANGE",
@@ -6243,7 +6249,9 @@
    "actif": true,
    "intitule": "Programme Grande Ecole",
    "date_fin": "2026-08-31",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42673"
+   ]
   },
   "RNCP39174": {
    "statut": "VERT",
@@ -10731,6 +10739,34 @@
    "type": "État de la fiche",
    "avant": "Active",
    "apres": "Inactive"
+  },
+  {
+   "date": "2026-07-22",
+   "code": "RNCP35863",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42644"
+  },
+  {
+   "date": "2026-07-22",
+   "code": "RNCP37779",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42656"
+  },
+  {
+   "date": "2026-07-22",
+   "code": "RNCP38142",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42635"
+  },
+  {
+   "date": "2026-07-22",
+   "code": "RNCP39160",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42673"
   }
  ]
 }
