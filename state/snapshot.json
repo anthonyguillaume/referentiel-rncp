@@ -1,6 +1,6 @@
 {
- "derniere_execution": "2026-07-22T09:05:40.104069+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-07-22.zip",
+ "derniere_execution": "2026-07-25T08:34:59.660955+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-07-25.zip",
  "codes": {
   "RNCP35185": {
    "statut": "ORANGE",
@@ -3166,7 +3166,9 @@
    "actif": true,
    "intitule": "Diplôme en management international de l'hôtellerie et de la restauration",
    "date_fin": "2026-08-31",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42709"
+   ]
   },
   "RNCP37722": {
    "statut": "VERT",
@@ -9927,7 +9929,7 @@
    "successeurs": []
   },
   "RNCP41538": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Responsable d'unité de restauration collective",
    "date_fin": "2027-01-21",
@@ -10767,6 +10769,20 @@
    "type": "Successeur(s) modifié(s)",
    "avant": "",
    "apres": "RNCP42673"
+  },
+  {
+   "date": "2026-07-25",
+   "code": "RNCP37719",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42709"
+  },
+  {
+   "date": "2026-07-25",
+   "code": "RNCP41538",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
   }
  ]
 }
