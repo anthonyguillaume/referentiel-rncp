@@ -1,6 +1,6 @@
 {
- "derniere_execution": "2026-07-30T09:07:14.621989+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-07-29.zip",
+ "derniere_execution": "2026-08-01T08:44:37.371504+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-08-01.zip",
  "codes": {
   "RNCP35185": {
    "statut": "ORANGE",
@@ -1425,11 +1425,13 @@
    "successeurs": []
   },
   "RNCP36777": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Métiers de la mode – vêtements »",
    "date_fin": "2027-08-31",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42747"
+   ]
   },
   "RNCP36787": {
    "statut": "VERT",
@@ -1646,11 +1648,13 @@
    "successeurs": []
   },
   "RNCP36968": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Maintenance des systèmes (option A : systèmes de production, option B : systèmes énergétiques et fluidiques, option C : systèmes éoliens, option D : systèmes ascenseurs et élévateurs)",
    "date_fin": "2027-08-31",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42746"
+   ]
   },
   "RNCP36969": {
    "statut": "ORANGE",
@@ -2353,11 +2357,13 @@
    "successeurs": []
   },
   "RNCP37378": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Conception des processus de découpe et d’emboutissage",
    "date_fin": "2027-08-31",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42748"
+   ]
   },
   "RNCP37381": {
    "statut": "VERT",
@@ -10810,6 +10816,48 @@
    "type": "Changement de statut",
    "avant": "RAS",
    "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-01",
+   "code": "RNCP36777",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-01",
+   "code": "RNCP36777",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42747"
+  },
+  {
+   "date": "2026-08-01",
+   "code": "RNCP36968",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-01",
+   "code": "RNCP36968",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42746"
+  },
+  {
+   "date": "2026-08-01",
+   "code": "RNCP37378",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-01",
+   "code": "RNCP37378",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42748"
   }
  ]
 }
