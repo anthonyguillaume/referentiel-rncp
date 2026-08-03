@@ -1,6 +1,6 @@
 {
- "derniere_execution": "2026-08-01T08:44:37.371504+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-08-01.zip",
+ "derniere_execution": "2026-08-03T09:54:12.484019+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-08-02.zip",
  "codes": {
   "RNCP35185": {
    "statut": "ORANGE",
@@ -894,14 +894,14 @@
    "successeurs": []
   },
   "RNCP36170": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Agent de refabrication et de recyclage de batteries d'accumulateurs",
    "date_fin": "2027-01-30",
    "successeurs": []
   },
   "RNCP36171": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Agent d'assemblage et de maintenance de batteries d'accumulateurs",
    "date_fin": "2027-01-30",
@@ -10858,6 +10858,20 @@
    "type": "Successeur(s) modifié(s)",
    "avant": "",
    "apres": "RNCP42748"
+  },
+  {
+   "date": "2026-08-03",
+   "code": "RNCP36170",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-03",
+   "code": "RNCP36171",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
   }
  ]
 }
