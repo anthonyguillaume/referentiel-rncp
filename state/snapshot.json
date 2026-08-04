@@ -1,5 +1,5 @@
 {
- "derniere_execution": "2026-08-03T09:54:12.484019+02:00",
+ "derniere_execution": "2026-08-04T09:06:28.251812+02:00",
  "source_export": "export-fiches-rncp-v4-1-2026-08-02.zip",
  "codes": {
   "RNCP35185": {
@@ -873,7 +873,7 @@
    "successeurs": []
   },
   "RNCP36163": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Administrateur réseau NetOps",
    "date_fin": "2027-01-31",
@@ -887,7 +887,7 @@
    "successeurs": []
   },
   "RNCP36169": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Soudeur programmeur de cellules robotisées",
    "date_fin": "2027-01-31",
@@ -10869,6 +10869,20 @@
   {
    "date": "2026-08-03",
    "code": "RNCP36171",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-04",
+   "code": "RNCP36163",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-04",
+   "code": "RNCP36169",
    "type": "Changement de statut",
    "avant": "RAS",
    "apres": "À vérifier"
