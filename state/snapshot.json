@@ -1,6 +1,6 @@
 {
- "derniere_execution": "2026-08-04T09:06:28.251812+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-08-02.zip",
+ "derniere_execution": "2026-08-05T09:08:07.622232+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-08-05.zip",
  "codes": {
   "RNCP35185": {
    "statut": "ORANGE",
@@ -479,8 +479,8 @@
    ]
   },
   "RNCP35706": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Responsable de développement touristique territorial",
    "date_fin": "2026-08-02",
    "successeurs": [
@@ -880,7 +880,7 @@
    "successeurs": []
   },
   "RNCP36168": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Technicien supérieur en fabrication additive",
    "date_fin": "2027-02-01",
@@ -10883,6 +10883,27 @@
   {
    "date": "2026-08-04",
    "code": "RNCP36169",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-05",
+   "code": "RNCP35706",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-08-05",
+   "code": "RNCP35706",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-08-05",
+   "code": "RNCP36168",
    "type": "Changement de statut",
    "avant": "RAS",
    "apres": "À vérifier"
