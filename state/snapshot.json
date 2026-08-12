@@ -1,6 +1,6 @@
 {
- "derniere_execution": "2026-08-08T07:12:49.198845+02:00",
- "source_export": "export-fiches-rncp-v3-0-2026-08-08.zip",
+ "derniere_execution": "2026-08-12T07:51:25.263095+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-08-12.zip",
  "codes": {
   "RNCP35185": {
    "statut": "ORANGE",
@@ -75,7 +75,7 @@
    ]
   },
   "RNCP35234": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Agent technique de réception et de valorisation de déchets",
    "date_fin": "2027-02-08",
@@ -1959,10 +1959,10 @@
    "successeurs": []
   },
   "RNCP37239": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Pilote d'installations de production par procédés",
-   "date_fin": "2027-08-31",
+   "date_fin": "2026-12-31",
    "successeurs": []
   },
   "RNCP37240": {
@@ -10921,6 +10921,27 @@
    "type": "Échéance modifiée",
    "avant": "16/09/2026",
    "apres": "15/03/2028"
+  },
+  {
+   "date": "2026-08-12",
+   "code": "RNCP35234",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-12",
+   "code": "RNCP37239",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-12",
+   "code": "RNCP37239",
+   "type": "Échéance modifiée",
+   "avant": "31/08/2027",
+   "apres": "31/12/2026"
   }
  ]
 }
