@@ -1,6 +1,6 @@
 {
- "derniere_execution": "2026-08-12T07:51:25.263095+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-08-12.zip",
+ "derniere_execution": "2026-08-13T07:52:59.204523+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-08-13.zip",
  "codes": {
   "RNCP35185": {
    "statut": "ORANGE",
@@ -5079,49 +5079,49 @@
    "successeurs": []
   },
   "RNCP38583": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Manager du développement commercial",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38585": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Délégué à la protection des données (MS)",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38586": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Manager de la stratégie marketing",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38589": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Directeur artistique",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38597": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Manager du marketing et de la stratégie de marque",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38598": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Manager du marketing de l'expérience client",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38599": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Manager de programmes et projets SI",
    "date_fin": "2027-02-09",
@@ -5135,49 +5135,49 @@
    "successeurs": []
   },
   "RNCP38604": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Responsable d'activités commerciales",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38605": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Responsable de projet marketing communication",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38609": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Conseiller en droit rural et économie agricole",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38619": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "CQP Conducteur référent de machine à papier",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38620": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "CQP Concepteur modélisateur numérique de produits ou de systèmes mécaniques",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38621": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "CQP Conducteur en transformation",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38622": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Technicien d’usinage sur machines-outils à commande numérique (MOCN)",
    "date_fin": "2027-02-09",
@@ -5198,28 +5198,28 @@
    "successeurs": []
   },
   "RNCP38626": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "CQP Aide-conducteur de machine à papier",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38627": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "CQP Aide-conducteur en transformation",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38629": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "CQP Animateur tir à l'arc",
    "date_fin": "2027-02-09",
    "successeurs": []
   },
   "RNCP38630": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "CQP Initiateur char à voile",
    "date_fin": "2027-02-09",
@@ -10942,6 +10942,132 @@
    "type": "Échéance modifiée",
    "avant": "31/08/2027",
    "apres": "31/12/2026"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38583",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38585",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38586",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38589",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38597",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38598",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38599",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38604",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38605",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38609",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38619",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38620",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38621",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38622",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38626",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38627",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38629",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-13",
+   "code": "RNCP38630",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
   }
  ]
 }
