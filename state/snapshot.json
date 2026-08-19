@@ -1,6 +1,6 @@
 {
- "derniere_execution": "2026-08-13T07:52:59.204523+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-08-13.zip",
+ "derniere_execution": "2026-08-19T06:58:33.104812+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-08-19.zip",
  "codes": {
   "RNCP35185": {
    "statut": "ORANGE",
@@ -964,7 +964,7 @@
    "successeurs": []
   },
   "RNCP36238": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Fraiseur en réalisation de pièces mécaniques",
    "date_fin": "2027-02-15",
@@ -1006,7 +1006,7 @@
    "successeurs": []
   },
   "RNCP36247": {
-   "statut": "VERT",
+   "statut": "ORANGE",
    "actif": true,
    "intitule": "Technicien supérieur de maintenance industrielle",
    "date_fin": "2027-02-15",
@@ -4876,10 +4876,10 @@
    "successeurs": []
   },
   "RNCP38497": {
-   "statut": "ORANGE",
-   "actif": true,
+   "statut": "ROUGE",
+   "actif": false,
    "intitule": "Art-thérapeute",
-   "date_fin": "2026-12-21",
+   "date_fin": "2026-08-17",
    "successeurs": []
   },
   "RNCP38498": {
@@ -11068,6 +11068,41 @@
    "type": "Changement de statut",
    "avant": "RAS",
    "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-19",
+   "code": "RNCP36238",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-19",
+   "code": "RNCP36247",
+   "type": "Changement de statut",
+   "avant": "RAS",
+   "apres": "À vérifier"
+  },
+  {
+   "date": "2026-08-19",
+   "code": "RNCP38497",
+   "type": "Changement de statut",
+   "avant": "À vérifier",
+   "apres": "Expiré / remplacé"
+  },
+  {
+   "date": "2026-08-19",
+   "code": "RNCP38497",
+   "type": "État de la fiche",
+   "avant": "Active",
+   "apres": "Inactive"
+  },
+  {
+   "date": "2026-08-19",
+   "code": "RNCP38497",
+   "type": "Échéance modifiée",
+   "avant": "21/12/2026",
+   "apres": "17/08/2026"
   }
  ]
 }
