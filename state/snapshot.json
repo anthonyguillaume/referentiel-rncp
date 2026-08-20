@@ -1,6 +1,6 @@
 {
- "derniere_execution": "2026-08-19T06:58:33.104812+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-08-19.zip",
+ "derniere_execution": "2026-08-20T06:59:56.803160+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-08-20.zip",
  "codes": {
   "RNCP35185": {
    "statut": "ORANGE",
@@ -638,7 +638,9 @@
    "actif": true,
    "intitule": "Maintenance et Efficacité Energétique",
    "date_fin": "2026-08-31",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42761"
+   ]
   },
   "RNCP35845": {
    "statut": "ORANGE",
@@ -11103,6 +11105,13 @@
    "type": "Échéance modifiée",
    "avant": "21/12/2026",
    "apres": "17/08/2026"
+  },
+  {
+   "date": "2026-08-20",
+   "code": "RNCP35844",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42761"
   }
  ]
 }
