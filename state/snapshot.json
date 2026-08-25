@@ -1,6 +1,6 @@
 {
- "derniere_execution": "2026-08-21T07:00:13.918632+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-08-21.zip",
+ "derniere_execution": "2026-08-25T07:00:43.540767+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-08-25.zip",
  "codes": {
   "RNCP35185": {
    "statut": "ORANGE",
@@ -596,7 +596,9 @@
    "actif": true,
    "intitule": "Menuisier de fabrication bois et dérivés",
    "date_fin": "2026-10-24",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42767"
+   ]
   },
   "RNCP35824": {
    "statut": "ORANGE",
@@ -610,7 +612,9 @@
    "actif": true,
    "intitule": "Chargé de travaux en réseaux électriques aériens et souterrains",
    "date_fin": "2026-11-20",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42765"
+   ]
   },
   "RNCP35826": {
    "statut": "ORANGE",
@@ -635,7 +639,9 @@
    "actif": true,
    "intitule": "Monteur de réseaux électriques aéro-souterrains",
    "date_fin": "2026-08-31",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42768"
+   ]
   },
   "RNCP35844": {
    "statut": "ORANGE",
@@ -8055,7 +8061,9 @@
    "actif": true,
    "intitule": "Conducteur de travaux du bâtiment et du génie civil",
    "date_fin": "2026-10-20",
-   "successeurs": []
+   "successeurs": [
+    "RNCP42766"
+   ]
   },
   "RNCP40218": {
    "statut": "VERT",
@@ -11130,6 +11138,34 @@
    "type": "Successeur(s) modifié(s)",
    "avant": "",
    "apres": "RNCP42764"
+  },
+  {
+   "date": "2026-08-25",
+   "code": "RNCP35823",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42767"
+  },
+  {
+   "date": "2026-08-25",
+   "code": "RNCP35825",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42765"
+  },
+  {
+   "date": "2026-08-25",
+   "code": "RNCP35828",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42768"
+  },
+  {
+   "date": "2026-08-25",
+   "code": "RNCP40217",
+   "type": "Successeur(s) modifié(s)",
+   "avant": "",
+   "apres": "RNCP42766"
   }
  ]
 }
