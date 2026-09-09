@@ -14,7 +14,9 @@ L'e-mail n'est envoyé que si des changements sont détectés (la première gén
 
 ## Le périmètre
 
-`config/formacodes.txt` définit ce qui est suivi : un formacode par ligne, 5 chiffres pour un formacode exact, 3 chiffres pour couvrir tout un domaine (ex. `114` couvre 11421, 11454…). Le fichier est initialisé avec les 700 formacodes de votre ancien fichier de liens CPF — le périmètre couvert est donc identique au départ, à la différence près que **les nouveaux diplômes publiés dans ces formacodes apparaîtront désormais tout seuls, en vert**. Un fichier vide (hors commentaires) suit le répertoire entier (~25 000 fiches dont ~5 000 actives) ; attendez-vous alors à des alertes quotidiennes nombreuses. Élargir ou réduire le périmètre = éditer ce fichier dans GitHub, rien d'autre.
+`config/formacodes.txt` définit ce qui est suivi : un formacode par ligne, 5 chiffres pour un formacode exact, 3 chiffres pour couvrir tout un domaine (ex. `114` couvre 11421, 11454…). Le fichier est initialisé avec les 700 formacodes de votre ancien fichier de liens CPF — le périmètre couvert est donc identique au départ, à la différence près que **les nouveaux diplômes publiés dans ces formacodes apparaîtront désormais tout seuls, en vert**. Un fichier vide (hors commentaires) suit le répertoire entier (~5 000 fiches actives) ; attendez-vous alors à des alertes quotidiennes nombreuses. Élargir ou réduire le périmètre = éditer ce fichier dans GitHub, rien d'autre.
+
+Seules les fiches **actives** du périmètre entrent dans le suivi : les fiches déjà inactives (remplacées ou échues avant le début du suivi) sont ignorées, ce qui évite de traîner des milliers de fiches historiques. Une fiche suivie qui se désactive reste dans le fichier (ligne orange le jour du changement, puis « Fiche active : Non » avec son successeur) tant qu'elle figure dans l'export.
 
 Limite à connaître : une fiche sans aucun formacode renseigné chez France compétences est invisible d'un périmètre par formacodes.
 

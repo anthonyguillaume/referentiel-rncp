@@ -5,7 +5,8 @@ Génération du référentiel des diplômes RNCP depuis l'export open data offic
 de France compétences (data.gouv.fr), sur un périmètre de formacodes.
 
 À chaque exécution :
-  - télécharge le dernier export RNCP et le filtre sur config/formacodes.txt ;
+  - télécharge le dernier export RNCP et le filtre sur config/formacodes.txt
+    (fiches actives ; une fiche suivie qui se désactive reste dans le fichier) ;
   - compare avec la génération précédente (state/snapshot.json) ;
   - produit docs/diplomes_rncp.xlsx : lignes VERTES (ajoutées), ORANGES
     (modifiées, avec le détail avant → après), ROUGES (fiches désactivées ou
@@ -672,12 +673,6 @@ def main() -> None:
             "schéma modifié ? Lancer --debug-fiche RNCP35803 pour vérifier."
         )
 
-    selection = {c: f for c, f in repertoire.items()
-                 if dans_perimetre(f["formacodes"], exacts, prefixes)}
-    log(f"  {len(selection)} fiches dans le périmètre")
-    if not selection:
-        raise SystemExit("Aucune fiche dans le périmètre : vérifier config/formacodes.txt")
-
     # Instantané précédent
     chemin_state = Path(args.state)
     ancien: dict = {}
@@ -691,6 +686,18 @@ def main() -> None:
             premiere = False
         else:
             log("Instantané v1 détecté : nouvelle base de référence (v2).")
+
+    # Sélection : fiches du périmètre ACTIVES, plus celles déjà suivies (une
+    # fiche qui se désactive pendant le suivi reste visible avec son
+    # successeur ; les fiches inactives depuis avant le suivi n'entrent pas).
+    selection = {c: f for c, f in repertoire.items()
+                 if dans_perimetre(f["formacodes"], exacts, prefixes)
+                 and (f["actif"] or c in ancien)}
+    n_inactives = sum(1 for f in selection.values() if not f["actif"])
+    log(f"  {len(selection)} fiches dans le périmètre "
+        f"({len(selection) - n_inactives} actives, {n_inactives} inactives déjà suivies)")
+    if not selection:
+        raise SystemExit("Aucune fiche dans le périmètre : vérifier config/formacodes.txt")
 
     diff, events = ({}, []) if premiere else comparer(ancien, selection, jour_iso)
     if premiere:
