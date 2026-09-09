@@ -13,7 +13,8 @@ de France compétences (data.gouv.fr), sur un périmètre de formacodes.
     disparues), onglets Synthèse, Changements et un onglet par domaine ;
   - produit le site statique docs/index.html + docs/data.json (recherche,
     filtres, lien de téléchargement de l'Excel) pour GitHub Pages ;
-  - produit summary.md / summary.html (résumé du run) et pose les sorties
+  - produit summary.md / summary.html (résumé du run), tient le journal des
+    générations (docs/runs.json, page runs.html) et pose les sorties
     GitHub Actions (changes / sujet / resume).
 
 Usage local :
@@ -540,8 +541,55 @@ def ecrire_site(outdir: Path, gabarit: Path, lignes, meta: dict) -> None:
             "rows": rows}
     (outdir / "data.json").write_text(json.dumps(data, ensure_ascii=False),
                                       encoding="utf-8")
-    if gabarit.exists():
-        shutil.copyfile(gabarit, outdir / "index.html")
+    copier_gabarits(outdir, gabarit)
+
+
+def copier_gabarits(outdir: Path, gabarit: Path) -> None:
+    """Copie index.html et les autres pages (runs.html…) du dossier du gabarit."""
+    if gabarit.parent.is_dir():
+        for page in gabarit.parent.glob("*.html"):
+            shutil.copyfile(page, outdir / page.name)
+
+
+# --------------------------------------------------------------------------- #
+# 6 bis. Journal des générations (runs.json, page runs.html)
+# --------------------------------------------------------------------------- #
+
+JOURNAL_MAX = 1500
+
+
+def url_run_actions() -> str:
+    serveur = os.environ.get("GITHUB_SERVER_URL", "")
+    depot = os.environ.get("GITHUB_REPOSITORY", "")
+    run_id = os.environ.get("GITHUB_RUN_ID", "")
+    return f"{serveur}/{depot}/actions/runs/{run_id}" if serveur and depot and run_id else ""
+
+
+def entree_journal(statut: str, maintenant: datetime, **champs) -> dict:
+    e = {"date": maintenant.strftime("%Y-%m-%dT%H:%M"), "statut": statut, "export": "",
+         "diplomes": 0, "ajoutes": 0, "modifies": 0, "supprimes": 0, "message": "",
+         "run_url": url_run_actions()}
+    e.update(champs)
+    return e
+
+
+def ecrire_runs_json(outdir: Path, journal: list[dict], maintenant: datetime) -> None:
+    outdir.mkdir(parents=True, exist_ok=True)
+    (outdir / "runs.json").write_text(
+        json.dumps({"genere_le": maintenant.strftime("%d/%m/%Y %H:%M"),
+                    "runs": list(reversed(journal))}, ensure_ascii=False),
+        encoding="utf-8")
+
+
+def charger_journal(chemin_state: Path) -> list[dict]:
+    if chemin_state.exists():
+        try:
+            contenu = json.loads(chemin_state.read_text(encoding="utf-8"))
+        except ValueError:
+            return []
+        if contenu.get("version") == 2:
+            return contenu.get("journal", [])
+    return []
 
 
 def construire_resumes(meta: dict, events: list[dict], lignes,
@@ -677,12 +725,14 @@ def main() -> None:
     chemin_state = Path(args.state)
     ancien: dict = {}
     historique: list[dict] = []
+    journal: list[dict] = []
     premiere = True
     if chemin_state.exists():
         contenu = json.loads(chemin_state.read_text(encoding="utf-8"))
         if contenu.get("version") == 2:
             ancien = contenu.get("codes", {})
             historique = contenu.get("historique", [])
+            journal = contenu.get("journal", [])
             premiere = False
         else:
             log("Instantané v1 détecté : nouvelle base de référence (v2).")
@@ -751,6 +801,15 @@ def main() -> None:
     (outdir / "summary.md").write_text(md, encoding="utf-8")
     (outdir / "summary.html").write_text(html, encoding="utf-8")
 
+    changements = premiere or bool(events)
+    journal.append(entree_journal(
+        "initialisation" if premiere else ("changements" if changements else "sans_changement"),
+        maintenant, export=source, diplomes=len(lignes),
+        ajoutes=compteurs["AJOUTÉ"], modifies=compteurs["MODIFIÉ"],
+        supprimes=compteurs["SUPPRIMÉ"]))
+    journal = journal[-JOURNAL_MAX:]
+    ecrire_runs_json(outdir, journal, maintenant)
+
     # Nouvel instantané
     etat = {}
     for code, f, evolution, _ in lignes:
@@ -763,10 +822,10 @@ def main() -> None:
     chemin_state.write_text(
         json.dumps({"version": 2, "derniere_execution": maintenant.isoformat(),
                     "source_export": source, "codes": etat,
-                    "historique": historique}, ensure_ascii=False, indent=1),
+                    "historique": historique, "journal": journal},
+                   ensure_ascii=False, indent=1),
         encoding="utf-8")
 
-    changements = premiere or bool(events)
     resume = (f"{cptr(compteurs)}" if not premiere
               else f"initialisation, {len(lignes)} diplômes")
     ecrire_github_output(changements, sujet, resume)

@@ -30,13 +30,22 @@ jobs:
         run: pip install -r requirements.txt
 
       # Génère docs/ : diplomes_rncp.xlsx, index.html + data.json (site),
-      # summary.md/html, et met à jour state/snapshot.json.
+      # runs.json + runs.html (journal des générations), summary.md/html,
+      # et met à jour state/snapshot.json.
       # Sorties : changes (true/false), sujet, resume.
       - name: Générer le référentiel des diplômes
         id: controle
         env:
           SITE_URL: ${{ vars.SITE_URL }}
-        run: python genere_rncp.py
+        run: |
+          set -o pipefail
+          python genere_rncp.py 2>&1 | tee generation.log
+
+      # En cas d'échec, l'erreur est inscrite dans le journal des générations
+      # (state + docs/runs.json) pour apparaître sur la page runs.html.
+      - name: Journaliser l'échec
+        if: failure()
+        run: python outils/journaliser_erreur.py generation.log
 
       - name: Publier le rapport en artefact
         if: always()
@@ -46,14 +55,17 @@ jobs:
           path: docs/
           retention-days: 90
 
-      # L'état et le site ne sont committés que s'il y a des changements.
-      # GitHub Pages sert le dossier docs/ (site + Excel téléchargeable).
+      # L'état et le site sont committés à chaque run (le journal des
+      # générations change même sans évolution des diplômes, et un échec y
+      # est inscrit). GitHub Pages sert le dossier docs/.
       - name: Publier le site et l'état dans le dépôt
-        if: steps.controle.outputs.changes == 'true'
+        if: always()
         run: |
           git config user.name "controle-rncp[bot]"
           git config user.email "actions@users.noreply.github.com"
           git add state docs
-          git diff --cached --quiet || git commit -m "Génération RNCP $(date -u +%F) — ${{ steps.controle.outputs.resume }}"
+          resume="${{ steps.controle.outputs.resume }}"
+          [ -n "$resume" ] || resume="échec de la génération"
+          git diff --cached --quiet || git commit -m "Génération RNCP $(date -u +%F) — $resume"
           git pull --rebase origin "$GITHUB_REF_NAME" || true
           git push

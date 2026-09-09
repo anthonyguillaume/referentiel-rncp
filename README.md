@@ -10,7 +10,9 @@ Le gabarit du site vit dans `site/index.html` (design GIP FCIP produit avec Clau
 
 `docs/index.html` + `docs/data.json` — le **site web** (servi par GitHub Pages) : recherche instantanée par code, intitulé ou formacode, filtres Ajoutés / Modifiés / Supprimés / Fiches inactives, détail par fiche avec lien vers France compétences, et bouton de téléchargement de l'Excel.
 
-Le site et l'état ne sont committés que si des changements sont détectés. L'état de comparaison vit dans `state/snapshot.json`, versionné.
+`docs/runs.html` + `docs/runs.json` — l'**historique des générations** : une ligne par exécution (date, export utilisé, diplômes suivis, ajoutés / modifiés / supprimés, lien vers le run GitHub Actions), y compris les exécutions sans changement et les **échecs** (téléchargement impossible, export anormal…), journalisés par le workflow.
+
+Le site et l'état sont committés à chaque exécution (le journal des générations évolue même sans changement). L'état de comparaison vit dans `state/snapshot.json`, versionné.
 
 ## Le périmètre
 
@@ -37,7 +39,7 @@ Limite à connaître : une fiche sans aucun formacode renseigné chez France com
 
 ## Au quotidien
 
-Rien à faire : le fichier et le site se régénèrent seuls, l'équipe consulte le site pour chercher un code et télécharge l'Excel depuis le site. Les seules interventions possibles : éditer `config/formacodes.txt` pour ajuster le périmètre, et « Run workflow » pour forcer une génération. Le site et le fichier committés reflètent la dernière génération **avec changements** ; le contrôle tourne bien tous les jours même quand rien ne bouge.
+Rien à faire : le fichier et le site se régénèrent seuls, l'équipe consulte le site pour chercher un code et télécharge l'Excel depuis le site. Les seules interventions possibles : éditer `config/formacodes.txt` pour ajuster le périmètre, et « Run workflow » pour forcer une génération. La page « Historique des générations » du site permet de vérifier que le contrôle a bien tourné chaque jour, avec ou sans changement, et signale les échecs.
 
 ## Exécution locale et options
 
