@@ -55,3 +55,7 @@ python genere_rncp.py --debug-fiche RNCP35803          # affiche le XML brut d'u
 ## Migration depuis la v1
 
 L'ancien mode (comparaison d'un fichier Excel maintenu à la main) est remplacé : supprimer `check_rncp.py` et le dossier `data/` du dépôt. L'ancien `state/snapshot.json` est détecté et ignoré, la première génération v2 repart d'une base de référence propre.
+
+## Licence
+
+Code publié sous [licence MIT](LICENSE). Les données proviennent du Répertoire national des certifications professionnelles publié par France compétences sur data.gouv.fr sous [licence ouverte Etalab 2.0](https://www.etalab.gouv.fr/licence-ouverte-open-licence/).
