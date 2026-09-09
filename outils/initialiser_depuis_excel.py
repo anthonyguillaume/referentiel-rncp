@@ -7,8 +7,10 @@ formacode → RNCP (colonne « Nomenclature RNCP » ou « Code RNCP »).
 Les codes du fichier deviennent la base de référence, considérés comme
 ACTIFS et SANS SUCCESSEUR au moment où le fichier a été établi ; les autres
 champs (intitulé, type, niveau, échéance, formacodes) sont repris de l'export
-courant. La génération suivante signale donc en orange les fiches devenues
-inactives ou remplacées, en vert les diplômes du périmètre absents du fichier.
+courant. Les générations suivantes signalent en orange les fiches devenues
+inactives ou remplacées depuis, en vert les diplômes du périmètre absents du
+fichier, en rouge les fiches disparues — et ces couleurs persistent jusqu'à
+la prochaine réinitialisation. Le journal des générations est conservé.
 
 Usage :
   python outils/initialiser_depuis_excel.py "Liens CPF.xlsx" [--xml export.xml]
@@ -71,20 +73,30 @@ def main() -> None:
         etat[c] = {"intitule": f["intitule"], "type": f["type"], "niveau": f["niveau"],
                    "actif": True, "date_fin": f["date_fin"], "successeurs": [],
                    "formacodes": f["formacodes"], "premiere_vue": jour,
-                   "dernier_changement": ""}
+                   "dernier_changement": "", "evolution": "", "detail": ""}
     if absents:
         log(f"  {len(absents)} code(s) du fichier absent(s) de l'export, ignoré(s) : "
             + ", ".join(absents[:20]))
 
     chemin = Path(args.state)
+    journal: list = []
+    if chemin.exists():
+        try:
+            precedent = json.loads(chemin.read_text(encoding="utf-8"))
+            if precedent.get("version") == 2:
+                journal = precedent.get("journal", [])  # l'historique des runs est conservé
+        except ValueError:
+            pass
     chemin.parent.mkdir(parents=True, exist_ok=True)
     chemin.write_text(json.dumps({
         "version": 2,
         "derniere_execution": datetime.now().isoformat(),
         "source_export": f"{Path(args.excel).name} (référence initiale, export {source})",
+        "reference": {"nom": Path(args.excel).name, "date": jour},
         "codes": etat,
         "historique": [{"date": jour, "code": "—", "type": "Initialisation du suivi",
                         "avant": "", "apres": f"{len(etat)} diplômes du fichier {Path(args.excel).name}"}],
+        "journal": journal,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     log(f"Base de référence écrite : {chemin} ({len(etat)} codes)")
 

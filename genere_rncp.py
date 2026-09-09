@@ -7,10 +7,13 @@ de France compétences (data.gouv.fr), sur un périmètre de formacodes.
 À chaque exécution :
   - télécharge le dernier export RNCP et le filtre sur config/formacodes.txt
     (fiches actives ; une fiche suivie qui se désactive reste dans le fichier) ;
-  - compare avec la génération précédente (state/snapshot.json) ;
-  - produit docs/diplomes_rncp.xlsx : lignes VERTES (ajoutées), ORANGES
-    (modifiées, avec le détail avant → après), ROUGES (fiches désactivées ou
-    disparues), onglets Synthèse, Changements et un onglet par domaine ;
+  - compare avec la génération précédente (state/snapshot.json) et cumule
+    l'évolution de chaque fiche depuis la RÉFÉRENCE de départ (export initial
+    ou fichier Excel importé par outils/initialiser_depuis_excel.py) ;
+  - produit docs/diplomes_rncp.xlsx : lignes VERTES (absentes de la
+    référence), ORANGES (modifiées depuis, détail avant → après cumulé),
+    ROUGES (disparues), onglets Synthèse, Changements et un onglet par
+    domaine ; les couleurs persistent jusqu'à la prochaine réinitialisation ;
   - produit le site statique docs/index.html + docs/data.json (recherche,
     filtres, lien de téléchargement de l'Excel) pour GitHub Pages ;
   - produit summary.md / summary.html (résumé du run), tient le journal des
@@ -337,8 +340,14 @@ def comparer(ancien: dict, nouveau: dict, jour: str) -> tuple[dict, list[dict]]:
         events.append({"date": jour, "code": code, "type": type_,
                        "avant": str(avant), "apres": str(apres)})
 
-    anciens, nouveaux = set(ancien), set(nouveau)
+    anciens = {c for c in ancien if ancien[c].get("evolution") != "SUPPRIMÉ"}
+    disparus_connus = set(ancien) - anciens
+    nouveaux = set(nouveau)
     for c in sorted(nouveaux - anciens, key=lambda x: int(x[4:])):
+        if c in disparus_connus:
+            diff[c] = ("MODIFIÉ", "Fiche réapparue dans l'export")
+            ev(c, "Fiche réapparue", "", nouveau[c]["intitule"])
+            continue
         diff[c] = ("AJOUTÉ", "Nouvelle fiche dans le périmètre")
         ev(c, "Fiche ajoutée", "", nouveau[c]["intitule"])
     for c in sorted(anciens - nouveaux, key=lambda x: int(x[4:])):
@@ -356,6 +365,38 @@ def comparer(ancien: dict, nouveau: dict, jour: str) -> tuple[dict, list[dict]]:
         if morceaux:
             diff[c] = ("MODIFIÉ", " ; ".join(morceaux))
     return diff, events
+
+
+def fusionner_details(precedent: str, nouveau: str) -> str:
+    """Cumule les détails « Libellé : avant → après » : pour un même libellé,
+    conserve la valeur d'origine (référence) et prend la dernière valeur."""
+    if not precedent:
+        return nouveau
+    if not nouveau:
+        return precedent
+    ordre: list[str] = []
+    valeurs: dict[str, str] = {}
+    for det in (precedent, nouveau):
+        for morceau in det.split(" ; "):
+            if " : " in morceau and " → " in morceau:
+                libelle, reste = morceau.split(" : ", 1)
+                avant, apres = reste.split(" → ", 1)
+                if libelle in valeurs and " → " in valeurs[libelle]:
+                    avant = valeurs[libelle].split(" → ", 1)[0]
+                valeurs[libelle] = f"{avant} → {apres}"
+            else:
+                libelle, valeurs[libelle] = morceau, ""
+            if libelle not in ordre:
+                ordre.append(libelle)
+    morceaux = []
+    for k in ordre:
+        v = valeurs[k]
+        if " → " in v:
+            avant, apres = v.split(" → ", 1)
+            if avant == apres:
+                continue  # revenue à la valeur de référence
+        morceaux.append(f"{k} : {v}" if v else k)
+    return " ; ".join(morceaux)
 
 
 # --------------------------------------------------------------------------- #
@@ -421,19 +462,23 @@ def ecrire_classeur(chemin: Path, lignes: list[tuple[str, dict, str, str]],
     syn["A1"].font = Font(bold=True, size=14)
     syn["A2"] = f"Export France compétences : {meta['source_export']}"
     syn["A3"] = (f"Périmètre : {meta['perimetre']} — "
-                 f"{meta['nb_lignes']} diplômes dans le fichier")
+                 f"{meta['nb_lignes']} diplômes dans le fichier — "
+                 f"référence : {meta.get('reference', '')}")
     if meta.get("note"):
         syn["A4"] = meta["note"]
         syn["A4"].font = Font(bold=True, color="9C0006")
     gras = Font(bold=True)
     l = 6
-    syn.cell(row=l, column=1, value="Évolution depuis la dernière génération").font = gras
+    syn.cell(row=l, column=1, value="Évolution depuis la référence (cumul)").font = gras
+    syn.cell(row=l, column=3, value="Dont cette génération").font = gras
+    cj = meta.get("compteurs_jour", {})
     for evo in EVOLUTIONS:
         l += 1
         c = syn.cell(row=l, column=1, value=evo)
         c.fill = FILLS[evo]
         c.font = FONTS[evo]
         syn.cell(row=l, column=2, value=meta["compteurs"].get(evo, 0))
+        syn.cell(row=l, column=3, value=cj.get(evo, 0))
     l += 1
     syn.cell(row=l, column=1, value="Sans changement")
     syn.cell(row=l, column=2, value=meta["compteurs"].get("—", 0))
@@ -537,6 +582,8 @@ def ecrire_site(outdir: Path, gabarit: Path, lignes, meta: dict) -> None:
                      "export": meta["source_export"],
                      "perimetre": meta["perimetre"],
                      "compteurs": meta["compteurs"],
+                     "compteurs_jour": meta.get("compteurs_jour", {}),
+                     "reference": meta.get("reference", ""),
                      "note": meta.get("note", "")},
             "rows": rows}
     (outdir / "data.json").write_text(json.dumps(data, ensure_ascii=False),
@@ -556,6 +603,7 @@ def copier_gabarits(outdir: Path, gabarit: Path) -> None:
 # --------------------------------------------------------------------------- #
 
 JOURNAL_MAX = 1500
+HISTORIQUE_MAX = 10000
 
 
 def url_run_actions() -> str:
@@ -592,9 +640,11 @@ def charger_journal(chemin_state: Path) -> list[dict]:
     return []
 
 
-def construire_resumes(meta: dict, events: list[dict], lignes,
+def construire_resumes(meta: dict, diff: dict, lignes,
                        premiere: bool) -> tuple[str, str, str]:
-    cpt = meta["compteurs"]
+    cpt = meta.get("compteurs_jour", meta["compteurs"])
+    lignes = [(code, f, diff[code][0], diff[code][1]) for code, f, _, _ in lignes
+              if code in diff]
     bilan = (f"{cpt.get('AJOUTÉ', 0)} ajouté(s), {cpt.get('MODIFIÉ', 0)} modifié(s), "
              f"{cpt.get('SUPPRIMÉ', 0)} supprimé(s)")
     sujet = (f"Initialisation — {meta['nb_lignes']} diplômes suivis" if premiere
@@ -605,7 +655,9 @@ def construire_resumes(meta: dict, events: list[dict], lignes,
           f"Export France compétences : {meta['source_export']}  ",
           f"Périmètre : {meta['perimetre']}  ",
           f"Diplômes dans le fichier : {meta['nb_lignes']}  ",
-          f"Bilan : **{bilan}**", ""]
+          f"Bilan de cette génération : **{bilan}**  ",
+          f"Depuis la référence ({meta.get('reference', '')}) : "
+          f"{cptr(meta['compteurs'])}", ""]
     if site:
         md.append(f"Consulter et rechercher : {site}")
         md.append("")
@@ -726,6 +778,7 @@ def main() -> None:
     ancien: dict = {}
     historique: list[dict] = []
     journal: list[dict] = []
+    reference: dict = {}
     premiere = True
     if chemin_state.exists():
         contenu = json.loads(chemin_state.read_text(encoding="utf-8"))
@@ -733,6 +786,7 @@ def main() -> None:
             ancien = contenu.get("codes", {})
             historique = contenu.get("historique", [])
             journal = contenu.get("journal", [])
+            reference = contenu.get("reference", {})
             premiere = False
         else:
             log("Instantané v1 détecté : nouvelle base de référence (v2).")
@@ -752,34 +806,59 @@ def main() -> None:
 
     diff, events = ({}, []) if premiere else comparer(ancien, selection, jour_iso)
     if premiere:
+        reference = {"nom": f"export {source}", "date": jour_iso}
         historique.append({"date": jour_iso, "code": "—",
                            "type": "Initialisation du suivi", "avant": "",
                            "apres": f"{len(selection)} diplômes suivis"})
     historique.extend(events)
-    historique = historique[-1000:]
+    historique = historique[-HISTORIQUE_MAX:]
     n_nouveaux = 1 if premiere else len(events)
 
-    # Lignes du fichier : sélection courante + disparues (tombstones rouges)
+    # Lignes du fichier. L'évolution est CUMULÉE depuis la référence :
+    # AJOUTÉ = absente de la référence, MODIFIÉ = changée depuis (détail
+    # cumulé), SUPPRIMÉ = disparue (la ligne rouge persiste). Le diff du
+    # jour (`diff`) alimente le journal et les compteurs de la génération.
     lignes: list[tuple[str, dict, str, str]] = []
     for code, f in selection.items():
-        evolution, detail = diff.get(code, ("", ""))
+        evo_jour, det_jour = diff.get(code, ("", ""))
         prec = ancien.get(code, {})
+        evo_prec, det_prec = prec.get("evolution", ""), prec.get("detail", "")
+        if evo_jour == "AJOUTÉ":
+            evolution, detail = "AJOUTÉ", det_jour
+        elif evo_jour == "MODIFIÉ":
+            evolution = "AJOUTÉ" if evo_prec == "AJOUTÉ" else "MODIFIÉ"
+            detail = fusionner_details(det_prec, det_jour)
+            if evolution == "MODIFIÉ" and not detail:
+                evolution = ""  # tous les champs sont revenus à la référence
+        else:
+            evolution, detail = evo_prec, det_prec
         f = dict(f)
         f["premiere_vue"] = prec.get("premiere_vue", jour_iso)
-        f["dernier_changement"] = (jour_iso if evolution
+        f["dernier_changement"] = (jour_iso if evo_jour
                                    else prec.get("dernier_changement", ""))
+        f["evolution"], f["detail"] = evolution, detail
         lignes.append((code, f, evolution, detail))
-    for code, (evolution, detail) in diff.items():
-        if evolution == "SUPPRIMÉ":
+    for code, (evo_jour, det_jour) in diff.items():
+        if evo_jour == "SUPPRIMÉ":
+            if ancien.get(code, {}).get("evolution") == "AJOUTÉ":
+                continue  # absente de la référence : sort simplement du fichier
             f = dict(ancien.get(code, {}))
-            f["dernier_changement"] = jour_iso
-            lignes.append((code, f, evolution, detail))
+            f.update(dernier_changement=jour_iso, evolution="SUPPRIMÉ", detail=det_jour)
+            lignes.append((code, f, "SUPPRIMÉ", det_jour))
+    for code, prec in ancien.items():
+        if prec.get("evolution") == "SUPPRIMÉ" and code not in selection:
+            lignes.append((code, dict(prec), "SUPPRIMÉ", prec.get("detail", "")))
     lignes.sort(key=lambda x: (x[1].get("type", ""), x[1].get("intitule", "")))
 
     compteurs = {e: 0 for e in EVOLUTIONS}
     compteurs["—"] = 0
     for _, _, evolution, _ in lignes:
         compteurs[evolution if evolution in compteurs else "—"] += 1
+    compteurs_jour = {e: 0 for e in EVOLUTIONS}
+    for evolution, _ in diff.values():
+        compteurs_jour[evolution] += 1
+    reference_txt = (f"{reference.get('nom', '')} ({fr_date(reference.get('date'))})"
+                     if reference else "")
 
     meta = {
         "date_generation": maintenant.strftime("%d/%m/%Y %H:%M"),
@@ -787,8 +866,13 @@ def main() -> None:
         "perimetre": perimetre_txt,
         "nb_lignes": len(lignes),
         "compteurs": compteurs,
+        "compteurs_jour": compteurs_jour,
+        "reference": reference_txt,
     }
-    log("Bilan : " + ", ".join(f"{compteurs[e]} {e.lower()}" for e in EVOLUTIONS)
+    log("Cette génération : " + ", ".join(f"{compteurs_jour[e]} {e.lower()}"
+                                          for e in EVOLUTIONS))
+    log("Bilan depuis la référence : "
+        + ", ".join(f"{compteurs[e]} {e.lower()}" for e in EVOLUTIONS)
         + f", {compteurs['—']} sans changement")
 
     outdir = Path(args.outdir)
@@ -797,7 +881,7 @@ def main() -> None:
     ecrire_classeur(outdir / "diplomes_rncp.xlsx", lignes, historique,
                     n_nouveaux, meta)
     ecrire_site(outdir, Path(args.site), lignes, meta)
-    md, html, sujet = construire_resumes(meta, events, lignes, premiere)
+    md, html, sujet = construire_resumes(meta, diff, lignes, premiere)
     (outdir / "summary.md").write_text(md, encoding="utf-8")
     (outdir / "summary.html").write_text(html, encoding="utf-8")
 
@@ -805,28 +889,28 @@ def main() -> None:
     journal.append(entree_journal(
         "initialisation" if premiere else ("changements" if changements else "sans_changement"),
         maintenant, export=source, diplomes=len(lignes),
-        ajoutes=compteurs["AJOUTÉ"], modifies=compteurs["MODIFIÉ"],
-        supprimes=compteurs["SUPPRIMÉ"]))
+        ajoutes=compteurs_jour["AJOUTÉ"], modifies=compteurs_jour["MODIFIÉ"],
+        supprimes=compteurs_jour["SUPPRIMÉ"]))
     journal = journal[-JOURNAL_MAX:]
     ecrire_runs_json(outdir, journal, maintenant)
 
     # Nouvel instantané
     etat = {}
     for code, f, evolution, _ in lignes:
-        if evolution == "SUPPRIMÉ":
-            continue  # les disparues sortent du suivi après signalement
         etat[code] = {k: f.get(k) for k in ("intitule", "type", "niveau", "actif",
                                             "date_fin", "successeurs", "formacodes",
-                                            "premiere_vue", "dernier_changement")}
+                                            "premiere_vue", "dernier_changement",
+                                            "evolution", "detail")}
     chemin_state.parent.mkdir(parents=True, exist_ok=True)
     chemin_state.write_text(
         json.dumps({"version": 2, "derniere_execution": maintenant.isoformat(),
-                    "source_export": source, "codes": etat,
+                    "source_export": source, "reference": reference,
+                    "codes": etat,
                     "historique": historique, "journal": journal},
                    ensure_ascii=False, indent=1),
         encoding="utf-8")
 
-    resume = (f"{cptr(compteurs)}" if not premiere
+    resume = (f"{cptr(compteurs_jour)}" if not premiere
               else f"initialisation, {len(lignes)} diplômes")
     ecrire_github_output(changements, sujet, resume)
     step = os.environ.get("GITHUB_STEP_SUMMARY")
