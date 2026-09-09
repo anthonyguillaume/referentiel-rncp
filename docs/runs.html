@@ -21,6 +21,10 @@ a{color:var(--marianne)} a:hover{color:var(--marine)}
 :focus-visible{outline:3px solid var(--marianne);outline-offset:2px;border-radius:4px}
 header.bandeau{background:var(--marine);color:#fff;padding:28px 24px 24px}
 .bandeau-inner{max-width:1240px;margin:0 auto}
+.bandeau-inner{position:relative}
+.lien-github{position:absolute;right:0;top:-4px;display:inline-flex;align-items:center;gap:7px;color:#C7CEE9;text-decoration:none;font-size:13px;font-weight:600;padding:6px 8px;border-radius:8px;transition:color .12s,background .12s}
+.lien-github:hover{color:#fff;background:rgba(255,255,255,.1)}
+@media (max-width:620px){.lien-github-txt{display:none}}
 .surtitre{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.06em;
   text-transform:uppercase;color:#B9C2E4;font-weight:600;margin-bottom:8px}
 .surtitre::before{content:"";width:26px;height:2px;background:var(--rouge-rep)}
@@ -77,6 +81,7 @@ footer{border-top:1px solid var(--bordure);margin-top:32px;padding:20px 0 8px;fo
 <body>
 <header class="bandeau">
   <div class="bandeau-inner">
+    <a class="lien-github" href="https://github.com/anthonyguillaume/referentiel-rncp" target="_blank" rel="noopener" aria-label="Dépôt GitHub du projet" title="Code source, configuration du périmètre et exécutions du contrôle sur GitHub."><svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><span class="lien-github-txt">GitHub</span></a>
     <p class="surtitre">GIP FCIP · Académie de Reims · Équipe formation</p>
     <h1>Historique des générations</h1>
     <p class="sous-titre">Chaque exécution du contrôle RNCP : export utilisé, nombre de diplômes suivis, ajouts, modifications, suppressions, et erreurs éventuelles.</p>
