@@ -13,7 +13,7 @@ de France compétences (data.gouv.fr), sur un périmètre de formacodes.
     disparues), onglets Synthèse, Changements et un onglet par domaine ;
   - produit le site statique docs/index.html + docs/data.json (recherche,
     filtres, lien de téléchargement de l'Excel) pour GitHub Pages ;
-  - produit summary.md / summary.html pour l'e-mail et pose les sorties
+  - produit summary.md / summary.html (résumé du run) et pose les sorties
     GitHub Actions (changes / sujet / resume).
 
 Usage local :
@@ -687,12 +687,13 @@ def main() -> None:
         else:
             log("Instantané v1 détecté : nouvelle base de référence (v2).")
 
-    # Sélection : fiches du périmètre ACTIVES, plus celles déjà suivies (une
-    # fiche qui se désactive pendant le suivi reste visible avec son
-    # successeur ; les fiches inactives depuis avant le suivi n'entrent pas).
+    # Sélection : fiches ACTIVES du périmètre, plus toutes celles déjà suivies
+    # quels que soient leurs formacodes (une fiche suivie qui se désactive ou
+    # dont les formacodes changent reste visible ; les fiches inactives depuis
+    # avant le suivi n'entrent pas).
     selection = {c: f for c, f in repertoire.items()
-                 if dans_perimetre(f["formacodes"], exacts, prefixes)
-                 and (f["actif"] or c in ancien)}
+                 if c in ancien
+                 or (f["actif"] and dans_perimetre(f["formacodes"], exacts, prefixes))}
     n_inactives = sum(1 for f in selection.values() if not f["actif"])
     log(f"  {len(selection)} fiches dans le périmètre "
         f"({len(selection) - n_inactives} actives, {n_inactives} inactives déjà suivies)")

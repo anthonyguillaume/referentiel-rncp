@@ -5,11 +5,6 @@ on:
     # Tous les jours à 04:30 UTC (06:30 à Paris l'été, 05:30 l'hiver).
     - cron: "30 4 * * *"
   workflow_dispatch:
-    inputs:
-      force_email:
-        description: "Envoyer le mail même sans changement"
-        type: boolean
-        default: false
 
 permissions:
   contents: write
@@ -51,27 +46,7 @@ jobs:
           path: docs/
           retention-days: 90
 
-      # Configuration : tout en VARIABLES de dépôt (MAIL_SERVER, MAIL_PORT,
-      # MAIL_USERNAME, MAIL_TO, MAIL_FROM, SITE_URL), seul MAIL_PASSWORD est
-      # un SECRET. MAIL_TO accepte plusieurs adresses séparées par des virgules.
-      - name: Envoyer l'e-mail
-        if: (steps.controle.outputs.changes == 'true' || inputs.force_email == true) && vars.MAIL_SERVER != ''
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: ${{ vars.MAIL_SERVER }}
-          server_port: ${{ vars.MAIL_PORT }}
-          # Décommenter si le serveur exige TLS implicite (port 465) :
-          # secure: true
-          username: ${{ vars.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "[Diplômes RNCP] ${{ steps.controle.outputs.sujet }}"
-          to: ${{ vars.MAIL_TO }}
-          from: "Veille RNCP <${{ vars.MAIL_FROM || vars.MAIL_USERNAME }}>"
-          html_body: "file://docs/summary.html"
-          attachments: docs/diplomes_rncp.xlsx
-
-      # L'état et le site ne sont committés QU'APRÈS l'envoi réussi : si le
-      # mail échoue, les mêmes changements seront re-signalés au run suivant.
+      # L'état et le site ne sont committés que s'il y a des changements.
       # GitHub Pages sert le dossier docs/ (site + Excel téléchargeable).
       - name: Publier le site et l'état dans le dépôt
         if: steps.controle.outputs.changes == 'true'
