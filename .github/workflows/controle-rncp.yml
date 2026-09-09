@@ -1,9 +1,9 @@
 name: Contrôle RNCP
 
 on:
-  #schedule:
+  schedule:
     # Tous les jours à 04:30 UTC (06:30 à Paris l'été, 05:30 l'hiver).
-    #- cron: "30 4 * * *"
+    - cron: "30 4 * * *"
   workflow_dispatch:
     inputs:
       force_email:
