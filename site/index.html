@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Référentiel des diplômes RNCP — GIP FCIP de l&#39;académie de Reims</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #1E2A5A; display: flex; align-items: center; justify-content: center; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+    #__bundler_loading { position: fixed; bottom: 20px; right: 20px; font: 13px/1.4 -apple-system, BlinkMacSystemFont, sans-serif; color: #666; background: #fff; padding: 8px 14px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.12); z-index: 10000; }
+    #__bundler_thumbnail { position: fixed; inset: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #1E2A5A; z-index: 9999; }
+    #__bundler_thumbnail svg { width: 100%; height: 100%; object-fit: contain; }
+    #__bundler_placeholder { color: #999; font-size: 14px; }
+  </style>
+  <noscript>
+    <style>#__bundler_loading { display: none; }</style>
+    <div style="position:fixed;bottom:12px;left:12px;font:13px/1.4 -apple-system,BlinkMacSystemFont,sans-serif;color:#999;background:rgba(255,255,255,0.9);padding:6px 12px;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,0.08);z-index:10000;">
+      This page requires JavaScript to display.
+    </div>
+  </noscript>
+</head>
+<body>
+  <div id="__bundler_thumbnail">
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="800" fill="#1E2A5A"></rect>
+<rect x="360" y="240" width="480" height="60" rx="10" fill="#ffffff" opacity="0.95"></rect>
+<rect x="360" y="330" width="480" height="36" rx="8" fill="#18753C"></rect>
+<rect x="360" y="390" width="480" height="36" rx="8" fill="#B34000"></rect>
+<rect x="360" y="450" width="480" height="36" rx="8" fill="#CE0500"></rect>
+<rect x="360" y="510" width="480" height="36" rx="8" fill="#8A93B8"></rect>
+</svg>
+</div>
+  <div id="__bundler_loading">Unpacking...</div>
+
+  <script>
+    
+document.addEventListener('DOMContentLoaded', async function() {
+  const loading = document.getElementById('__bundler_loading');
+  function setStatus(msg) { if (loading) loading.textContent = msg; }
+
+  const FONT_MIME = /^(font[/]|application[/](x-)?font-|application[/]vnd\.ms-fontobject)/i;
+  const MIME_TOKEN = /^[\w.+-]+[/][\w.+-]+$/;
+  function toBase64(bytes) {
+    let bin = '';
+    for (let i = 0; i < bytes.length; i += 0x8000) {
+      bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+    }
+    return btoa(bin);
+  }
+
+  // Error sink persists across replaceWith since it's on window, not the DOM.
+  window.addEventListener('error', function(e) {
+    // Failed resource loads (CSP-blocked links, scripts, images) fire plain
+    // events at the element — warn only; real JS errors carry message/error.
+    if (!e.message && !e.error && e.target && e.target !== window) {
+      console.warn('[bundle] resource failed to load:',
+        e.target.tagName, String(e.target.src || e.target.href || ''));
+      return;
+    }
+    var p = document.body || document.documentElement;
+    var d = document.getElementById('__bundler_err') || p.appendChild(document.createElement('div'));
+    d.id = '__bundler_err';
+    d.style.cssText = 'position:fixed;bottom:12px;left:12px;right:12px;font:12px/1.4 ui-monospace,monospace;background:#2a1215;color:#ff8a80;padding:10px 14px;border-radius:8px;border:1px solid #5c2b2e;z-index:99999;white-space:pre-wrap;max-height:40vh;overflow:auto';
+    d.textContent = (d.textContent ? d.textContent + String.fromCharCode(10) : '') +
+      '[bundle] ' + (e.message || e.type) +
+      (e.filename ? ' (' + e.filename.slice(0, 60) + ':' + e.lineno + ')' : '');
+  }, true);
+
+  try {
+    const manifestEl = document.querySelector('script[type="__bundler/manifest"]');
+    const templateEl = document.querySelector('script[type="__bundler/template"]');
+    if (!manifestEl || !templateEl) {
+      setStatus('Error: missing bundle data');
+      console.error('[bundler] Missing script tags — manifestEl:', !!manifestEl, 'templateEl:', !!templateEl);
+      return;
+    }
+
+    const manifest = JSON.parse(manifestEl.textContent);
+    let template = JSON.parse(templateEl.textContent);
+
+    // Nested page bundles (iframe targets). Each ships ONCE, in the ROOT
+    // document's manifest; frame srcs carry an about:blank#<uuid> marker
+    // instead of a substitutable uuid. Every document mints the blobs for
+    // its OWN frames — from local text at the root, or text obtained from
+    // its DIRECT parent over the relay protocol below — so each frame
+    // navigation stays same-origin with its initiator and a deduped page
+    // loads at any depth on any host, including a file:// download's
+    // opaque origins (where a blob minted by one document cannot be
+    // navigated to by another).
+    const pageOrderEl = document.querySelector('script[type="__bundler/page_order"]');
+    const pageOrder = pageOrderEl ? JSON.parse(pageOrderEl.textContent) : [];
+    const pageSet = new Set(pageOrder);
+    const pageTexts = {};
+
+    // ── Nested-page text protocol (parent-chain relay) ──
+    // Page bundles ship once, in the ROOT document's manifest. Every
+    // document mints the blobs for its OWN frames, obtaining page text
+    // through a strict parent-chain relay: a document only ever SENDS to
+    // its direct parent (which, for every document the publisher's own
+    // runtime minted, is another publisher document) and only ACCEPTS
+    // text from that direct parent; requests from below are honored only
+    // for the document's own child frames, and the ROOT never sends
+    // upward at all. That last rule is load-bearing: the artifact host's
+    // frame-ancestors allows claude.ai (and friends) to frame an
+    // artifact, so window.top can be a FOREIGN document — a top-addressed
+    // protocol would hand page uuids to that ancestor and accept forged
+    // "page text" from it, minting attacker HTML as an artifact-origin
+    // blob document. The chain never touches the ancestor: requests stop
+    // at the root, replies are origin-addressed per hop (never '*' when
+    // an origin exists), and both directions are origin-gated (on https
+    // a foreign sender's origin can never equal this document's; in
+    // opaque contexts — file:// — everything serializes as 'null', where
+    // an embedded EXTERNAL frame still fails the gate by carrying its
+    // own real origin, and a sandboxed child of such a frame is excluded
+    // by the own-child-frames check plus uuid unguessability). Shape is
+    // deny-by-default: one request form, one reply form, no error
+    // replies.
+    // window.origin is the SERIALIZED SECURITY origin ('null' in opaque
+    // contexts such as a sandboxed preview iframe) — location.origin is
+    // computed from the URL and stays 'https://…' even when the document
+    // is sandboxed, which would misgate every opaque chain.
+    const OWN_TARGET = /^https?:[/][/]/.test(window.origin || '')
+      ? window.origin
+      : '*';
+    function trustedOrigin(e) {
+      if (e.origin === window.origin) return true; // https chains; opaque==opaque
+      // file:// trees: Chrome serializes the file document's origin as
+      // 'file://' while the blob: documents it mints serialize as 'null',
+      // so the two legitimate shapes can never string-match — accept the
+      // pair in both directions. https origins never serialize as either,
+      // and sender identity (own child frame / direct parent) is checked
+      // separately.
+      return (
+        (e.origin === 'null' &&
+          (window.origin === 'file://' ||
+            window.location.protocol === 'file:')) ||
+        (/^file:/.test(e.origin) && window.origin === 'null')
+      );
+    }
+    // Non-empty only in the root document (nested bundles ship an empty
+    // island), so it doubles as the root marker: the root answers from
+    // local text and treats a miss as authoritative — never relaying to
+    // its (possibly foreign) parent.
+    const isPageRoot = pageOrder.length > 0;
+    const blobUrls = {};
+    const resourceBlobs = {};
+    const UUID_SHAPE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
+    const pendingFrames = {}; // uuid -> [{el, frag}] awaiting text for own frames
+    const pendingRelays = {}; // uuid -> [childWindow] awaiting text to pass down
+    function mountPage(el, frag, text) {
+      const pageBlob = new Blob([text], { type: 'text/html' });
+      const u = URL.createObjectURL(pageBlob);
+      resourceBlobs[u] = pageBlob;
+      el.src = u + frag;
+    }
+    function deliverPage(uuid, text) {
+      const frames = pendingFrames[uuid];
+      delete pendingFrames[uuid];
+      if (frames) for (const f of frames) mountPage(f.el, f.frag, text);
+      const relays = pendingRelays[uuid];
+      delete pendingRelays[uuid];
+      if (relays) {
+        for (const cw of relays) {
+          try { cw.postMessage({ __bundler_page: uuid, __bundler_text: text }, OWN_TARGET); } catch (err) { /* gone */ }
+        }
+      }
+    }
+    function ownFrameWindows() {
+      const out = [];
+      for (const f of Array.from(document.querySelectorAll('iframe'))) {
+        try { if (f.contentWindow) out.push(f.contentWindow); } catch (err) { /* detached */ }
+      }
+      return out;
+    }
+    window.addEventListener('message', function (e) {
+      const d = e.data;
+      if (!d || typeof d !== 'object' || !e.source) return;
+      // Origin gate first; the structural checks below (own-child-frames
+      // for requests, direct-parent + solicited-uuid for replies, the
+      // root's never-relay rule) are what hold in fully opaque chains
+      // where origin strings can't discriminate — a sandboxed root's
+      // FOREIGN wrapper still fails all three even though both serialize
+      // as real-vs-'null' rather than matching.
+      if (!trustedOrigin(e)) return;
+      if (typeof d.__bundler_need === 'string' && UUID_SHAPE.test(d.__bundler_need)) {
+        // Requests are honored only for this document's own child frames.
+        if (ownFrameWindows().indexOf(e.source) < 0) return;
+        const uuid = d.__bundler_need;
+        const text = pageTexts[uuid];
+        if (typeof text === 'string') {
+          try { e.source.postMessage({ __bundler_page: uuid, __bundler_text: text }, OWN_TARGET); } catch (err) { /* gone */ }
+          return;
+        }
+        if (isPageRoot || window.parent === window) return; // authoritative miss
+        const waiting = pendingRelays[uuid];
+        if (waiting) {
+          if (waiting.indexOf(e.source) < 0) waiting.push(e.source);
+          return;
+        }
+        // Never-answered uuids would otherwise accumulate forever under a
+        // request spray; past the cap (far above any real page count) new
+        // relays are dropped rather than remembered.
+        if (Object.keys(pendingRelays).length >= 128) return;
+        pendingRelays[uuid] = [e.source];
+        window.parent.postMessage({ __bundler_need: uuid }, OWN_TARGET);
+      } else if (
+        typeof d.__bundler_page === 'string' &&
+        UUID_SHAPE.test(d.__bundler_page) &&
+        typeof d.__bundler_text === 'string'
+      ) {
+        // The shape test is load-bearing beyond tidiness: the solicited
+        // check below uses the in operator, which matches prototype keys
+        // ('__proto__', 'constructor') — an unshaped key would reach
+        // deliverPage and throw, painting the error banner.
+        // Text is accepted only from the direct parent — the document
+        // that minted this one.
+        if (e.source !== window.parent || window.parent === window) return;
+        if (!(d.__bundler_page in pendingFrames) && !(d.__bundler_page in pendingRelays)) return;
+        deliverPage(d.__bundler_page, d.__bundler_text);
+      }
+    });
+
+    const uuids = Object.keys(manifest);
+    setStatus('Unpacking ' + uuids.length + ' assets...');
+
+    await Promise.all(uuids.map(async (uuid) => {
+      const entry = manifest[uuid];
+      try {
+        const binaryStr = atob(entry.data);
+        const bytes = new Uint8Array(binaryStr.length);
+        for (let i = 0; i < binaryStr.length; i++) bytes[i] = binaryStr.charCodeAt(i);
+
+        let finalBytes = bytes;
+        if (entry.compressed) {
+          if (typeof DecompressionStream !== 'undefined') {
+            const ds = new DecompressionStream('gzip');
+            const writer = ds.writable.getWriter();
+            const reader = ds.readable.getReader();
+            writer.write(bytes);
+            writer.close();
+            const chunks = [];
+            let totalLen = 0;
+            while (true) {
+              const { done, value } = await reader.read();
+              if (done) break;
+              chunks.push(value);
+              totalLen += value.length;
+            }
+            finalBytes = new Uint8Array(totalLen);
+            let offset = 0;
+            for (const chunk of chunks) { finalBytes.set(chunk, offset); offset += chunk.length; }
+          } else {
+            console.warn('DecompressionStream not available, asset ' + uuid + ' may not render');
+          }
+        }
+
+        if (pageSet.has(uuid)) {
+          pageTexts[uuid] = new TextDecoder().decode(finalBytes);
+          return;
+        }
+        if (FONT_MIME.test(entry.mime) && MIME_TOKEN.test(entry.mime)) {
+          // Strict artifact hosts allow font-src data: but not blob:.
+          blobUrls[uuid] = 'data:' + entry.mime + ';base64,' +
+            (entry.compressed ? toBase64(finalBytes) : entry.data);
+        } else {
+          const blob = new Blob([finalBytes], { type: entry.mime });
+          blobUrls[uuid] = URL.createObjectURL(blob);
+          resourceBlobs[blobUrls[uuid]] = blob;
+        }
+      } catch (err) {
+        console.error('Failed to decode asset ' + uuid + ':', err);
+        const blob = new Blob([], { type: entry.mime });
+        blobUrls[uuid] = URL.createObjectURL(blob);
+        resourceBlobs[blobUrls[uuid]] = blob;
+      }
+    }));
+
+    const extResEl = document.querySelector('script[type="__bundler/ext_resources"]');
+    const extResources = extResEl ? JSON.parse(extResEl.textContent) : [];
+    const resourceMap = {};
+    for (const entry of extResources) {
+      if (blobUrls[entry.uuid]) resourceMap[entry.id] = blobUrls[entry.uuid];
+    }
+
+    // Artifact-host CSP (connect-src 'self') refuses fetch() of blob: URLs —
+    // consumers read these Blobs directly. Survives the swap like the error sink.
+    window.__resourceBlobs = resourceBlobs;
+
+    setStatus('Rendering...');
+    // Page uuids have no blob here — they ride inside about:blank#<uuid>
+    // frame markers the pass below resolves after the swap.
+    for (const uuid of uuids) {
+      if (pageSet.has(uuid)) continue;
+      template = template.split(uuid).join(blobUrls[uuid]);
+    }
+
+    // Strip integrity + crossorigin — blob URLs from a file:// document inherit
+    // a null origin, so crossorigin forces a CORS fetch that SRI then rejects.
+    // The manifest bytes are ours; SRI protects against CDN compromise, not this.
+    template = template.replace(/\s+integrity="[^"]*"/gi, '').replace(/\s+crossorigin="[^"]*"/gi, '');
+
+    const resourceScript = '<script>window.__resources = ' +
+      JSON.stringify(resourceMap).replace(/<\//g, '<\\/') +
+      ';</' + 'script>';
+    // Inject after <head> so the DOCTYPE stays first; prepending the script
+    // would push the parser into quirks mode. DOMParser always emits a <head>
+    // (synthesizing one if the source HTML omitted it) but may carry
+    // attributes through, so match the full opening tag. slice() rather than
+    // replace() keeps us clear of $-pattern substitution in resourceScript.
+    const headOpen = template.match(/<head[^>]*>/i);
+    if (headOpen) {
+      const i = headOpen.index + headOpen[0].length;
+      template = template.slice(0, i) + resourceScript + template.slice(i);
+    }
+
+    // Parse the template and swap the root element. Scripts inserted via
+    // DOMParser/replaceWith are inert per spec — re-create each with
+    // createElement so they execute, awaiting onload for src scripts to
+    // preserve ordering (React before ReactDOM before Babel before text/babel).
+    const doc = new DOMParser().parseFromString(template, 'text/html');
+    document.documentElement.replaceWith(doc.documentElement);
+
+    // Resolve page-frame markers: mint this document's own blob for each
+    // framed page — from local text when this is the root, otherwise by
+    // asking the direct parent over the relay protocol above. An
+    // unanswered request leaves the frame on about:blank, the same
+    // degraded state as a refused embed.
+    {
+      const MARKER = /^about:blank#([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(#.*)?$/;
+      const needed = [];
+      for (const el of Array.from(document.querySelectorAll('iframe'))) {
+        const m = MARKER.exec(el.getAttribute('src') || '');
+        if (!m) continue;
+        const text = pageTexts[m[1]];
+        if (typeof text === 'string') {
+          mountPage(el, m[2] || '', text);
+        } else if (window.parent !== window && !isPageRoot) {
+          const had = pendingFrames[m[1]];
+          (pendingFrames[m[1]] = had || []).push({ el: el, frag: m[2] || '' });
+          if (!had) needed.push(m[1]);
+        }
+      }
+      for (const uuid of needed) {
+        window.parent.postMessage({ __bundler_need: uuid }, OWN_TARGET);
+      }
+    }
+
+    const dead = Array.from(document.scripts);
+    for (const old of dead) {
+      const s = document.createElement('script');
+      for (const a of old.attributes) s.setAttribute(a.name, a.value);
+      s.textContent = old.textContent;
+      // text/babel scripts with a src: read and inline. transformScriptTags
+      // does XHR against the src, but blob:null/ from a file:// origin is
+      // silently dropped. Inlining makes it a plain inline babel script,
+      // which transformScriptTags handles unconditionally.
+      if ((s.type === 'text/babel' || s.type === 'text/jsx') && s.src) {
+        const pre = resourceBlobs[s.src.split('#')[0]];
+        s.textContent = pre ? await pre.text() : await (await fetch(s.src)).text();
+        s.removeAttribute('src');
+      }
+      const p = s.src ? new Promise(function(r) { s.onload = s.onerror = r; }) : null;
+      old.replaceWith(s);
+      if (p) await p;
+    }
+    // Babel standalone auto-transforms type=text/babel on DOMContentLoaded,
+    // which fired before we swapped the document. Trigger manually if present.
+    if (window.Babel && typeof window.Babel.transformScriptTags === 'function') {
+      window.Babel.transformScriptTags();
+    }
+  } catch (err) {
+    setStatus('Error unpacking: ' + err.message);
+    console.error('Bundle unpack error:', err);
+  }
+});
+
+  </script>
+
+  <script type="__bundler/manifest"> {} </script>
+
+  <script type="__bundler/ext_resources"> [] </script>
+
+  <script type="__bundler/page_order">
+[]
+  </script>
+
+  <script type="__bundler/template">
+"<!DOCTYPE html>\n<html lang=\"fr\"><head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n<title>Référentiel des diplômes RNCP — GIP FCIP de l'académie de Reims<\u002Ftitle>\n<style>\n:root{\n  --marine:#1E2A5A; --marine-fonce:#151F45; --marianne:#000091; --rouge-rep:#E1000F;\n  --fond:#F4F5F9; --carte:#FFFFFF; --bordure:#DDE1EC; --encre:#1B2033; --encre-2:#4A5170; --encre-3:#6B7290;\n  --vert:#18753C; --vert-bg:#E8F6EC; --orange:#B34000; --orange-bg:#FDEFE4; --rouge:#CE0500; --rouge-bg:#FCEBEA;\n  --rayon:8px; --sticky:112px;\n}\n*{box-sizing:border-box}\nhtml{scroll-padding-top:calc(var(--sticky) + 12px)}\nbody{margin:0;background:var(--fond);color:var(--encre);\n  font-family:system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;\n  font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}\na{color:var(--marianne)} a:hover{color:var(--marine)}\n:focus-visible{outline:3px solid var(--marianne);outline-offset:2px;border-radius:4px}\n/* ---------- Bandeau ---------- */\nheader.bandeau{background:var(--marine);color:#fff;padding:28px 24px 24px}\n.bandeau-inner{max-width:1240px;margin:0 auto}\n.surtitre{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.06em;\n  text-transform:uppercase;color:#B9C2E4;font-weight:600;margin-bottom:8px}\n.surtitre::before{content:\"\";width:26px;height:2px;background:var(--rouge-rep)}\nh1{margin:0 0 6px;font-size:clamp(24px,3.2vw,32px);font-weight:700;letter-spacing:-.01em}\n.sous-titre{margin:0 0 18px;color:#C7CEE9;font-size:15px;max-width:70ch}\n.meta-chips{display:flex;flex-wrap:wrap;gap:8px 10px;font-size:13px}\n.chip{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.09);\n  border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:5px 13px;color:#E4E8F7}\n.chip b{font-weight:600;color:#fff}\n.chip .dot{width:7px;height:7px;border-radius:50%;background:#7FD494;flex:none}\n.tricolore{height:4px;display:grid;grid-template-columns:1fr 1fr 1fr}\n.tricolore span:nth-child(1){background:var(--marianne)}\n.tricolore span:nth-child(2){background:#fff}\n.tricolore span:nth-child(3){background:var(--rouge-rep)}\n/* ---------- Avertissement ---------- */\n.note{display:none;max-width:1240px;margin:16px auto 0;padding:12px 16px 12px 14px;\n  background:#FFF8E6;border:1px solid #E7D9A8;border-radius:var(--rayon);\n  color:#5F4A00;font-size:14px;gap:10px;align-items:flex-start;margin-left:auto;margin-right:auto}\n.note.visible{display:flex}\n.note svg{flex:none;margin-top:2px}\n.page{max-width:1240px;margin:0 auto;padding:0 24px 48px}\nheader.bandeau,.tricolore{padding-left:0}\n.page-note{padding:0 24px}\n/* ---------- Barre outils ---------- */\n.outils{position:sticky;top:0;z-index:20;background:var(--fond);\n  padding:16px 0 12px;border-bottom:1px solid var(--bordure)}\n.outils-ligne{display:flex;flex-wrap:wrap;gap:10px;align-items:center}\n.recherche{position:relative;flex:1 1 300px;min-width:220px}\n.recherche input{width:100%;padding:10px 14px 10px 40px;font:inherit;color:var(--encre);\n  background:var(--carte);border:1px solid var(--bordure);border-radius:var(--rayon)}\n.recherche input::placeholder{color:var(--encre-3)}\n.recherche input:focus{border-color:var(--marianne);outline:3px solid rgba(0,0,145,.15);outline-offset:0}\n.recherche svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--encre-3);pointer-events:none}\n.filtres{display:flex;gap:6px;flex-wrap:wrap}\n.filtre{font:inherit;font-size:13.5px;font-weight:600;color:var(--encre-2);cursor:pointer;\n  background:var(--carte);border:1px solid var(--bordure);border-radius:999px;padding:7px 14px;\n  display:inline-flex;align-items:center;gap:7px;transition:background .12s,border-color .12s}\n.filtre:hover{border-color:var(--encre-3)}\n.filtre .n{font-size:12px;font-weight:700;padding:1px 7px;border-radius:999px;background:var(--fond);color:var(--encre-2)}\n.filtre[aria-pressed=\"true\"]{background:var(--marine);border-color:var(--marine);color:#fff}\n.filtre[aria-pressed=\"true\"] .n{background:rgba(255,255,255,.2);color:#fff}\n.filtre.f-aj[aria-pressed=\"true\"]{background:var(--vert);border-color:var(--vert)}\n.filtre.f-mo[aria-pressed=\"true\"]{background:var(--orange);border-color:var(--orange)}\n.filtre.f-su[aria-pressed=\"true\"],.filtre.f-in[aria-pressed=\"true\"]{background:var(--rouge);border-color:var(--rouge)}\n.btn-excel{font:inherit;font-size:14px;font-weight:600;text-decoration:none;color:#fff;\n  background:var(--marine);border-radius:var(--rayon);padding:10px 18px;\n  display:inline-flex;align-items:center;gap:9px;margin-left:auto;transition:background .12s}\n.btn-excel:hover{background:var(--marine-fonce);color:#fff}\n.compteur{margin:12px 0 10px;font-size:13.5px;color:var(--encre-2)}\n.compteur b{color:var(--encre);font-weight:700;font-variant-numeric:tabular-nums}\n/* ---------- Tableau ---------- */\n.table-carte{background:var(--carte);border:1px solid var(--bordure);border-radius:var(--rayon);overflow:clip}\ntable{width:100%;border-collapse:collapse;font-size:13.5px}\nthead th{position:sticky;top:var(--sticky);z-index:10;background:#EDEFF6;color:var(--encre-2);\n  font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;text-align:left;\n  padding:10px 14px;border-bottom:1px solid var(--bordure);white-space:nowrap}\ntbody td{padding:9px 14px;border-bottom:1px solid #ECEEF5;vertical-align:top}\ntbody tr.ligne{cursor:pointer}\ntbody tr.ligne:hover{background:#F6F7FB}\ntbody tr.ligne:focus-visible{outline:3px solid var(--marianne);outline-offset:-3px}\ntr.t-aj{background:var(--vert-bg)} tr.t-aj:hover{background:#DDF0E3}\ntr.t-mo{background:var(--orange-bg)} tr.t-mo:hover{background:#F8E6D4}\ntr.t-su{background:var(--rouge-bg)} tr.t-su:hover{background:#F8E0DE}\ntr.ouverte{background:#EEF0F9 !important;box-shadow:inset 3px 0 0 var(--marine)}\n.code{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap;color:var(--marine)}\n.intitule{max-width:52ch;overflow-wrap:anywhere}\n.inactif-lbl{color:var(--rouge);font-weight:600}\n.actif-lbl{color:var(--encre-3)}\ntd.num{font-variant-numeric:tabular-nums;white-space:nowrap}\n.badge{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.04em;\n  padding:3px 9px;border-radius:999px;white-space:nowrap}\n.b-aj{background:var(--vert);color:#fff}\n.b-mo{background:var(--orange);color:#fff}\n.b-su{background:var(--rouge);color:#fff}\n.chevron{color:var(--encre-3);transition:transform .15s;display:inline-block}\ntr.ouverte .chevron{transform:rotate(90deg)}\n/* ---------- Panneau détail ---------- */\ntr.detail td{background:#F8F9FD;border-bottom:1px solid var(--bordure);padding:18px 20px 20px}\n.detail-grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px 28px;max-width:1100px}\n.detail-bloc h3{margin:0 0 5px;font-size:11.5px;font-weight:700;text-transform:uppercase;\n  letter-spacing:.06em;color:var(--encre-3)}\n.detail-bloc p{margin:0;font-size:14px}\n.evo-detail{padding:10px 14px;border-radius:6px;font-size:14px;margin:0}\n.evo-detail.e-aj{background:var(--vert-bg);border-left:3px solid var(--vert)}\n.evo-detail.e-mo{background:var(--orange-bg);border-left:3px solid var(--orange)}\n.evo-detail.e-su{background:var(--rouge-bg);border-left:3px solid var(--rouge)}\n.fc-chip{display:inline-block;background:#EDEFF6;border-radius:5px;padding:2px 8px;\n  font-variant-numeric:tabular-nums;font-size:13px;margin:0 6px 4px 0}\n.lien-fc{font-weight:600;text-decoration:underline;text-underline-offset:3px}\n.vide{padding:48px 20px;text-align:center;color:var(--encre-2)}\n.vide b{display:block;font-size:17px;margin-bottom:4px;color:var(--encre)}\n/* ---------- Pied ---------- */\nfooter{border-top:1px solid var(--bordure);margin-top:32px;padding:20px 0 8px;\n  font-size:13px;color:var(--encre-3);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}\n/* ---------- Responsive ---------- */\n@media (max-width:1100px){\n  .col-type,.col-echeance{display:none}\n  .intitule{max-width:none}\n}\n@media (max-width:620px){\n  .col-actif,.col-niveau{display:none}\n  header.bandeau{padding:20px 16px}\n  .page,.page-note{padding-left:12px;padding-right:12px}\n  .btn-excel{margin-left:0;width:100%;justify-content:center}\n  thead th,tbody td{padding-left:10px;padding-right:10px}\n}\n@media (prefers-reduced-motion:reduce){*{transition:none !important}}\n<\u002Fstyle>\n\n<\u002Fhead>\n<body>\n<header class=\"bandeau\">\n  <div class=\"bandeau-inner\">\n    <p class=\"surtitre\">GIP FCIP · Académie de Reims · Équipe formation<\u002Fp>\n    <h1>Référentiel des diplômes RNCP<\u002Fh1>\n    <p class=\"sous-titre\">Suivi quotidien des certifications du Répertoire national : ajouts, modifications et suppressions détectés depuis la veille.<\u002Fp>\n    <div class=\"meta-chips\" id=\"metaChips\" aria-label=\"Métadonnées de génération\"><\u002Fdiv>\n  <\u002Fdiv>\n<\u002Fheader>\n<div class=\"tricolore\" aria-hidden=\"true\"><span><\u002Fspan><span><\u002Fspan><span><\u002Fspan><\u002Fdiv>\n\n<div class=\"page-note\"><div class=\"note\" id=\"note\" role=\"status\">\n  <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z\"><\u002Fpath><\u002Fsvg>\n  <span id=\"noteTexte\"><\u002Fspan>\n<\u002Fdiv><\u002Fdiv>\n\n<main class=\"page\">\n  <div class=\"outils\" id=\"outils\">\n    <div class=\"outils-ligne\" role=\"search\">\n      <div class=\"recherche\">\n        <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"><\u002Fcircle><path d=\"m20 20-3.5-3.5\"><\u002Fpath><\u002Fsvg>\n        <input type=\"search\" id=\"q\" placeholder=\"Rechercher un code RNCP, un intitulé, un formacode…\" aria-label=\"Rechercher un code RNCP, un intitulé ou un formacode\" autocomplete=\"off\">\n      <\u002Fdiv>\n      <div class=\"filtres\" role=\"group\" aria-label=\"Filtrer par évolution\" id=\"filtres\">\n        <button class=\"filtre\" data-f=\"tous\" aria-pressed=\"true\">Tous <span class=\"n\" id=\"nTous\"><\u002Fspan><\u002Fbutton>\n        <button class=\"filtre f-aj\" data-f=\"AJOUTÉ\" aria-pressed=\"false\">Ajoutés <span class=\"n\" id=\"nAj\"><\u002Fspan><\u002Fbutton>\n        <button class=\"filtre f-mo\" data-f=\"MODIFIÉ\" aria-pressed=\"false\">Modifiés <span class=\"n\" id=\"nMo\"><\u002Fspan><\u002Fbutton>\n        <button class=\"filtre f-su\" data-f=\"SUPPRIMÉ\" aria-pressed=\"false\">Supprimés <span class=\"n\" id=\"nSu\"><\u002Fspan><\u002Fbutton>\n        <button class=\"filtre f-in\" data-f=\"inactifs\" aria-pressed=\"false\">Fiches inactives <span class=\"n\" id=\"nIn\"><\u002Fspan><\u002Fbutton>\n      <\u002Fdiv>\n      <a class=\"btn-excel\" href=\"diplomes_rncp.xlsx\" download=\"\">\n        <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2\"><\u002Fpath><\u002Fsvg>\n        Télécharger l'Excel\n      <\u002Fa>\n    <\u002Fdiv>\n  <\u002Fdiv>\n\n  <p class=\"compteur\" id=\"compteur\" aria-live=\"polite\"><\u002Fp>\n\n  <div class=\"table-carte\">\n    <table id=\"table\">\n      <thead><tr>\n        <th scope=\"col\">Code<\u002Fth>\n        <th scope=\"col\">Intitulé<\u002Fth>\n        <th scope=\"col\" class=\"col-type\">Type<\u002Fth>\n        <th scope=\"col\" class=\"col-niveau\">Niveau<\u002Fth>\n        <th scope=\"col\" class=\"col-actif\">Active<\u002Fth>\n        <th scope=\"col\" class=\"col-echeance\">Échéance<\u002Fth>\n        <th scope=\"col\">Évolution<\u002Fth>\n        <th scope=\"col\"><span class=\"sr-only\" style=\"position:absolute;clip:rect(0 0 0 0)\">Détail<\u002Fspan><\u002Fth>\n      <\u002Ftr><\u002Fthead>\n      <tbody id=\"corps\"><\u002Ftbody>\n    <\u002Ftable>\n    <div class=\"vide\" id=\"vide\" hidden=\"\"><b>Aucun résultat<\u002Fb>Modifiez la recherche ou le filtre actif.<\u002Fdiv>\n  <\u002Fdiv>\n\n  <footer>\n    <span>Source : <a href=\"https://www.francecompetences.fr/\" target=\"_blank\" rel=\"noopener\">France compétences<\u002Fa> — données publiées sous licence ouverte Etalab 2.0.<\u002Fspan>\n    <span>Page régénérée automatiquement chaque jour · GIP FCIP de l'académie de Reims<\u002Fspan>\n  <\u002Ffooter>\n<\u002Fmain>\n\n<script>\n(function(){\n\"use strict\";\nvar DATA=null,ROWS=[],filtre=\"tous\",requete=\"\",ouverte=-1;\nvar corps=document.getElementById(\"corps\"),vide=document.getElementById(\"vide\"),\n    compteur=document.getElementById(\"compteur\"),champ=document.getElementById(\"q\");\n\nfunction esc(s){return String(s==null?\"\":s).replace(/[&<>\"']/g,function(c){return{\"&\":\"&amp;\",\"<\":\"&lt;\",\">\":\"&gt;\",'\"':\"&quot;\",\"'\":\"&#39;\"}[c]})}\nfunction norm(s){return String(s||\"\").normalize(\"NFD\").replace(/[\\u0300-\\u036f]/g,\"\").toLowerCase()}\n\nfunction majSticky(){\n  var h=document.getElementById(\"outils\").offsetHeight;\n  document.documentElement.style.setProperty(\"--sticky\",h+\"px\");\n}\nwindow.addEventListener(\"resize\",majSticky);\n\nfetch((window.__resources&&window.__resources.dataJson)||\"data.json\").then(function(r){\n  if(!r.ok)throw new Error(\"HTTP \"+r.status);\n  return r.json();\n}).then(function(d){\n  DATA=d;\n  ROWS=d.rows.map(function(r,i){\n    r._i=i;\n    r._q=norm(r.code+\" \"+r.intitule+\" \"+(r.formacodes||[]).join(\" \"));\n    return r;\n  });\n  var m=d.meta||{},c=m.compteurs||{};\n  document.getElementById(\"metaChips\").innerHTML=\n    '<span class=\"chip\"><span class=\"dot\"><\u002Fspan>Généré le <b>'+esc(m.genere_le)+'<\u002Fb><\u002Fspan>'+\n    '<span class=\"chip\">Export source&nbsp;: <b>'+esc(m.export)+'<\u002Fb><\u002Fspan>'+\n    (m.perimetre?'<span class=\"chip\">'+esc(m.perimetre)+'<\u002Fspan>':\"\");\n  if(m.note){\n    document.getElementById(\"noteTexte\").textContent=m.note;\n    document.getElementById(\"note\").classList.add(\"visible\");\n  }\n  document.getElementById(\"nTous\").textContent=ROWS.length.toLocaleString(\"fr-FR\");\n  document.getElementById(\"nAj\").textContent=c[\"AJOUTÉ\"]||0;\n  document.getElementById(\"nMo\").textContent=c[\"MODIFIÉ\"]||0;\n  document.getElementById(\"nSu\").textContent=c[\"SUPPRIMÉ\"]||0;\n  document.getElementById(\"nIn\").textContent=ROWS.filter(function(r){return!r.actif}).length;\n  rendre();majSticky();\n}).catch(function(e){\n  compteur.innerHTML='<b style=\"color:var(--rouge)\">Erreur de chargement des données<\u002Fb> ('+esc(e.message)+'). Réessayez plus tard ou contactez le gestionnaire de la page.';\n});\n\nfunction filtrer(){\n  var q=requete;\n  return ROWS.filter(function(r){\n    if(filtre===\"inactifs\"){if(r.actif)return false}\n    else if(filtre!==\"tous\"&&r.evolution!==filtre)return false;\n    return !q||r._q.indexOf(q)>-1;\n  });\n}\n\nvar EVOC={\"AJOUTÉ\":[\"b-aj\",\"t-aj\",\"e-aj\"],\"MODIFIÉ\":[\"b-mo\",\"t-mo\",\"e-mo\"],\"SUPPRIMÉ\":[\"b-su\",\"t-su\",\"e-su\"]};\n\nfunction rendre(){\n  ouverte=-1;\n  var liste=filtrer(),html=[],i,r,ev;\n  for(i=0;i<liste.length;i++){\n    r=liste[i];ev=EVOC[r.evolution];\n    html.push('<tr class=\"ligne',ev?\" \"+ev[1]:\"\",'\" data-i=\"',r._i,'\" tabindex=\"0\" role=\"button\" aria-expanded=\"false\" aria-label=\"',esc(r.code),' — ',esc(r.intitule),', afficher le détail\">',\n      '<td class=\"code\">',esc(r.code),'<\u002Ftd>',\n      '<td class=\"intitule\">',esc(r.intitule),'<\u002Ftd>',\n      '<td class=\"col-type\">',esc(r.type),'<\u002Ftd>',\n      '<td class=\"col-niveau num\">',esc(r.niveau),'<\u002Ftd>',\n      '<td class=\"col-actif\">',r.actif?'<span class=\"actif-lbl\">Oui<\u002Fspan>':'<span class=\"inactif-lbl\">Non<\u002Fspan>','<\u002Ftd>',\n      '<td class=\"col-echeance num\">',esc(r.echeance),'<\u002Ftd>',\n      '<td>',ev?'<span class=\"badge '+ev[0]+'\">'+esc(r.evolution)+'<\u002Fspan>':'<span style=\"color:var(--encre-3)\">—<\u002Fspan>','<\u002Ftd>',\n      '<td><span class=\"chevron\" aria-hidden=\"true\">&#8250;<\u002Fspan><\u002Ftd><\u002Ftr>');\n  }\n  corps.innerHTML=html.join(\"\");\n  vide.hidden=liste.length>0;\n  var n=liste.length.toLocaleString(\"fr-FR\");\n  compteur.innerHTML=\"<b>\"+n+\"<\u002Fb> \"+(liste.length>1?\"diplômes affichés\":\"diplôme affiché\")+\n    (filtre!==\"tous\"||requete?\" (sur \"+ROWS.length.toLocaleString(\"fr-FR\")+\")\":\"\");\n}\n\nfunction fermerDetail(){\n  var tr=corps.querySelector(\"tr.ouverte\");\n  if(tr){tr.classList.remove(\"ouverte\");tr.setAttribute(\"aria-expanded\",\"false\");}\n  var d=corps.querySelector(\"tr.detail\");\n  if(d)d.remove();\n  ouverte=-1;\n}\n\nfunction ouvrirDetail(tr){\n  var i=+tr.dataset.i;\n  if(ouverte===i){fermerDetail();return}\n  fermerDetail();\n  var r=ROWS[i],ev=EVOC[r.evolution],b=[];\n  b.push('<tr class=\"detail\"><td colspan=\"8\"><div class=\"detail-grille\">');\n  if(r.detail){\n    b.push('<div class=\"detail-bloc\" style=\"grid-column:1/-1\"><h3>',\n      r.evolution?\"Détail de l'évolution (\"+esc(r.evolution.toLowerCase())+\")\":\"Détail\",\n      '<\u002Fh3><p class=\"evo-detail ',ev?ev[2]:\"\",'\">',esc(r.detail),'<\u002Fp><\u002Fdiv>');\n  }\n  if(r.successeurs&&r.successeurs.length){\n    b.push('<div class=\"detail-bloc\"><h3>Remplacée par<\u002Fh3><p>',\n      r.successeurs.map(function(s){return '<span class=\"code\">'+esc(s)+'<\u002Fspan>'}).join(\", \"),'<\u002Fp><\u002Fdiv>');\n  }\n  b.push('<div class=\"detail-bloc\"><h3>Formacodes<\u002Fh3><p>',\n    (r.formacodes&&r.formacodes.length)?r.formacodes.map(function(f){return '<span class=\"fc-chip\">'+esc(f)+'<\u002Fspan>'}).join(\"\"):\"—\",'<\u002Fp><\u002Fdiv>');\n  b.push('<div class=\"detail-bloc\"><h3>Dernier changement<\u002Fh3><p>',esc(r.dernier_changement||\"—\"),'<\u002Fp><\u002Fdiv>');\n  b.push('<div class=\"detail-bloc\"><h3>Statut<\u002Fh3><p>',\n    r.actif?\"Fiche active\":'<span class=\"inactif-lbl\">Fiche inactive<\u002Fspan>',\n    r.echeance?' · échéance '+esc(r.echeance):\"\",'<\u002Fp><\u002Fdiv>');\n  if(r.url){\n    b.push('<div class=\"detail-bloc\"><h3>Fiche officielle<\u002Fh3><p><a class=\"lien-fc\" href=\"',esc(r.url),'\" target=\"_blank\" rel=\"noopener\">Consulter sur France compétences&nbsp;&#8599;<\u002Fa><\u002Fp><\u002Fdiv>');\n  }\n  b.push('<\u002Fdiv><\u002Ftd><\u002Ftr>');\n  tr.insertAdjacentHTML(\"afterend\",b.join(\"\"));\n  tr.classList.add(\"ouverte\");\n  tr.setAttribute(\"aria-expanded\",\"true\");\n  ouverte=i;\n}\n\ncorps.addEventListener(\"click\",function(e){\n  if(e.target.closest(\"a\"))return;\n  var tr=e.target.closest(\"tr.ligne\");\n  if(tr)ouvrirDetail(tr);\n});\ncorps.addEventListener(\"keydown\",function(e){\n  if(e.key!==\"Enter\"&&e.key!==\" \")return;\n  var tr=e.target.closest(\"tr.ligne\");\n  if(tr){e.preventDefault();ouvrirDetail(tr)}\n});\ndocument.addEventListener(\"keydown\",function(e){if(e.key===\"Escape\")fermerDetail()});\n\nvar minuterie=null;\nchamp.addEventListener(\"input\",function(){\n  clearTimeout(minuterie);\n  minuterie=setTimeout(function(){requete=norm(champ.value.trim());rendre()},80);\n});\n\ndocument.getElementById(\"filtres\").addEventListener(\"click\",function(e){\n  var btn=e.target.closest(\".filtre\");\n  if(!btn)return;\n  filtre=btn.dataset.f;\n  var btns=this.querySelectorAll(\".filtre\");\n  for(var i=0;i<btns.length;i++)btns[i].setAttribute(\"aria-pressed\",String(btns[i]===btn));\n  rendre();\n});\n})();\n<\u002Fscript>\n\n\n<\u002Fbody><\u002Fhtml>"
+  </script>
+</body>
+</html>

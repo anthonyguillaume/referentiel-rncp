@@ -34,23 +34,26 @@ jobs:
       - name: Installer les dépendances
         run: pip install -r requirements.txt
 
-      # Génère output/Liens_CPF_controle.xlsx, summary.md/html, state/snapshot.json
-      # et pose les sorties : changes (true/false), sujet, resume.
-      - name: Contrôler les fiches RNCP
+      # Génère docs/ : diplomes_rncp.xlsx, index.html + data.json (site),
+      # summary.md/html, et met à jour state/snapshot.json.
+      # Sorties : changes (true/false), sujet, resume.
+      - name: Générer le référentiel des diplômes
         id: controle
-        run: python check_rncp.py
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python genere_rncp.py
 
       - name: Publier le rapport en artefact
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: rapport-rncp-${{ github.run_number }}
-          path: output/
+          path: docs/
           retention-days: 90
 
       # Configuration : tout en VARIABLES de dépôt (MAIL_SERVER, MAIL_PORT,
-      # MAIL_USERNAME, MAIL_TO, MAIL_FROM), seul MAIL_PASSWORD est un SECRET.
-      # MAIL_TO accepte plusieurs adresses séparées par des virgules.
+      # MAIL_USERNAME, MAIL_TO, MAIL_FROM, SITE_URL), seul MAIL_PASSWORD est
+      # un SECRET. MAIL_TO accepte plusieurs adresses séparées par des virgules.
       - name: Envoyer l'e-mail
         if: (steps.controle.outputs.changes == 'true' || inputs.force_email == true) && vars.MAIL_SERVER != ''
         uses: dawidd6/action-send-mail@v3
@@ -61,24 +64,21 @@ jobs:
           # secure: true
           username: ${{ vars.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "[Contrôle RNCP] ${{ steps.controle.outputs.sujet }}"
+          subject: "[Diplômes RNCP] ${{ steps.controle.outputs.sujet }}"
           to: ${{ vars.MAIL_TO }}
-          from: "Contrôle RNCP <${{ vars.MAIL_FROM || vars.MAIL_USERNAME }}>"
-          html_body: "file://output/summary.html"
-          attachments: output/Liens_CPF_controle.xlsx
+          from: "Veille RNCP <${{ vars.MAIL_FROM || vars.MAIL_USERNAME }}>"
+          html_body: "file://docs/summary.html"
+          attachments: docs/diplomes_rncp.xlsx
 
-      # L'état n'est enregistré QU'APRÈS l'envoi réussi : si le mail échoue,
-      # le job s'arrête en erreur et les mêmes changements seront re-signalés
-      # à la prochaine exécution (aucune alerte perdue).
-      # Le classeur annoté REMPLACE le fichier de base : data/ contient donc
-      # toujours la dernière version, l'équipe n'a rien à redéposer.
-      - name: Mettre à jour le fichier de base et l'état dans le dépôt
+      # L'état et le site ne sont committés QU'APRÈS l'envoi réussi : si le
+      # mail échoue, les mêmes changements seront re-signalés au run suivant.
+      # GitHub Pages sert le dossier docs/ (site + Excel téléchargeable).
+      - name: Publier le site et l'état dans le dépôt
         if: steps.controle.outputs.changes == 'true'
         run: |
-          cp output/Liens_CPF_controle.xlsx "${{ steps.controle.outputs.fichier }}"
           git config user.name "controle-rncp[bot]"
           git config user.email "actions@users.noreply.github.com"
-          git add state data
-          git diff --cached --quiet || git commit -m "Contrôle RNCP $(date -u +%F) — ${{ steps.controle.outputs.resume }}"
+          git add state docs
+          git diff --cached --quiet || git commit -m "Génération RNCP $(date -u +%F) — ${{ steps.controle.outputs.resume }}"
           git pull --rebase origin "$GITHUB_REF_NAME" || true
           git push

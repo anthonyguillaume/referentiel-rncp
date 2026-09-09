@@ -1,58 +1,60 @@
-# Contrôle RNCP
+# Contrôle RNCP — référentiel généré
 
-Compare chaque jour les codes RNCP du fichier « Liens CPF par formacode et diplômes » avec l'export open data officiel de France compétences (mis à jour quotidiennement sur data.gouv.fr, licence ouverte), et envoie un e-mail uniquement quand quelque chose a changé.
+Chaque jour, ce dépôt **génère** le référentiel des diplômes RNCP de votre périmètre depuis l'export open data officiel de France compétences (data.gouv.fr, mise à jour quotidienne, licence ouverte). Plus de fichier à maintenir : les diplômes nouvellement publiés, modifiés ou disparus sont détectés automatiquement, un e-mail part quand quelque chose bouge, et un site web permet de chercher et consulter le tout.
 
-## Ce que produit chaque exécution
+## Ce que produit chaque génération
 
-Une copie annotée du classeur (`output/Liens_CPF_controle.xlsx`) — le fichier d'origine n'est jamais modifié. L'onglet principal reçoit huit colonnes supplémentaires (Statut, Contrôle France compétences, Code(s) à jour, Intitulé à jour, Échéance fiche, Formacodes de la fiche à jour, Changé ?, Changement depuis le dernier envoi) et chaque ligne est colorée selon son statut. Les onglets par formacode sont également colorés. Deux onglets sont ajoutés en tête : **Synthèse** (compteurs + liste des codes à traiter) et **Changements** (journal daté de toutes les évolutions détectées depuis la mise en place).
+`docs/diplomes_rncp.xlsx` — le classeur complet. Onglet **Diplômes** : une ligne par fiche (code, intitulé, type, niveau, fiche active, échéance, remplacée par, formacodes, lien France compétences cliquable, évolution et son détail avant → après, date du dernier changement, suivi depuis), sous forme de tableau Excel filtrable. Code couleur par rapport à la génération précédente : **vert** = ligne ajoutée, **orange** = ligne modifiée, **rouge** = fiche désactivée ou disparue de l'export. Une fiche disparue reste affichée en rouge le temps d'une génération puis sort du fichier ; sa trace demeure dans l'onglet **Changements** (journal daté complet, lignes de la génération courante surlignées en bleu). L'onglet **Synthèse** donne les compteurs et la liste des lignes ayant évolué, et un onglet par domaine (« Formacode 110 », « Formacode 114 »…) reprend la vue par formacode simplifié.
 
-Ce qui vient de changer est mis en évidence **en bleu** à trois endroits : la colonne « Changé ? » (OUI/NON) suivie du détail « Changement depuis le dernier envoi » (avant → après) sur l'onglet principal, la puce ● en tête de la Synthèse (les nouveautés remontent en premier dans chaque statut), et les lignes surlignées de l'onglet Changements. Les trois onglets sont équipés de filtres automatiques Excel : pour ne voir que ce qui vient de bouger, filtrer « Changé ? » sur OUI ; une ligne orange avec « Changé ? » à NON est un point déjà signalé lors d'un envoi précédent.
+Le gabarit du site vit dans `site/index.html` (design GIP FCIP produit avec Claude Design) et est recopié dans `docs/` à chaque génération. Si vous régénérez ce gabarit avec Claude Design, veillez à ce qu'il n'embarque pas de données d'exemple : les blocs `__bundler/manifest` et `__bundler/ext_resources` doivent être vides (`{}` et `[]`) pour que la page charge le vrai `data.json`.
 
-Les statuts : **vert** (RAS — fiche active, intitulé conforme), **orange** (à vérifier — intitulé officiel différent, successeur déjà publié alors que la fiche est encore active, ou échéance à moins de 180 jours), **rouge** (fiche inactive : remplacée, avec le ou les nouveaux codes indiqués en suivant la chaîne de remplacement jusqu'à la fiche active, ou expirée sans successeur), **gris** (code introuvable dans le répertoire, saisie à vérifier).
+`docs/index.html` + `docs/data.json` — le **site web** (servi par GitHub Pages) : recherche instantanée par code, intitulé ou formacode, filtres Ajoutés / Modifiés / Supprimés / Fiches inactives, détail par fiche avec lien vers France compétences, et bouton de téléchargement de l'Excel.
 
-L'e-mail n'est envoyé que si des changements sont détectés par rapport à la veille (l'état de référence est conservé dans `state/snapshot.json`, versionné dans le dépôt). La toute première exécution envoie un état des lieux complet.
+L'e-mail n'est envoyé que si des changements sont détectés (la première génération envoie l'état des lieux de référence). L'état de comparaison vit dans `state/snapshot.json`, versionné.
+
+## Le périmètre
+
+`config/formacodes.txt` définit ce qui est suivi : un formacode par ligne, 5 chiffres pour un formacode exact, 3 chiffres pour couvrir tout un domaine (ex. `114` couvre 11421, 11454…). Le fichier est initialisé avec les 700 formacodes de votre ancien fichier de liens CPF — le périmètre couvert est donc identique au départ, à la différence près que **les nouveaux diplômes publiés dans ces formacodes apparaîtront désormais tout seuls, en vert**. Un fichier vide (hors commentaires) suit le répertoire entier (~25 000 fiches dont ~5 000 actives) ; attendez-vous alors à des alertes quotidiennes nombreuses. Élargir ou réduire le périmètre = éditer ce fichier dans GitHub, rien d'autre.
+
+Limite à connaître : une fiche sans aucun formacode renseigné chez France compétences est invisible d'un périmètre par formacodes.
 
 ## Mise en place (une fois, ~10 minutes)
 
-1. Créer un dépôt GitHub **privé** (le fichier contient des données métier) et y déposer tout le contenu de ce dossier — soit par `git push`, soit via l'interface web (« Add file → Upload files », en conservant l'arborescence, notamment `.github/workflows/`).
+1. Créer un dépôt GitHub et y déposer tout le contenu de ce dossier en conservant l'arborescence — attention aux éléments cachés `.github/` et `.gitignore` (⌘⇧. dans le Finder pour les voir, ou création directe dans l'interface GitHub).
 
-2. Dans le dépôt : Settings → Secrets and variables → Actions → « New repository secret », créer les secrets SMTP ci-dessous.
+2. Settings → Secrets and variables → Actions. Créer le secret et les variables :
 
 | Où | Nom | Contenu | Exemple |
 |---|---|---|---|
-| Secret | `MAIL_SERVER` | serveur SMTP | `smtp-relay.brevo.com` |
-| Secret | `MAIL_PORT` | port SMTP | `587` |
-| Secret | `MAIL_USERNAME` | identifiant SMTP | `xxx@smtp-brevo.com` |
-| Secret | `MAIL_PASSWORD` | mot de passe / clé SMTP | — |
-| **Variable** | `MAIL_TO` | destinataires, **séparés par des virgules** | `marielle@…, anthony@…, equipe@…` |
-| Secret | `MAIL_FROM` | expéditeur (facultatif, défaut : `MAIL_USERNAME`) | `noreply@…` |
+| **Secret** | `MAIL_PASSWORD` | mot de passe / clé SMTP (mot de passe d'application pour Gmail) | — |
+| Variable | `MAIL_SERVER` | serveur SMTP | `smtp.gmail.com` |
+| Variable | `MAIL_PORT` | port SMTP | `587` |
+| Variable | `MAIL_USERNAME` | identifiant SMTP | `compte@gmail.com` |
+| Variable | `MAIL_TO` | destinataires, **séparés par des virgules** | `marielle@…, anthony@…` |
+| Variable | `MAIL_FROM` | expéditeur (facultatif, défaut : `MAIL_USERNAME`) | `compte@gmail.com` |
+| Variable | `SITE_URL` | adresse du site Pages, ajoutée dans les e-mails (facultatif) | `https://xxx.github.io/rncp-watch/` |
 
-Les destinataires se saisissent dans l'onglet **Variables** (même écran que les secrets) : la liste reste lisible et modifiable par toute l'équipe, sans passer par un secret masqué. Ajouter ou retirer une adresse = éditer la variable, rien d'autre. (`MAIL_TO` en secret fonctionne aussi, la variable est prioritaire.)
+3. Activer le site : Settings → **Pages** → Build and deployment → Source « Deploy from a branch » → branche `main`, dossier `/docs` → Save. L'URL affichée est celle à mettre dans `SITE_URL`. Point d'attention : sur un dépôt **privé**, GitHub Pages nécessite un plan payant (Pro/Team/Enterprise) ; le contenu du site étant exclusivement de l'open data France compétences, un dépôt public est une alternative acceptable si vous retirez toute donnée interne du dépôt.
 
-Fournisseurs qui fonctionnent bien : **Brevo** (300 mails/jour gratuits, le plus simple), **Gmail** avec un mot de passe d'application, ou le SMTP **Microsoft 365** de l'entreprise si l'authentification SMTP y est autorisée. Pour un serveur en TLS implicite (port 465), décommenter `secure: true` dans le workflow.
+4. Onglet **Actions** : activer les workflows si demandé, puis « Contrôle RNCP » → « Run workflow » pour la première génération (~2 minutes : téléchargement de l'export ~70 Mo, génération, mail d'état des lieux, commit de `docs/` et `state/`).
 
-3. Onglet **Actions** du dépôt : activer les workflows si GitHub le demande, ouvrir « Contrôle RNCP » → « Run workflow » pour la première exécution. Elle télécharge l'export du jour (~70 Mo), établit l'état de référence, committe `state/` et `output/`, et envoie l'e-mail d'état des lieux.
-
-4. À noter : l'état de référence n'est enregistré qu'après l'envoi réussi du mail — en cas d'échec SMTP, le job passe en erreur et les mêmes changements sont re-signalés au contrôle suivant, aucune alerte n'est perdue.
-
-5. C'est tout : le contrôle tourne ensuite chaque jour à 04:30 UTC (06:30 à Paris l'été). Le cron GitHub est en UTC et peut glisser de quelques minutes. En cas d'échec technique (data.gouv indisponible, schéma modifié…), GitHub notifie automatiquement l'auteur du workflow.
+5. C'est tout. Génération quotidienne à 04:30 UTC (cron GitHub en UTC, léger glissement possible). L'état n'est committé qu'après l'envoi réussi du mail : en cas d'échec SMTP le job passe en erreur et les mêmes changements sont re-signalés au run suivant, aucune alerte n'est perdue. En cas d'échec technique, GitHub notifie l'auteur du workflow.
 
 ## Au quotidien
 
-Quand le fichier de référence évolue (nouveau diplôme, lien CPF ajouté…), remplacer `data/liens_cpf_formacode_rncp.xlsx` directement dans l'interface GitHub (ouvrir le dossier `data/`, « Add file → Upload files », écraser). Le contrôle suivant prendra la nouvelle version ; tout `.xlsx` présent dans `data/` fait l'affaire, le nom importe peu. Le dernier rapport est toujours lisible dans `output/` sur GitHub, joint à chaque e-mail, et conservé 90 jours en artefact de workflow. Pour recevoir le rapport sans attendre un changement : « Run workflow » en cochant « Envoyer le mail même sans changement ».
+Rien à faire : le fichier et le site se régénèrent seuls, l'équipe reçoit un mail quand ça bouge, consulte le site pour chercher un code, et télécharge l'Excel depuis le site ou la pièce jointe. Les seules interventions possibles : éditer `config/formacodes.txt` pour ajuster le périmètre, et « Run workflow » avec « Envoyer le mail même sans changement » pour recevoir le fichier à la demande. Le site et le fichier committés reflètent la dernière génération **avec changements** ; le contrôle tourne bien tous les jours même quand rien ne bouge.
 
 ## Exécution locale et options
 
 ```
 pip install -r requirements.txt
-python check_rncp.py                                   # télécharge le dernier export
-python check_rncp.py --xml export-fiches-rncp.xml      # export déjà téléchargé
-python check_rncp.py --xml tests/fiches-exemple.xml --min-couverture 0   # démo hors ligne
-python check_rncp.py --debug-fiche RNCP35803           # affiche le XML brut d'une fiche
+python genere_rncp.py                                  # télécharge le dernier export
+python genere_rncp.py --xml export-fiches-rncp.xml     # export déjà téléchargé
+python genere_rncp.py --debug-fiche RNCP35803          # affiche le XML brut d'une fiche
 ```
 
-`--seuil-jours` règle l'alerte orange d'échéance proche (défaut 180). `--min-couverture` (défaut 0.5) fait échouer l'exécution si moins de la moitié des codes du fichier sont retrouvés dans l'export — c'est le garde-fou contre un changement de schéma silencieux chez France compétences.
+`--min-fiches` (défaut 5000) fait échouer la génération si l'export paraît anormalement petit — garde-fou contre un changement de schéma silencieux chez France compétences. Le lecteur XML est volontairement tolérant (codes par motif, deux formes acceptées pour les fiches de remplacement, niveau extrait défensivement) ; si un jour le format change vraiment, `--debug-fiche` montre la structure reçue en dix secondes.
 
-## Points d'attention
+## Migration depuis la v1
 
-Le lecteur XML est volontairement tolérant (recherche des codes par motif, deux formes acceptées pour les fiches de remplacement) car France compétences fait évoluer son schéma d'export de temps en temps ; si un jour la couverture chute, lancer `--debug-fiche` sur un code connu montre immédiatement la structure reçue. Les colonnes E et G du fichier source sont des formules : la copie annotée force leur recalcul à l'ouverture dans Excel (elles peuvent apparaître vides dans un simple aperçu). Enfin, l'intitulé officiel est comparé après normalisation (accents, casse, tirets, espaces) et en tenant compte du préfixe de type de diplôme (« BTS - … ») ; un orange « intitulé différent » signale donc un vrai écart de fond, pas une différence typographique.
+L'ancien mode (comparaison d'un fichier Excel maintenu à la main) est remplacé : supprimer `check_rncp.py` et le dossier `data/` du dépôt. L'ancien `state/snapshot.json` est détecté et ignoré, la première génération v2 repart d'une base de référence propre.
