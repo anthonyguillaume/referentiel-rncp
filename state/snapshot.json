@@ -1,6 +1,6 @@
 {
  "version": 2,
- "derniere_execution": "2026-09-09T17:22:29.626425+02:00",
+ "derniere_execution": "2026-09-10T10:26:47.695158+02:00",
  "source_export": "export-fiches-rncp-v4-1-2026-09-09.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
@@ -91907,6 +91907,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/rncp-watch/actions/runs/34369800213"
+  },
+  {
+   "date": "2026-09-10T10:26",
+   "statut": "sans_changement",
+   "export": "export-fiches-rncp-v4-1-2026-09-09.zip",
+   "diplomes": 4116,
+   "ajoutes": 0,
+   "modifies": 0,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/34455182806"
   }
  ]
 }
