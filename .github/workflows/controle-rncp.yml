@@ -3,6 +3,7 @@ name: Contrôle RNCP
 on:
   schedule:
     # Tous les jours à 04:30 UTC (06:30 à Paris l'été, 05:30 l'hiver).
+    # Fichier retouché le 10/09/2026 pour réenregistrer la planification après le renommage du dépôt.
     - cron: "30 4 * * *"
   workflow_dispatch:
 
