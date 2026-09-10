@@ -63,8 +63,9 @@ le site affiche alors un point rouge sur « Généré le » et un bandeau d'aler
 
 ### Site (`site/index.html`)
 Recherche (code, intitulé, formacode), filtres Ajoutés / Modifiés / Supprimés / Fiches inactives, listes Type et
-Niveau (avec effectifs), colonne Formacodes (puces, tri sur le premier code, masquée sous 620 px ; pas de liste déroulante :
-1 576 codes distincts, trop pour un sélecteur — la recherche suffit), sélecteur de période des changements (défaut : **7 jours** ; dernier run, 30 jours, depuis le début),
+Niveau (avec effectifs), colonnes Formacodes et Formacode simplifié (domaine à 3 chiffres, calculé côté site ; puces, tri sur le premier code,
+masquées sous 620 px), liste Formacode simplifié (77 domaines, avec effectifs ; une fiche à plusieurs domaines est comptée sous chacun ;
+pas de liste sur les formacodes complets : 1 576 codes distincts, trop pour un sélecteur — la recherche suffit), sélecteur de période des changements (défaut : **7 jours** ; dernier run, 30 jours, depuis le début),
 tri par clic sur les en-têtes, colonne « Dernier changement », badges Niveau / Active, infobulles sur les en-têtes
 de colonnes et les puces du bandeau, lien Excel, lien Historique, icône GitHub, balises anti-cache et `data.json`
 chargé avec horodatage + `cache: no-store`.
@@ -139,6 +140,11 @@ la copie manuelle permet une mise en ligne immédiate.
   ne jamais pousser sans accord explicite de l'utilisateur ; pas de trailer Co-Authored-By.
 - Le fichier v1 `data/liens_cpf_formacode_rncp.xlsx` est encore dans l'historique git (dépôt public, non purgé, choix de l'utilisateur).
 - Historique des événements plafonné à 10 000 (`HISTORIQUE_MAX`), journal des runs à 1 500 (`JOURNAL_MAX`).
+- **Cron non déclenché le 10/09/2026 à 04:30 UTC** (lendemain du renommage du dépôt). Le fichier de workflow a été retouché et poussé
+  le 10/09 pour réenregistrer la planification, puis un run manuel lancé à 08:26 UTC. Vérifier qu'un run automatique a bien eu lieu le 11/09 ;
+  sinon, voir la page Actions du dépôt (workflow désactivé ?) et retoucher à nouveau le fichier.
+- L'export France compétences du jour n'est pas toujours disponible à 04:30 UTC (le 10/09 à 08:30 UTC, le dernier publié était celui du 09/09) :
+  un run « sans changement » sur l'export de la veille est normal.
 
 ## 7. Journal des décisions et réalisations (09/09/2026)
 
