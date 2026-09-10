@@ -63,7 +63,8 @@ le site affiche alors un point rouge sur « Généré le » et un bandeau d'aler
 
 ### Site (`site/index.html`)
 Recherche (code, intitulé, formacode), filtres Ajoutés / Modifiés / Supprimés / Fiches inactives, listes Type et
-Niveau (avec effectifs), sélecteur de période des changements (défaut : **7 jours** ; dernier run, 30 jours, depuis le début),
+Niveau (avec effectifs), colonne Formacodes (puces, tri sur le premier code, masquée sous 620 px ; pas de liste déroulante :
+1 576 codes distincts, trop pour un sélecteur — la recherche suffit), sélecteur de période des changements (défaut : **7 jours** ; dernier run, 30 jours, depuis le début),
 tri par clic sur les en-têtes, colonne « Dernier changement », badges Niveau / Active, infobulles sur les en-têtes
 de colonnes et les puces du bandeau, lien Excel, lien Historique, icône GitHub, balises anti-cache et `data.json`
 chargé avec horodatage + `cache: no-store`.
