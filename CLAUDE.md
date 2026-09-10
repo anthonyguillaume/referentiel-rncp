@@ -164,5 +164,13 @@ la copie manuelle permet une mise en ligne immédiate.
 9. Colonne « Dernier changement » + tri par colonnes ; sélecteur de période (défaut 7 jours) ; icône GitHub ; licence MIT.
 10. Dépôt renommé `referentiel-rncp` ; `SITE_URL` et remote mis à jour.
 
-État au 09/09/2026 17:45 : 4 116 codes suivis (3 919 actifs, 197 inactifs), 2 704 ajoutés / 229 modifiés / 0 supprimé
-par rapport à la référence, 5 générations au journal, prochain run automatique le 10/09/2026 à 04:30 UTC.
+### 10/09/2026
+
+11. Site : colonnes « Formacodes » (codes complets) et « Formacode simplifié » (domaine à 3 chiffres, calculé côté site) ;
+    liste déroulante sur le formacode simplifié (77 domaines). Une liste sur les formacodes complets a été ajoutée puis retirée
+    (1 576 entrées, jugée inutilisable). En-têtes longs sur deux lignes pour que les onze colonnes tiennent dans la carte.
+12. Run planifié de 04:30 UTC absent (lendemain du renommage) : fichier de workflow retouché et poussé, run manuel lancé à 08:26 UTC
+    (sans changement, export du 09/09 car celui du 10/09 n'était pas encore publié sur data.gouv).
+
+État au 10/09/2026 11:00 : 4 116 codes suivis (3 919 actifs, 197 inactifs), 2 704 ajoutés / 229 modifiés / 0 supprimé
+par rapport à la référence, 6 générations au journal, prochain run automatique attendu le 11/09/2026 à 04:30 UTC (à vérifier, voir §6).
