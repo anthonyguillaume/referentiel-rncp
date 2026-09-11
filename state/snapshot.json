@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-09-10T11:04:41.607072+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-09-09.zip",
+ "derniere_execution": "2026-09-11T11:02:42.229126+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-09-11.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -1319,6 +1319,25 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP38413": {
+   "intitule": "Architecte des systèmes d'information dans les processus industriels",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2026-12-21",
+   "successeurs": [],
+   "formacodes": [
+    "24491",
+    "24231",
+    "31038",
+    "24426",
+    "31006"
+   ],
+   "premiere_vue": "2026-09-11",
+   "dernier_changement": "2026-09-11",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39580": {
    "intitule": "Architecte des systèmes d'information dans les processus industriels (MS)",
    "type": "",
@@ -1409,6 +1428,24 @@
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41993"
   },
+  "RNCP38474": {
+   "intitule": "Architecte internet des objets",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2026-12-21",
+   "successeurs": [],
+   "formacodes": [
+    "31009",
+    "31082",
+    "24231",
+    "31028"
+   ],
+   "premiere_vue": "2026-09-11",
+   "dernier_changement": "2026-09-11",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP38906": {
    "intitule": "Architecte internet des objets",
    "type": "",
@@ -1448,16 +1485,16 @@
    "intitule": "Art-thérapeute",
    "type": "",
    "niveau": "Niveau 6",
-   "actif": false,
-   "date_fin": "2026-08-17",
+   "actif": true,
+   "date_fin": "2026-12-21",
    "successeurs": [],
    "formacodes": [
     "14426"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-09-11",
    "evolution": "MODIFIÉ",
-   "detail": "Fiche active : Oui → Non"
+   "detail": "Échéance : 17/08/2026 → 21/12/2026"
   },
   "RNCP42078": {
    "intitule": "Artiste de cirque et du mouvement",
@@ -46509,6 +46546,24 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42794": {
+   "intitule": "Sciences et Ingénierie - Cybersécurité",
+   "type": "Grade_Licence",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "31045",
+    "31006",
+    "31008",
+    "31009"
+   ],
+   "premiere_vue": "2026-09-11",
+   "dernier_changement": "2026-09-11",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP40542": {
    "intitule": "Sciences et Ingénierie - Environnement et développement durable",
    "type": "Grade_Licence",
@@ -57695,15 +57750,13 @@
    "successeurs": [],
    "formacodes": [
     "12526",
-    "12547",
     "12510",
-    "12549",
-    "12554"
+    "12549"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-09-11",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 12526, 12547, 12510, 12549, 12554 → 12526, 12510, 12549"
   },
   "RNCP35934": {
    "intitule": "Ouvrier du génie écologique",
@@ -62898,6 +62951,25 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42791": {
+   "intitule": "Ingénieur diplômé de l'Institut supérieur de l'électronique et du numérique Yncréa Méditerranée",
+   "type": "Titre ingénieur",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2028-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "24392",
+    "32062",
+    "31028",
+    "15099",
+    "31054"
+   ],
+   "premiere_vue": "2026-09-11",
+   "dernier_changement": "2026-09-11",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39899": {
    "intitule": "Ingénieur diplômé de l'Institut supérieur de l’électronique et du numérique Yncréa Ouest",
    "type": "Titre ingénieur",
@@ -64297,6 +64369,24 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42792": {
+   "intitule": "Ingénieur diplômé de l'école nationale supérieure de chimie, de biologie et de physique de l'institut polytechnique de Bordeaux, spécialité agroalimentaire et génie biologique",
+   "type": "Titre ingénieur",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2027-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "31652",
+    "21554",
+    "21570",
+    "32062"
+   ],
+   "premiere_vue": "2026-09-11",
+   "dernier_changement": "2026-09-11",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -67559,6 +67649,25 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42793": {
+   "intitule": "Ingénieur diplômé de l’École nationale supérieure en systèmes avancés et réseaux de l’Institut polytechnique de Grenoble",
+   "type": "Titre ingénieur",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2029-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "24273",
+    "24323",
+    "24346",
+    "24454",
+    "31094"
+   ],
+   "premiere_vue": "2026-09-11",
+   "dernier_changement": "2026-09-11",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -91850,6 +91959,69 @@
    "type": "Remplacée par modifié",
    "avant": "",
    "apres": "RNCP41815"
+  },
+  {
+   "date": "2026-09-11",
+   "code": "RNCP38413",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Architecte des systèmes d'information dans les processus industriels"
+  },
+  {
+   "date": "2026-09-11",
+   "code": "RNCP38474",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Architecte internet des objets"
+  },
+  {
+   "date": "2026-09-11",
+   "code": "RNCP42791",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Ingénieur diplômé de l'Institut supérieur de l'électronique et du numérique Yncréa Méditerranée"
+  },
+  {
+   "date": "2026-09-11",
+   "code": "RNCP42792",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Ingénieur diplômé de l'école nationale supérieure de chimie, de biologie et de physique de l'institut polytechnique de Bordeaux, spécialité agroalimentaire et génie biologique"
+  },
+  {
+   "date": "2026-09-11",
+   "code": "RNCP42793",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Ingénieur diplômé de l’École nationale supérieure en systèmes avancés et réseaux de l’Institut polytechnique de Grenoble"
+  },
+  {
+   "date": "2026-09-11",
+   "code": "RNCP42794",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Sciences et Ingénierie - Cybersécurité"
+  },
+  {
+   "date": "2026-09-11",
+   "code": "RNCP38497",
+   "type": "Fiche active modifié",
+   "avant": "Non",
+   "apres": "Oui"
+  },
+  {
+   "date": "2026-09-11",
+   "code": "RNCP38497",
+   "type": "Échéance modifié",
+   "avant": "17/08/2026",
+   "apres": "21/12/2026"
+  },
+  {
+   "date": "2026-09-11",
+   "code": "RNCP42790",
+   "type": "Formacodes modifié",
+   "avant": "12526, 12547, 12510, 12549, 12554",
+   "apres": "12526, 12510, 12549"
   }
  ],
  "journal": [
@@ -91929,6 +92101,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/34458618765"
+  },
+  {
+   "date": "2026-09-11T11:02",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-09-11.zip",
+   "diplomes": 4122,
+   "ajoutes": 6,
+   "modifies": 2,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/34582166816"
   }
  ]
 }
