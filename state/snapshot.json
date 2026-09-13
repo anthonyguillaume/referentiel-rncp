@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-09-12T10:45:47.856018+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-09-11.zip",
+ "derniere_execution": "2026-09-13T11:40:24.793197+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-09-13.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -27664,6 +27664,21 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42798": {
+   "intitule": "Analyste du renseignement stratégique",
+   "type": "Autre",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2031-07-19",
+   "successeurs": [],
+   "formacodes": [
+    "42802"
+   ],
+   "premiere_vue": "2026-09-13",
+   "dernier_changement": "2026-09-13",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP36166": {
    "intitule": "Analyste développeur d'applications informatiques",
    "type": "Autre",
@@ -32641,14 +32656,31 @@
    "niveau": "Niveau 5",
    "actif": true,
    "date_fin": "2027-12-31",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42795"
+   ],
    "formacodes": [
     "41036"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-09-13",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42795"
+  },
+  "RNCP42795": {
+   "intitule": "Assurance",
+   "type": "BTS",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2032-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "41036"
+   ],
+   "premiere_vue": "2026-09-13",
+   "dernier_changement": "2026-09-13",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP38576": {
    "intitule": "Aéronautique",
@@ -35575,14 +35607,16 @@
    "niveau": "Niveau 3",
    "actif": true,
    "date_fin": "2026-12-31",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42799"
+   ],
    "formacodes": [
     "12520"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-09-13",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42799"
   },
   "RNCP37240": {
    "intitule": "Agent de prévention et de médiation",
@@ -41798,6 +41832,22 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42800": {
+   "intitule": "diplôme d'État supérieur de la jeunesse, de l'éducation populaire et du sport spécialité « direction de la performance sportive » mention « football »",
+   "type": "DESJEPS",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2031-08-07",
+   "successeurs": [],
+   "formacodes": [
+    "15436",
+    "15426"
+   ],
+   "premiere_vue": "2026-09-13",
+   "dernier_changement": "2026-09-13",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP36767": {
    "intitule": "Accueil d'excellence en tourisme (fiche nationale)",
    "type": "DEUST",
@@ -46555,14 +46605,12 @@
    "successeurs": [],
    "formacodes": [
     "31045",
-    "31006",
-    "31008",
-    "31009"
+    "31008"
    ],
    "premiere_vue": "2026-09-11",
-   "dernier_changement": "2026-09-11",
+   "dernier_changement": "2026-09-13",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 31045, 31006, 31008, 31009 → 31045, 31008"
   },
   "RNCP40542": {
    "intitule": "Sciences et Ingénierie - Environnement et développement durable",
@@ -56076,6 +56124,25 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42797": {
+   "intitule": "Conducteur d’engins de chantiers urbains",
+   "type": "TP",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2031-10-12",
+   "successeurs": [],
+   "formacodes": [
+    "22002",
+    "22062",
+    "22022",
+    "22070",
+    "22054"
+   ],
+   "premiere_vue": "2026-09-13",
+   "dernier_changement": "2026-09-13",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP41633": {
    "intitule": "Conducteur livreur sur véhicule utilitaire léger",
    "type": "TP",
@@ -59506,14 +59573,16 @@
    "niveau": "Niveau 3",
    "actif": true,
    "date_fin": "2026-10-12",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42797"
+   ],
    "formacodes": [
     "31717"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-09-13",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42797"
   },
   "RNCP41030": {
    "intitule": "Diplôme d'ingénieur d'Efrei Paris (Université Paris- Panthéon Assas)",
@@ -62962,13 +63031,12 @@
     "24392",
     "32062",
     "31028",
-    "15099",
-    "31054"
+    "15099"
    ],
    "premiere_vue": "2026-09-11",
-   "dernier_changement": "2026-09-11",
+   "dernier_changement": "2026-09-13",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 24392, 32062, 31028, 15099, 31054 → 24392, 32062, 31028, 15099"
   },
   "RNCP39899": {
    "intitule": "Ingénieur diplômé de l'Institut supérieur de l’électronique et du numérique Yncréa Ouest",
@@ -67663,13 +67731,13 @@
     "24273",
     "24323",
     "24346",
-    "24454",
-    "31094"
+    "15099",
+    "32062"
    ],
    "premiere_vue": "2026-09-11",
-   "dernier_changement": "2026-09-11",
+   "dernier_changement": "2026-09-13",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 24273, 24323, 24346, 24454, 31094 → 24273, 24323, 24346, 15099, 32062"
   },
   "RNCP42008": {
    "intitule": "Ingénieur diplômé de l’École polytechnique universitaire de Montpellier, spécialité Informatique",
@@ -92022,6 +92090,76 @@
    "type": "Formacodes modifié",
    "avant": "12526, 12547, 12510, 12549, 12554",
    "apres": "12526, 12510, 12549"
+  },
+  {
+   "date": "2026-09-13",
+   "code": "RNCP42795",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Assurance"
+  },
+  {
+   "date": "2026-09-13",
+   "code": "RNCP42797",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Conducteur d’engins de chantiers urbains"
+  },
+  {
+   "date": "2026-09-13",
+   "code": "RNCP42798",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Analyste du renseignement stratégique"
+  },
+  {
+   "date": "2026-09-13",
+   "code": "RNCP42800",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "diplôme d'État supérieur de la jeunesse, de l'éducation populaire et du sport spécialité « direction de la performance sportive » mention « football »"
+  },
+  {
+   "date": "2026-09-13",
+   "code": "RNCP35824",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42797"
+  },
+  {
+   "date": "2026-09-13",
+   "code": "RNCP38359",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42795"
+  },
+  {
+   "date": "2026-09-13",
+   "code": "RNCP38741",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42799"
+  },
+  {
+   "date": "2026-09-13",
+   "code": "RNCP42791",
+   "type": "Formacodes modifié",
+   "avant": "24392, 32062, 31028, 15099, 31054",
+   "apres": "24392, 32062, 31028, 15099"
+  },
+  {
+   "date": "2026-09-13",
+   "code": "RNCP42793",
+   "type": "Formacodes modifié",
+   "avant": "24273, 24323, 24346, 24454, 31094",
+   "apres": "24273, 24323, 24346, 15099, 32062"
+  },
+  {
+   "date": "2026-09-13",
+   "code": "RNCP42794",
+   "type": "Formacodes modifié",
+   "avant": "31045, 31006, 31008, 31009",
+   "apres": "31045, 31008"
   }
  ],
  "journal": [
@@ -92123,6 +92261,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/34684095362"
+  },
+  {
+   "date": "2026-09-13T11:40",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-09-13.zip",
+   "diplomes": 4126,
+   "ajoutes": 4,
+   "modifies": 6,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/34749968595"
   }
  ]
 }
