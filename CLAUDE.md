@@ -5,7 +5,7 @@ Il décrit ce qui existe, pourquoi, et comment intervenir sans casser la chaîne
 
 ## 1. Le projet en trois phrases
 
-Chaque jour à 04:30 UTC, un workflow GitHub Actions télécharge l'export open data du RNCP
+Chaque jour à 22:05 UTC (minuit à Paris l'été, 23:05 l'hiver), un workflow GitHub Actions télécharge l'export open data du RNCP
 (France compétences, data.gouv.fr, ~75 Mo zip / ~470 Mo XML, ~25 700 fiches dont ~5 000 actives),
 le filtre sur un périmètre de formacodes, compare avec l'état de la veille, puis publie un
 classeur Excel colorisé et un site statique sur GitHub Pages. Les couleurs (ajouté / modifié /
@@ -31,6 +31,7 @@ supprimé) sont **cumulées depuis une référence de départ**, actuellement le
 | `docs/` | Sortie publiée par le bot : `index.html`, `runs.html`, `data.json`, `runs.json`, `diplomes_rncp.xlsx`, `summary.*` |
 | `.github/workflows/controle-rncp.yml` | Workflow quotidien + `workflow_dispatch` |
 | `tests/generation-1.xml`, `-2.xml` | Exports simulés (1 412 fiches ; la 2 contient 2 ajouts, 3 modifs, 2 suppressions) |
+| `tests/test_selection.py` | Tests unitaires de la règle de sélection : `python -m unittest discover tests` (dans l'image Docker) |
 | `Dockerfile`, `.dockerignore` | Image de test locale alignée sur le runner (Python 3.12) |
 | `tmp/` | Ignoré par git ; y déposer les analyses ponctuelles (ex. `analyse_liens_cpf.xlsx`) |
 
@@ -42,6 +43,10 @@ Une fiche **déjà suivie reste suivie quels que soient ses formacodes** et mêm
 Pourquoi : 546 des 1 412 codes du fichier Excel (dont 471 actifs) portent chez France
 compétences des formacodes absents des 700 du périmètre ; sans cette règle ils seraient perdus.
 Les fiches inactives depuis avant le suivi n'entrent jamais (sinon 4 289 fiches historiques).
+Les **successeurs actifs d'une fiche suivie entrent aussi dans le suivi**, de proche en proche et quels que soient leurs formacodes
+(`selectionner` dans `genere_rncp.py`). Pourquoi : la remplaçante d'une fiche de la référence porte en général les mêmes formacodes hors
+périmètre (ex. RNCP37245 → RNCP42124, formacode 21759) ; sans cette règle l'ancienne fiche passait inactive sans que la nouvelle apparaisse
+(signalement du GIP le 16/09/2026, 65 fiches concernées). Une remplaçante inactive n'entre pas mais sa propre remplaçante est recherchée.
 
 ### Évolution cumulée depuis la référence
 Pour chaque code, `state/snapshot.json` conserve `evolution` (AJOUTÉ / MODIFIÉ / SUPPRIMÉ / vide)
@@ -171,6 +176,16 @@ la copie manuelle permet une mise en ligne immédiate.
     (1 576 entrées, jugée inutilisable). En-têtes longs sur deux lignes pour que les onze colonnes tiennent dans la carte.
 12. Run planifié de 04:30 UTC absent (lendemain du renommage) : fichier de workflow retouché et poussé, run manuel lancé à 08:26 UTC
     (sans changement, export du 09/09 car celui du 10/09 n'était pas encore publié sur data.gouv).
+
+### 17/09/2026
+
+13. Signalement du GIP (M. Langlet, 16/09) : RNCP42124 et RNCP42125 absents alors que 37245 / 37246 sont passées inactives. Données France
+    compétences correctes ; cause : remplaçantes à formacodes hors périmètre (21759, 21779). Règle ajoutée : les successeurs actifs des fiches
+    suivies entrent dans le suivi (66 fiches vertes au premier run). Le « RNCP42124 chapelier modiste » de la capture n'a jamais été publié
+    (toujours RNCP42123 dans les 12 Excel committés) : modification locale du fichier de l'utilisatrice.
+
+14. Planification déplacée de 04:30 UTC à **22:05 UTC** (minuit heure de Paris l'été) à la demande de l'utilisateur. Constat préalable : GitHub
+    démarrait les runs planifiés de 04:30 UTC avec ~5 h de retard (09:26 à 10:04 UTC du 14 au 17/09) ; le retard réel du nouveau créneau est à observer.
 
 État au 10/09/2026 11:00 : 4 116 codes suivis (3 919 actifs, 197 inactifs), 2 704 ajoutés / 229 modifiés / 0 supprimé
 par rapport à la référence, 6 générations au journal, prochain run automatique attendu le 11/09/2026 à 04:30 UTC (à vérifier, voir §6).

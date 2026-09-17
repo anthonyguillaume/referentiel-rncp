@@ -317,6 +317,30 @@ def dans_perimetre(formacodes: list[str], exacts: set[str], prefixes: set[str]) 
     return False
 
 
+def selectionner(repertoire: dict[str, dict], ancien: dict, exacts: set[str],
+                 prefixes: set[str]) -> dict[str, dict]:
+    """Fiches ACTIVES du périmètre, plus toutes celles déjà suivies quels que
+    soient leurs formacodes (une fiche suivie qui se désactive ou dont les
+    formacodes changent reste visible ; les fiches inactives depuis avant le
+    suivi n'entrent pas), plus les successeurs ACTIFS des fiches suivies, de
+    proche en proche : la remplaçante d'une fiche de la référence porte souvent
+    les mêmes formacodes hors périmètre et serait sinon perdue."""
+    selection = {c: f for c, f in repertoire.items()
+                 if c in ancien
+                 or (f["actif"] and dans_perimetre(f["formacodes"], exacts, prefixes))}
+    a_visiter = list(selection)
+    vus = set(selection)
+    while a_visiter:
+        for succ in repertoire[a_visiter.pop()]["successeurs"]:
+            if succ in vus or succ not in repertoire:
+                continue
+            vus.add(succ)
+            a_visiter.append(succ)  # une remplaçante inactive est traversée sans entrer
+            if repertoire[succ]["actif"]:
+                selection[succ] = repertoire[succ]
+    return selection
+
+
 # --------------------------------------------------------------------------- #
 # 4. Diff avec la génération précédente
 # --------------------------------------------------------------------------- #
@@ -791,13 +815,7 @@ def main() -> None:
         else:
             log("Instantané v1 détecté : nouvelle base de référence (v2).")
 
-    # Sélection : fiches ACTIVES du périmètre, plus toutes celles déjà suivies
-    # quels que soient leurs formacodes (une fiche suivie qui se désactive ou
-    # dont les formacodes changent reste visible ; les fiches inactives depuis
-    # avant le suivi n'entrent pas).
-    selection = {c: f for c, f in repertoire.items()
-                 if c in ancien
-                 or (f["actif"] and dans_perimetre(f["formacodes"], exacts, prefixes))}
+    selection = selectionner(repertoire, ancien, exacts, prefixes)
     n_inactives = sum(1 for f in selection.values() if not f["actif"])
     log(f"  {len(selection)} fiches dans le périmètre "
         f"({len(selection) - n_inactives} actives, {n_inactives} inactives déjà suivies)")
