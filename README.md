@@ -35,7 +35,7 @@ Limite à connaître : une fiche sans aucun formacode renseigné chez France com
 
 4. Onglet **Actions** : activer les workflows si demandé, puis « Contrôle RNCP » → « Run workflow » pour la première génération (~2 minutes : téléchargement de l'export ~70 Mo, génération, commit de `docs/` et `state/`).
 
-5. C'est tout. Génération quotidienne à 04:30 UTC (cron GitHub en UTC, léger glissement possible). En cas d'échec technique, GitHub notifie l'auteur du workflow.
+5. C'est tout. Génération quotidienne à 22:05 UTC (minuit à Paris l'été) (cron GitHub en UTC, léger glissement possible). En cas d'échec technique, GitHub notifie l'auteur du workflow.
 
 ## Au quotidien
 

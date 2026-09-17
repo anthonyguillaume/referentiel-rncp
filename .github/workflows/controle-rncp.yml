@@ -2,9 +2,10 @@ name: Contrôle RNCP
 
 on:
   schedule:
-    # Tous les jours à 04:30 UTC (06:30 à Paris l'été, 05:30 l'hiver).
+    # Tous les jours à 22:05 UTC (00:05 à Paris l'été, 23:05 l'hiver) : le cron GitHub est en UTC, sans heure d'été.
+    # L'export France compétences du jour (publié vers 02:00 UTC) est alors toujours disponible.
     # Fichier retouché le 10/09/2026 pour réenregistrer la planification après le renommage du dépôt.
-    - cron: "30 4 * * *"
+    - cron: "5 22 * * *"
   workflow_dispatch:
 
 permissions:
