@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-09-16T11:26:26.421665+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-09-16.zip",
+ "derniere_execution": "2026-09-17T11:36:18.251218+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-09-17.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -7834,7 +7834,7 @@
    "intitule": "Chargé des ressources humaines",
    "type": "",
    "niveau": "Niveau 6",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-09-15",
    "successeurs": [
     "RNCP42313"
@@ -7843,9 +7843,9 @@
     "33054"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-09-17",
    "evolution": "MODIFIÉ",
-   "detail": "Remplacée par :  → RNCP42313"
+   "detail": "Remplacée par :  → RNCP42313 ; Fiche active : Oui → Non"
   },
   "RNCP36143": {
    "intitule": "Chargé des ressources humaines",
@@ -9031,6 +9031,23 @@
    "evolution": "MODIFIÉ",
    "detail": "Remplacée par :  → RNCP42473"
   },
+  "RNCP42477": {
+   "intitule": "Coach professionnel",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-06-26",
+   "successeurs": [],
+   "formacodes": [
+    "32150",
+    "44517",
+    "32043"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39870": {
    "intitule": "Coach professionnel",
    "type": "",
@@ -9102,23 +9119,6 @@
    "successeurs": [],
    "formacodes": [
     "32150",
-    "32043"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP42477": {
-   "intitule": "Coach professionnel",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2029-06-26",
-   "successeurs": [],
-   "formacodes": [
-    "32150",
-    "44517",
     "32043"
    ],
    "premiere_vue": "2026-09-09",
@@ -11584,7 +11584,7 @@
    "intitule": "Directeur artistique image et média",
    "type": "",
    "niveau": "Niveau 7",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-09-15",
    "successeurs": [
     "RNCP42633"
@@ -11595,9 +11595,9 @@
     "46081"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-09-17",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
   "RNCP37662": {
    "intitule": "Directeur artistique multimédia",
@@ -15956,16 +15956,16 @@
    "intitule": "Graphiste motion designer",
    "type": "",
    "niveau": "Niveau 6",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-09-15",
    "successeurs": [],
    "formacodes": [
     "46003"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-09-17",
+   "evolution": "MODIFIÉ",
+   "detail": "Fiche active : Oui → Non"
   },
   "RNCP40243": {
    "intitule": "Graphiste motion designer",
@@ -21079,7 +21079,7 @@
    "intitule": "Manager/Designer de produits et services numériques",
    "type": "",
    "niveau": "Niveau 7",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-09-15",
    "successeurs": [],
    "formacodes": [
@@ -21088,9 +21088,9 @@
     "46339"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-09-17",
+   "evolution": "MODIFIÉ",
+   "detail": "Fiche active : Oui → Non"
   },
   "RNCP38507": {
    "intitule": "Maquilleur artistique et évènementiel",
@@ -22163,7 +22163,7 @@
    "intitule": "Peintre concepteur de décor, techniques ancestrales et contemporaines",
    "type": "",
    "niveau": "Niveau 5",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-09-15",
    "successeurs": [],
    "formacodes": [
@@ -22171,9 +22171,9 @@
     "45501"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-09-17",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
   "RNCP40837": {
    "intitule": "Peintre décorateur en bâtiment",
@@ -23856,7 +23856,7 @@
    "intitule": "Responsable des opérations logistiques",
    "type": "",
    "niveau": "Niveau 6",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-09-15",
    "successeurs": [
     "RNCP39860"
@@ -23865,9 +23865,9 @@
     "31845"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-09-17",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
   "RNCP38123": {
    "intitule": "Responsable du développement commercial",
@@ -24886,7 +24886,7 @@
    "intitule": "Responsable qualité, santé, sécurité, environnement",
    "type": "",
    "niveau": "Niveau 6",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-09-15",
    "successeurs": [
     "RNCP42494"
@@ -24898,9 +24898,9 @@
     "12587"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-09-17",
    "evolution": "MODIFIÉ",
-   "detail": "Remplacée par :  → RNCP42494"
+   "detail": "Remplacée par :  → RNCP42494 ; Fiche active : Oui → Non"
   },
   "RNCP39122": {
    "intitule": "Responsable technico-commercial",
@@ -25481,7 +25481,7 @@
    "intitule": "Sommelier-conseil, caviste",
    "type": "",
    "niveau": "Niveau 4",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-09-15",
    "successeurs": [
     "RNCP42644"
@@ -25493,9 +25493,9 @@
     "42739"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-09-17",
    "evolution": "MODIFIÉ",
-   "detail": "Remplacée par :  → RNCP42644"
+   "detail": "Remplacée par :  → RNCP42644 ; Fiche active : Oui → Non"
   },
   "RNCP41767": {
    "intitule": "Sondeur en géotechnique",
@@ -26687,7 +26687,7 @@
    "intitule": "Technicien performance industrielle",
    "type": "",
    "niveau": "Niveau 5",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-09-15",
    "successeurs": [
     "RNCP41972"
@@ -26697,9 +26697,9 @@
     "31652"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-09-17",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
   "RNCP41642": {
    "intitule": "Technicien polyvalent du spectacle vivant et de l'événementiel",
@@ -56011,7 +56011,7 @@
    "intitule": "Conducteur de grue à tour",
    "type": "TP",
    "niveau": "Niveau 3",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-09-15",
    "successeurs": [
     "RNCP42763"
@@ -56020,9 +56020,9 @@
     "31708"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-09-17",
    "evolution": "MODIFIÉ",
-   "detail": "Remplacée par :  → RNCP42763"
+   "detail": "Remplacée par :  → RNCP42763 ; Fiche active : Oui → Non"
   },
   "RNCP37877": {
    "intitule": "Conducteur de machines de plasturgie",
@@ -92166,6 +92166,76 @@
    "type": "Formacodes modifié",
    "avant": "22002, 22062, 22022, 22070, 22054",
    "apres": "22002, 22062, 22022, 31717"
+  },
+  {
+   "date": "2026-09-17",
+   "code": "RNCP35826",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-09-17",
+   "code": "RNCP35861",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-09-17",
+   "code": "RNCP35862",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-09-17",
+   "code": "RNCP35863",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-09-17",
+   "code": "RNCP35864",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-09-17",
+   "code": "RNCP35874",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-09-17",
+   "code": "RNCP35876",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-09-17",
+   "code": "RNCP35878",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-09-17",
+   "code": "RNCP35886",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-09-17",
+   "code": "RNCP35896",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
   }
  ],
  "journal": [
@@ -92311,6 +92381,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/35079400834"
+  },
+  {
+   "date": "2026-09-17T11:36",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-09-17.zip",
+   "diplomes": 4126,
+   "ajoutes": 0,
+   "modifies": 10,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/35206003043"
   }
  ]
 }
