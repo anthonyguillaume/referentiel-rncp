@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-09-18T01:55:36.860964+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-09-17.zip",
+ "derniere_execution": "2026-09-19T01:54:32.589148+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-09-18.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -9093,6 +9093,21 @@
    "evolution": "MODIFIÉ",
    "detail": "Remplacée par :  → RNCP42473"
   },
+  "RNCP39870": {
+   "intitule": "Coach professionnel",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2026-11-28",
+   "successeurs": [],
+   "formacodes": [
+    "32150"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP42477": {
    "intitule": "Coach professionnel",
    "type": "",
@@ -9104,21 +9119,6 @@
     "32150",
     "44517",
     "32043"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP39870": {
-   "intitule": "Coach professionnel",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2026-11-28",
-   "successeurs": [],
-   "formacodes": [
-    "32150"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
@@ -57948,14 +57948,31 @@
    "niveau": "Niveau 4",
    "actif": true,
    "date_fin": "2026-12-17",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42801"
+   ],
    "formacodes": [
     "42797"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-09-19",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42801"
+  },
+  "RNCP42801": {
+   "intitule": "Gouvernant en hôtellerie",
+   "type": "TP",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2031-12-17",
+   "successeurs": [],
+   "formacodes": [
+    "42797"
+   ],
+   "premiere_vue": "2026-09-19",
+   "dernier_changement": "2026-09-19",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP39532": {
    "intitule": "Graphiste",
@@ -93731,6 +93748,20 @@
    "type": "Fiche ajoutée",
    "avant": "",
    "apres": "Agent de la qualité de l'eau"
+  },
+  {
+   "date": "2026-09-19",
+   "code": "RNCP42801",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Gouvernant en hôtellerie"
+  },
+  {
+   "date": "2026-09-19",
+   "code": "RNCP39533",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42801"
   }
  ],
  "journal": [
@@ -93909,6 +93940,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/35288964255"
+  },
+  {
+   "date": "2026-09-19T01:54",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-09-18.zip",
+   "diplomes": 4193,
+   "ajoutes": 1,
+   "modifies": 1,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/35407461569"
   }
  ]
 }
