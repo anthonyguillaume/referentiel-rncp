@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-09-19T01:54:32.589148+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-09-18.zip",
+ "derniere_execution": "2026-09-20T01:55:02.706105+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-09-19.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -8952,14 +8952,16 @@
    "niveau": "Niveau 6",
    "actif": true,
    "date_fin": "2030-10-27",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42802"
+   ],
    "formacodes": [
     "46236"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-09-20",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42802"
   },
   "RNCP40163": {
    "intitule": "Chef pâtissier",
@@ -47416,6 +47418,21 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42802": {
+   "intitule": "Métiers du son, ingénierie sonore",
+   "type": "Grade_Licence",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "46236"
+   ],
+   "premiere_vue": "2026-09-20",
+   "dernier_changement": "2026-09-20",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP42571": {
    "intitule": "Science de la donnée",
    "type": "Grade_Licence",
@@ -65497,15 +65514,16 @@
    "date_fin": "2027-08-31",
    "successeurs": [],
    "formacodes": [
-    "31652",
     "21554",
-    "21570",
-    "32062"
+    "12046",
+    "31407",
+    "32062",
+    "15099"
    ],
    "premiere_vue": "2026-09-11",
-   "dernier_changement": "2026-09-11",
+   "dernier_changement": "2026-09-20",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 31652, 21554, 21570, 32062 → 21554, 12046, 31407, 32062, 15099"
   },
   "RNCP42728": {
    "intitule": "Ingénieur diplômé de l'école nationale supérieure de chimie, de biologie et de physique de l'institut polytechnique de Bordeaux, spécialité agroalimentaire et génie industriel",
@@ -93762,6 +93780,27 @@
    "type": "Remplacée par modifié",
    "avant": "",
    "apres": "RNCP42801"
+  },
+  {
+   "date": "2026-09-20",
+   "code": "RNCP42802",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Métiers du son, ingénierie sonore"
+  },
+  {
+   "date": "2026-09-20",
+   "code": "RNCP41429",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42802"
+  },
+  {
+   "date": "2026-09-20",
+   "code": "RNCP42792",
+   "type": "Formacodes modifié",
+   "avant": "31652, 21554, 21570, 32062",
+   "apres": "21554, 12046, 31407, 32062, 15099"
   }
  ],
  "journal": [
@@ -93951,6 +93990,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/35407461569"
+  },
+  {
+   "date": "2026-09-20T01:55",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-09-19.zip",
+   "diplomes": 4194,
+   "ajoutes": 1,
+   "modifies": 2,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/35477378731"
   }
  ]
 }
