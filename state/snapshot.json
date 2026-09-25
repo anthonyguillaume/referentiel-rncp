@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-09-24T02:15:48.859294+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-09-22.zip",
+ "derniere_execution": "2026-09-25T02:17:47.839379+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-09-24.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -20423,21 +20423,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP38460": {
-   "intitule": "Manager en ressources humaines",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2026-12-21",
-   "successeurs": [],
-   "formacodes": [
-    "33054"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP39595": {
    "intitule": "Manager en ressources humaines",
    "type": "",
@@ -20455,6 +20440,21 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP38460": {
+   "intitule": "Manager en ressources humaines",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2026-12-21",
+   "successeurs": [],
+   "formacodes": [
+    "33054"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
   },
   "RNCP39982": {
    "intitule": "Manager en services et industries de santé (MS)",
@@ -21006,23 +21006,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
-  "RNCP40349": {
-   "intitule": "Manager marketing et communication",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2027-03-28",
-   "successeurs": [],
-   "formacodes": [
-    "46301",
-    "34052",
-    "34085"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP40360": {
    "intitule": "Manager marketing et communication",
    "type": "",
@@ -21039,6 +21022,23 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
+  },
+  "RNCP40349": {
+   "intitule": "Manager marketing et communication",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2027-03-28",
+   "successeurs": [],
+   "formacodes": [
+    "46301",
+    "34052",
+    "34085"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP38133": {
    "intitule": "Manager marketing et communication (MS)",
@@ -22735,25 +22735,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP41791": {
-   "intitule": "Product builder no code",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2028-12-18",
-   "successeurs": [],
-   "formacodes": [
-    "31086",
-    "46334",
-    "31094",
-    "72454",
-    "32066"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP41766": {
    "intitule": "Product builder no code",
    "type": "",
@@ -22772,6 +22753,25 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP41791": {
+   "intitule": "Product builder no code",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2028-12-18",
+   "successeurs": [],
+   "formacodes": [
+    "31086",
+    "46334",
+    "31094",
+    "72454",
+    "32066"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
   },
   "RNCP41483": {
    "intitule": "Product builder no-code",
@@ -24137,22 +24137,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP37849": {
-   "intitule": "Responsable du développement commercial",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": false,
-   "date_fin": "2026-07-19",
-   "successeurs": [],
-   "formacodes": [
-    "34026",
-    "34582"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "MODIFIÉ",
-   "detail": "Fiche active : Oui → Non"
-  },
   "RNCP41114": {
    "intitule": "Responsable du développement commercial",
    "type": "",
@@ -24168,6 +24152,22 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP37849": {
+   "intitule": "Responsable du développement commercial",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": false,
+   "date_fin": "2026-07-19",
+   "successeurs": [],
+   "formacodes": [
+    "34026",
+    "34582"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "MODIFIÉ",
+   "detail": "Fiche active : Oui → Non"
   },
   "RNCP39209": {
    "intitule": "Responsable du développement de produits dans le secteur de la mode",
@@ -32778,7 +32778,7 @@
    "type": "BPJEPS",
    "niveau": "Niveau 4",
    "actif": true,
-   "date_fin": "2029-02-09",
+   "date_fin": "2030-02-09",
    "successeurs": [],
    "formacodes": [
     "15436",
@@ -32786,9 +32786,9 @@
     "15459"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-09-25",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Échéance : 09/02/2029 → 09/02/2030"
   },
   "RNCP41752": {
    "intitule": "Spécialité Educateur sportif mention Activités physiques et sportives de la forme",
@@ -40486,23 +40486,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP42423": {
-   "intitule": "Accompagnant éducatif et social",
-   "type": "DE",
-   "niveau": "Niveau 3",
-   "actif": true,
-   "date_fin": "2027-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "44028",
-    "44079",
-    "44089"
-   ],
-   "premiere_vue": "2026-09-17",
-   "dernier_changement": "2026-09-17",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP36004": {
    "intitule": "Accompagnant éducatif et social",
    "type": "DE",
@@ -40521,6 +40504,23 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42423"
+  },
+  "RNCP42423": {
+   "intitule": "Accompagnant éducatif et social",
+   "type": "DE",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2027-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "44028",
+    "44079",
+    "44089"
+   ],
+   "premiere_vue": "2026-09-17",
+   "dernier_changement": "2026-09-17",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP40692": {
    "intitule": "Aide-Soignant",
@@ -46112,6 +46112,25 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42807": {
+   "intitule": "Diplôme d'études avancées en management international des entreprises",
+   "type": "DipViGrM",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2029-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "32025",
+    "32043",
+    "32154",
+    "32006",
+    "13115"
+   ],
+   "premiere_vue": "2026-09-25",
+   "dernier_changement": "2026-09-25",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39289": {
    "intitule": "Diplôme d'études supérieures en Management Stratégique International",
    "type": "DipViGrM",
@@ -47558,6 +47577,23 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42808": {
+   "intitule": "Sciences et Ingénierie - Informatique",
+   "type": "Grade_Licence",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2028-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "31067",
+    "31028",
+    "31087"
+   ],
+   "premiere_vue": "2026-09-25",
+   "dernier_changement": "2026-09-25",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP40741": {
    "intitule": "Sciences et Ingénierie - Informatique et Cybersécurité",
    "type": "Grade_Licence",
@@ -48133,13 +48169,12 @@
    "successeurs": [],
    "formacodes": [
     "23594",
-    "23613",
-    "23654"
+    "23613"
    ],
    "premiere_vue": "2026-09-23",
-   "dernier_changement": "2026-09-23",
+   "dernier_changement": "2026-09-25",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 23594, 23613, 23654 → 23594, 23613"
   },
   "RNCP42685": {
    "intitule": "Sciences et ingénierie - Systèmes numériques",
@@ -62727,13 +62762,12 @@
     "24158",
     "24054",
     "32062",
-    "15099",
-    "24154"
+    "15099"
    ],
    "premiere_vue": "2026-09-23",
-   "dernier_changement": "2026-09-23",
+   "dernier_changement": "2026-09-25",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 24158, 24054, 32062, 15099, 24154 → 24158, 24054, 32062, 15099"
   },
   "RNCP42694": {
    "intitule": "Ingénieur diplômé de l'Ecole nationale supérieure de mécanique et d'aérotechnique",
@@ -67732,6 +67766,25 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42809": {
+   "intitule": "Ingénieur diplômé de l’Institut supérieur d’agriculture Rhône-Alpes",
+   "type": "Titre ingénieur",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "32062",
+    "32154",
+    "21059",
+    "12554",
+    "21554"
+   ],
+   "premiere_vue": "2026-09-25",
+   "dernier_changement": "2026-09-25",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -94078,6 +94131,48 @@
    "type": "Fiche active modifié",
    "avant": "Oui",
    "apres": "Non"
+  },
+  {
+   "date": "2026-09-25",
+   "code": "RNCP42807",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Diplôme d'études avancées en management international des entreprises"
+  },
+  {
+   "date": "2026-09-25",
+   "code": "RNCP42808",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Sciences et Ingénierie - Informatique"
+  },
+  {
+   "date": "2026-09-25",
+   "code": "RNCP42809",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Ingénieur diplômé de l’Institut supérieur d’agriculture Rhône-Alpes"
+  },
+  {
+   "date": "2026-09-25",
+   "code": "RNCP40526",
+   "type": "Échéance modifié",
+   "avant": "09/02/2029",
+   "apres": "09/02/2030"
+  },
+  {
+   "date": "2026-09-25",
+   "code": "RNCP42805",
+   "type": "Formacodes modifié",
+   "avant": "24158, 24054, 32062, 15099, 24154",
+   "apres": "24158, 24054, 32062, 15099"
+  },
+  {
+   "date": "2026-09-25",
+   "code": "RNCP42806",
+   "type": "Formacodes modifié",
+   "avant": "23594, 23613, 23654",
+   "apres": "23594, 23613"
   }
  ],
  "journal": [
@@ -94322,6 +94417,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/35937591699"
+  },
+  {
+   "date": "2026-09-25T02:17",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-09-24.zip",
+   "diplomes": 4201,
+   "ajoutes": 3,
+   "modifies": 3,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/36076864067"
   }
  ]
 }
