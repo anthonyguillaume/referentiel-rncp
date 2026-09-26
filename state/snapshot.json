@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-09-25T02:17:47.839379+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-09-24.zip",
+ "derniere_execution": "2026-09-26T02:23:16.726236+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-09-25.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -24821,22 +24821,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP38131": {
-   "intitule": "Responsable marketing et communication",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2026-10-18",
-   "successeurs": [],
-   "formacodes": [
-    "34052",
-    "34085"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP40379": {
    "intitule": "Responsable marketing et communication",
    "type": "",
@@ -24870,6 +24854,22 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP38131": {
+   "intitule": "Responsable marketing et communication",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2026-10-18",
+   "successeurs": [],
+   "formacodes": [
+    "34052",
+    "34085"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
   },
   "RNCP36727": {
    "intitule": "Responsable marketing opérationnel",
@@ -25082,24 +25082,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP41446": {
-   "intitule": "Responsable qualité sécurité environnement",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2030-10-27",
-   "successeurs": [],
-   "formacodes": [
-    "31407",
-    "31449",
-    "42818",
-    "12587"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP42206": {
    "intitule": "Responsable qualité sécurité environnement",
    "type": "",
@@ -25112,6 +25094,24 @@
     "31449",
     "31407",
     "42866",
+    "12587"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP41446": {
+   "intitule": "Responsable qualité sécurité environnement",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2030-10-27",
+   "successeurs": [],
+   "formacodes": [
+    "31407",
+    "31449",
+    "42818",
     "12587"
    ],
    "premiere_vue": "2026-09-09",
@@ -47585,14 +47585,13 @@
    "date_fin": "2028-08-31",
    "successeurs": [],
    "formacodes": [
-    "31067",
-    "31028",
-    "31087"
+    "31087",
+    "31028"
    ],
    "premiere_vue": "2026-09-25",
-   "dernier_changement": "2026-09-25",
+   "dernier_changement": "2026-09-26",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 31067, 31028, 31087 → 31087, 31028"
   },
   "RNCP40741": {
    "intitule": "Sciences et Ingénierie - Informatique et Cybersécurité",
@@ -65224,6 +65223,25 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42810": {
+   "intitule": "Ingénieur diplômé de l'École nationale supérieure de l'énergie, l'eau et l'environnement de l'Institut polytechnique de Grenoble",
+   "type": "Titre ingénieur",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "24154",
+    "12584",
+    "12532",
+    "32062",
+    "15099"
+   ],
+   "premiere_vue": "2026-09-26",
+   "dernier_changement": "2026-09-26",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -94173,6 +94191,20 @@
    "type": "Formacodes modifié",
    "avant": "23594, 23613, 23654",
    "apres": "23594, 23613"
+  },
+  {
+   "date": "2026-09-26",
+   "code": "RNCP42810",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Ingénieur diplômé de l'École nationale supérieure de l'énergie, l'eau et l'environnement de l'Institut polytechnique de Grenoble"
+  },
+  {
+   "date": "2026-09-26",
+   "code": "RNCP42808",
+   "type": "Formacodes modifié",
+   "avant": "31067, 31028, 31087",
+   "apres": "31087, 31028"
   }
  ],
  "journal": [
@@ -94428,6 +94460,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/36076864067"
+  },
+  {
+   "date": "2026-09-26T02:23",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-09-25.zip",
+   "diplomes": 4202,
+   "ajoutes": 1,
+   "modifies": 1,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/36204653211"
   }
  ]
 }
