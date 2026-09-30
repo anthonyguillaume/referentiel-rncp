@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-09-29T03:30:10.851266+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-09-28.zip",
+ "derniere_execution": "2026-09-30T03:06:44.506935+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-09-29.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -2040,21 +2040,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP36611": {
-   "intitule": "Attaché de recherche clinique",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2027-07-01",
-   "successeurs": [],
-   "formacodes": [
-    "43001"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP40276": {
    "intitule": "Attaché de recherche clinique",
    "type": "",
@@ -2069,6 +2054,21 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
+  },
+  "RNCP36611": {
+   "intitule": "Attaché de recherche clinique",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2027-07-01",
+   "successeurs": [],
+   "formacodes": [
+    "43001"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP40610": {
    "intitule": "Auditeur et contrôleur de gestion",
@@ -33324,16 +33324,14 @@
    "niveau": "Niveau 5",
    "actif": true,
    "date_fin": "2030-08-31",
-   "successeurs": [
-    "RNCP37378"
-   ],
+   "successeurs": [],
    "formacodes": [
     "23059"
    ],
    "premiere_vue": "2026-09-17",
-   "dernier_changement": "2026-09-17",
+   "dernier_changement": "2026-09-30",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Remplacée par : RNCP37378 → "
   },
   "RNCP37464": {
    "intitule": "Conception des processus de réalisation de produits, option A : production unitaire, option B : production sérielle",
@@ -41344,15 +41342,17 @@
    "niveau": "Niveau 5",
    "actif": true,
    "date_fin": "2027-07-31",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42812"
+   ],
    "formacodes": [
     "15436",
     "15497"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-09-30",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Remplacée par :  → RNCP42812"
   },
   "RNCP35903": {
    "intitule": "Diplôme d’Etat de la jeunesse, de l’éducation populaire et du sport spécialité « perfectionnement sportif » mention \"taekwondo et disciplines associées\"",
@@ -41935,6 +41935,38 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42811": {
+   "intitule": "spécialité \"entraînement et perfectionnement sportif\" mention \"basket-ball\"",
+   "type": "DEJEPS",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2031-09-10",
+   "successeurs": [],
+   "formacodes": [
+    "15436",
+    "15419"
+   ],
+   "premiere_vue": "2026-09-30",
+   "dernier_changement": "2026-09-30",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42812": {
+   "intitule": "spécialité \"entraînement et perfectionnement sportif\" mention \"sport automobile\"",
+   "type": "DEJEPS",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2031-08-22",
+   "successeurs": [],
+   "formacodes": [
+    "15436",
+    "15497"
+   ],
+   "premiere_vue": "2026-09-30",
+   "dernier_changement": "2026-09-30",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -94205,6 +94237,34 @@
    "type": "Formacodes modifié",
    "avant": "31067, 31028, 31087",
    "apres": "31087, 31028"
+  },
+  {
+   "date": "2026-09-30",
+   "code": "RNCP42811",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "spécialité \"entraînement et perfectionnement sportif\" mention \"basket-ball\""
+  },
+  {
+   "date": "2026-09-30",
+   "code": "RNCP42812",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "spécialité \"entraînement et perfectionnement sportif\" mention \"sport automobile\""
+  },
+  {
+   "date": "2026-09-30",
+   "code": "RNCP36786",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42812"
+  },
+  {
+   "date": "2026-09-30",
+   "code": "RNCP42748",
+   "type": "Remplacée par modifié",
+   "avant": "RNCP37378",
+   "apres": ""
   }
  ],
  "journal": [
@@ -94504,6 +94564,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/36508188892"
+  },
+  {
+   "date": "2026-09-30T03:06",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-09-29.zip",
+   "diplomes": 4204,
+   "ajoutes": 2,
+   "modifies": 2,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/36653530680"
   }
  ]
 }
