@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-10-02T03:18:28.616728+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-10-01.zip",
+ "derniere_execution": "2026-10-03T02:57:39.871512+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-10-02.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -61499,13 +61499,12 @@
     "31045",
     "32062",
     "32154",
-    "73054",
-    "31006"
+    "73054"
    ],
    "premiere_vue": "2026-09-23",
-   "dernier_changement": "2026-09-23",
+   "dernier_changement": "2026-10-03",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 31045, 32062, 32154, 73054, 31006 → 31045, 32062, 32154, 73054"
   },
   "RNCP38219": {
    "intitule": "Ingénieur diplômé de Télécom Physique Strasbourg de l'Université de Strasbourg",
@@ -94265,6 +94264,13 @@
    "type": "Remplacée par modifié",
    "avant": "RNCP37378",
    "apres": ""
+  },
+  {
+   "date": "2026-10-03",
+   "code": "RNCP42803",
+   "type": "Formacodes modifié",
+   "avant": "31045, 32062, 32154, 73054, 31006",
+   "apres": "31045, 32062, 32154, 73054"
   }
  ],
  "journal": [
@@ -94597,6 +94603,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/36950289723"
+  },
+  {
+   "date": "2026-10-03T02:57",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-10-02.zip",
+   "diplomes": 4204,
+   "ajoutes": 0,
+   "modifies": 1,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/37084195743"
   }
  ]
 }
