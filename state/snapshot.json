@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-10-04T02:22:16.560548+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-10-03.zip",
+ "derniere_execution": "2026-10-05T02:27:53.220591+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-10-04.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -16226,6 +16226,21 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42867": {
+   "intitule": "Graphiste motion designer",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2031-09-30",
+   "successeurs": [],
+   "formacodes": [
+    "46003"
+   ],
+   "premiere_vue": "2026-10-04",
+   "dernier_changement": "2026-10-04",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP40243": {
    "intitule": "Graphiste motion designer",
    "type": "",
@@ -16280,21 +16295,6 @@
    "dernier_changement": "2026-10-04",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42867"
-  },
-  "RNCP42867": {
-   "intitule": "Graphiste motion designer",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2031-09-30",
-   "successeurs": [],
-   "formacodes": [
-    "46003"
-   ],
-   "premiere_vue": "2026-10-04",
-   "dernier_changement": "2026-10-04",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP39958": {
    "intitule": "Graphiste multimédia",
@@ -22729,6 +22729,23 @@
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41815"
   },
+  "RNCP42817": {
+   "intitule": "Photographe",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2031-09-30",
+   "successeurs": [],
+   "formacodes": [
+    "46283",
+    "46006",
+    "46392"
+   ],
+   "premiere_vue": "2026-10-04",
+   "dernier_changement": "2026-10-04",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP37333": {
    "intitule": "Photographe",
    "type": "",
@@ -22780,23 +22797,6 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
-  },
-  "RNCP42817": {
-   "intitule": "Photographe",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2031-09-30",
-   "successeurs": [],
-   "formacodes": [
-    "46283",
-    "46006",
-    "46392"
-   ],
-   "premiere_vue": "2026-10-04",
-   "dernier_changement": "2026-10-04",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP41086": {
    "intitule": "Photographe Plurimédia (BTM)",
@@ -95136,6 +95136,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/37164731295"
+  },
+  {
+   "date": "2026-10-05T02:27",
+   "statut": "sans_changement",
+   "export": "export-fiches-rncp-v4-1-2026-10-04.zip",
+   "diplomes": 4217,
+   "ajoutes": 0,
+   "modifies": 0,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/37247612649"
   }
  ]
 }
