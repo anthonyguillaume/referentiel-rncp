@@ -1,6 +1,6 @@
 {
  "version": 2,
- "derniere_execution": "2026-10-06T04:04:44.896007+02:00",
+ "derniere_execution": "2026-10-07T03:13:39.749327+02:00",
  "source_export": "export-fiches-rncp-v4-1-2026-10-06.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
@@ -2785,6 +2785,22 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42866": {
+   "intitule": "CQP Animateur de tennis de table",
+   "type": "",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2031-09-30",
+   "successeurs": [],
+   "formacodes": [
+    "15454",
+    "15408"
+   ],
+   "premiere_vue": "2026-10-06",
+   "dernier_changement": "2026-10-06",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP38243": {
    "intitule": "CQP Animateur de tennis de table",
    "type": "",
@@ -2802,22 +2818,6 @@
    "dernier_changement": "2026-10-06",
    "evolution": "MODIFIÉ",
    "detail": "Remplacée par :  → RNCP42866"
-  },
-  "RNCP42866": {
-   "intitule": "CQP Animateur de tennis de table",
-   "type": "",
-   "niveau": "Niveau 3",
-   "actif": true,
-   "date_fin": "2031-09-30",
-   "successeurs": [],
-   "formacodes": [
-    "15454",
-    "15408"
-   ],
-   "premiere_vue": "2026-10-06",
-   "dernier_changement": "2026-10-06",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP41426": {
    "intitule": "CQP Animateur des activités gymniques",
@@ -5690,6 +5690,21 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42860": {
+   "intitule": "CQP Rectifieur sur machine conventionnelle et/ou numérique",
+   "type": "",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2031-09-30",
+   "successeurs": [],
+   "formacodes": [
+    "23098"
+   ],
+   "premiere_vue": "2026-10-06",
+   "dernier_changement": "2026-10-06",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP37734": {
    "intitule": "CQP Rectifieur sur machine conventionnelle et/ou numérique",
    "type": "",
@@ -5706,21 +5721,6 @@
    "dernier_changement": "2026-10-06",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42860"
-  },
-  "RNCP42860": {
-   "intitule": "CQP Rectifieur sur machine conventionnelle et/ou numérique",
-   "type": "",
-   "niveau": "Niveau 3",
-   "actif": true,
-   "date_fin": "2031-09-30",
-   "successeurs": [],
-   "formacodes": [
-    "23098"
-   ],
-   "premiere_vue": "2026-10-06",
-   "dernier_changement": "2026-10-06",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP39740": {
    "intitule": "CQP Responsable d'unité(s) d'enseignement de la sécurité routière et de la conduite",
@@ -13533,6 +13533,21 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42859": {
+   "intitule": "Expert conseil en gestion de patrimoine",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2029-10-30",
+   "successeurs": [],
+   "formacodes": [
+    "41014"
+   ],
+   "premiere_vue": "2026-10-06",
+   "dernier_changement": "2026-10-06",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP36074": {
    "intitule": "Expert conseil en gestion de patrimoine",
    "type": "",
@@ -13564,21 +13579,6 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
-  },
-  "RNCP42859": {
-   "intitule": "Expert conseil en gestion de patrimoine",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2029-10-30",
-   "successeurs": [],
-   "formacodes": [
-    "41014"
-   ],
-   "premiere_vue": "2026-10-06",
-   "dernier_changement": "2026-10-06",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP41654": {
    "intitule": "Expert consultant blockchain",
@@ -24669,6 +24669,21 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
+  "RNCP42841": {
+   "intitule": "Responsable du développement commercial",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2028-09-30",
+   "successeurs": [],
+   "formacodes": [
+    "34554"
+   ],
+   "premiere_vue": "2026-10-06",
+   "dernier_changement": "2026-10-06",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP38505": {
    "intitule": "Responsable du développement commercial",
    "type": "",
@@ -24734,21 +24749,6 @@
    "dernier_changement": "2026-10-06",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42841"
-  },
-  "RNCP42841": {
-   "intitule": "Responsable du développement commercial",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2028-09-30",
-   "successeurs": [],
-   "formacodes": [
-    "34554"
-   ],
-   "premiere_vue": "2026-10-06",
-   "dernier_changement": "2026-10-06",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP39209": {
    "intitule": "Responsable du développement de produits dans le secteur de la mode",
@@ -95974,6 +95974,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/37402358119"
+  },
+  {
+   "date": "2026-10-07T03:13",
+   "statut": "sans_changement",
+   "export": "export-fiches-rncp-v4-1-2026-10-06.zip",
+   "diplomes": 4244,
+   "ajoutes": 0,
+   "modifies": 0,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/37556020930"
   }
  ]
 }
