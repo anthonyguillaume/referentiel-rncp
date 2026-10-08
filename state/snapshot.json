@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-10-07T03:13:39.749327+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-10-06.zip",
+ "derniere_execution": "2026-10-08T03:34:59.754381+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-10-07.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -320,6 +320,23 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42818": {
+   "intitule": "Agent d'accompagnement auprès d'adultes dépendants",
+   "type": "",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2031-09-30",
+   "successeurs": [],
+   "formacodes": [
+    "43429",
+    "42056",
+    "44022"
+   ],
+   "premiere_vue": "2026-10-08",
+   "dernier_changement": "2026-10-08",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -2253,6 +2270,25 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42836": {
+   "intitule": "Biérologue-Zythologue",
+   "type": "",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2029-09-30",
+   "successeurs": [],
+   "formacodes": [
+    "21520",
+    "21532",
+    "34566",
+    "12059",
+    "34502"
+   ],
+   "premiere_vue": "2026-10-08",
+   "dernier_changement": "2026-10-08",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -5272,14 +5308,31 @@
    "niveau": "Niveau 3",
    "actif": true,
    "date_fin": "2026-11-28",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42847"
+   ],
    "formacodes": [
     "23608"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-10-08",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42847"
+  },
+  "RNCP42847": {
+   "intitule": "CQP Opérateur maintenance pneumatiques véhicules industriels, agricoles et génie civil",
+   "type": "",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2031-09-30",
+   "successeurs": [],
+   "formacodes": [
+    "23608"
+   ],
+   "premiere_vue": "2026-10-08",
+   "dernier_changement": "2026-10-08",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP39881": {
    "intitule": "CQP Opérateur matériaux composites hautes performances",
@@ -5457,20 +5510,37 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42849": {
+   "intitule": "CQP Peintre en Carrosserie",
+   "type": "",
+   "niveau": "Niveau 4",
+   "actif": true,
+   "date_fin": "2031-09-30",
+   "successeurs": [],
+   "formacodes": [
+    "23607"
+   ],
+   "premiere_vue": "2026-10-08",
+   "dernier_changement": "2026-10-08",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39634": {
    "intitule": "CQP Peintre en carrosserie",
    "type": "",
    "niveau": "Niveau 4",
    "actif": false,
    "date_fin": "2026-10-01",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42849"
+   ],
    "formacodes": [
     "23607"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-10-04",
+   "dernier_changement": "2026-10-08",
    "evolution": "MODIFIÉ",
-   "detail": "Fiche active : Oui → Non"
+   "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42849"
   },
   "RNCP37136": {
    "intitule": "CQP Peintre industriel",
@@ -6370,6 +6440,21 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
+  },
+  "RNCP42814": {
+   "intitule": "CQP Technicien motocycles",
+   "type": "",
+   "niveau": "Niveau 4",
+   "actif": true,
+   "date_fin": "2031-09-30",
+   "successeurs": [],
+   "formacodes": [
+    "23635"
+   ],
+   "premiere_vue": "2026-10-08",
+   "dernier_changement": "2026-10-08",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP40283": {
    "intitule": "CQP Technicien protection risques naturels",
@@ -24677,12 +24762,13 @@
    "date_fin": "2028-09-30",
    "successeurs": [],
    "formacodes": [
+    "34085",
     "34554"
    ],
    "premiere_vue": "2026-10-06",
-   "dernier_changement": "2026-10-06",
+   "dernier_changement": "2026-10-08",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 34554 → 34085, 34554"
   },
   "RNCP38505": {
    "intitule": "Responsable du développement commercial",
@@ -25402,6 +25488,22 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP38131": {
+   "intitule": "Responsable marketing et communication",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2026-10-18",
+   "successeurs": [],
+   "formacodes": [
+    "34052",
+    "34085"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
+  },
   "RNCP40379": {
    "intitule": "Responsable marketing et communication",
    "type": "",
@@ -25435,22 +25537,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP38131": {
-   "intitule": "Responsable marketing et communication",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2026-10-18",
-   "successeurs": [],
-   "formacodes": [
-    "34052",
-    "34085"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
   },
   "RNCP36727": {
    "intitule": "Responsable marketing opérationnel",
@@ -26234,21 +26320,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP36491": {
-   "intitule": "Secrétaire médical",
-   "type": "",
-   "niveau": "Niveau 4",
-   "actif": true,
-   "date_fin": "2027-06-01",
-   "successeurs": [],
-   "formacodes": [
-    "35015"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP36734": {
    "intitule": "Secrétaire médical",
    "type": "",
@@ -26258,6 +26329,21 @@
    "successeurs": [],
    "formacodes": [
     "35035"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
+  },
+  "RNCP36491": {
+   "intitule": "Secrétaire médical",
+   "type": "",
+   "niveau": "Niveau 4",
+   "actif": true,
+   "date_fin": "2027-06-01",
+   "successeurs": [],
+   "formacodes": [
+    "35015"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "",
@@ -27374,12 +27460,13 @@
    "date_fin": "2029-09-30",
    "successeurs": [],
    "formacodes": [
-    "24021"
+    "24021",
+    "12533"
    ],
    "premiere_vue": "2026-10-06",
-   "dernier_changement": "2026-10-06",
+   "dernier_changement": "2026-10-08",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 24021 → 24021, 12533"
   },
   "RNCP38119": {
    "intitule": "Technicien en réemploi, réparation et revalorisation d'appareils de gros électroménager",
@@ -28291,21 +28378,39 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42883": {
+   "intitule": "Visuel Merchandiser",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2028-09-30",
+   "successeurs": [],
+   "formacodes": [
+    "34519",
+    "34597"
+   ],
+   "premiere_vue": "2026-10-08",
+   "dernier_changement": "2026-10-08",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP38280": {
    "intitule": "Visuel merchandiser",
    "type": "",
    "niveau": "Niveau 6",
    "actif": true,
    "date_fin": "2026-11-15",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42883"
+   ],
    "formacodes": [
     "34519",
     "34597"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-10-08",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42883"
   },
   "RNCP40001": {
    "intitule": "Ébéniste",
@@ -69588,6 +69693,25 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42905": {
+   "intitule": "Ingénieur diplômé de l’École nationale supérieure d’ingénieurs de Bretagne Sud de l’université de Bretagne-Sud, Sécurité des systèmes d'information et cybersécurité",
+   "type": "Titre ingénieur",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2027-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "31006",
+    "31008",
+    "31034",
+    "24231",
+    "31045"
+   ],
+   "premiere_vue": "2026-10-08",
+   "dernier_changement": "2026-10-08",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP42398": {
    "intitule": "Ingénieur diplômé de l’École nationale supérieure d’ingénieurs de Bretagne Sud de l’université de Bretagne-Sud, spécialité Informatique et cybersécurité",
    "type": "Titre ingénieur",
@@ -95598,6 +95722,90 @@
    "type": "Formacodes modifié",
    "avant": "46264, 46274, 45004",
    "apres": "46264, 46274"
+  },
+  {
+   "date": "2026-10-08",
+   "code": "RNCP42814",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "CQP Technicien motocycles"
+  },
+  {
+   "date": "2026-10-08",
+   "code": "RNCP42818",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Agent d'accompagnement auprès d'adultes dépendants"
+  },
+  {
+   "date": "2026-10-08",
+   "code": "RNCP42836",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Biérologue-Zythologue"
+  },
+  {
+   "date": "2026-10-08",
+   "code": "RNCP42847",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "CQP Opérateur maintenance pneumatiques véhicules industriels, agricoles et génie civil"
+  },
+  {
+   "date": "2026-10-08",
+   "code": "RNCP42849",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "CQP Peintre en Carrosserie"
+  },
+  {
+   "date": "2026-10-08",
+   "code": "RNCP42883",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Visuel Merchandiser"
+  },
+  {
+   "date": "2026-10-08",
+   "code": "RNCP42905",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Ingénieur diplômé de l’École nationale supérieure d’ingénieurs de Bretagne Sud de l’université de Bretagne-Sud, Sécurité des systèmes d'information et cybersécurité"
+  },
+  {
+   "date": "2026-10-08",
+   "code": "RNCP38280",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42883"
+  },
+  {
+   "date": "2026-10-08",
+   "code": "RNCP39634",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42849"
+  },
+  {
+   "date": "2026-10-08",
+   "code": "RNCP39847",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42847"
+  },
+  {
+   "date": "2026-10-08",
+   "code": "RNCP42825",
+   "type": "Formacodes modifié",
+   "avant": "24021",
+   "apres": "24021, 12533"
+  },
+  {
+   "date": "2026-10-08",
+   "code": "RNCP42841",
+   "type": "Formacodes modifié",
+   "avant": "34554",
+   "apres": "34085, 34554"
   }
  ],
  "journal": [
@@ -95985,6 +96193,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/37556020930"
+  },
+  {
+   "date": "2026-10-08T03:34",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-10-07.zip",
+   "diplomes": 4251,
+   "ajoutes": 7,
+   "modifies": 5,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/37713632613"
   }
  ]
 }
