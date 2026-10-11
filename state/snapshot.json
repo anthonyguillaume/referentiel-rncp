@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-10-10T03:32:22.251465+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-10-09.zip",
+ "derniere_execution": "2026-10-11T02:41:52.850637+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-10-10.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -8169,6 +8169,21 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42313": {
+   "intitule": "Chargé des ressources humaines",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-05-29",
+   "successeurs": [],
+   "formacodes": [
+    "33054"
+   ],
+   "premiere_vue": "2026-09-17",
+   "dernier_changement": "2026-09-17",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39604": {
    "intitule": "Chargé des ressources humaines",
    "type": "",
@@ -8221,21 +8236,6 @@
    "dernier_changement": "2026-09-17",
    "evolution": "MODIFIÉ",
    "detail": "Remplacée par :  → RNCP42313 ; Fiche active : Oui → Non"
-  },
-  "RNCP42313": {
-   "intitule": "Chargé des ressources humaines",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2029-05-29",
-   "successeurs": [],
-   "formacodes": [
-    "33054"
-   ],
-   "premiere_vue": "2026-09-17",
-   "dernier_changement": "2026-09-17",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP40265": {
    "intitule": "Chargé d’affaires en travail temporaire et en recrutement",
@@ -11671,20 +11671,37 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42830": {
+   "intitule": "Dessinateur concepteur BIM bâtiment et architecture",
+   "type": "",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2031-09-30",
+   "successeurs": [],
+   "formacodes": [
+    "22252"
+   ],
+   "premiere_vue": "2026-10-11",
+   "dernier_changement": "2026-10-11",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP36018": {
    "intitule": "Dessinateur concepteur BIM bâtiment et architecture",
    "type": "",
    "niveau": "Niveau 5",
    "actif": true,
    "date_fin": "2026-11-10",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42830"
+   ],
    "formacodes": [
     "22252"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-10-11",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Remplacée par :  → RNCP42830"
   },
   "RNCP40590": {
    "intitule": "Dessinateur illustrateur",
@@ -17684,14 +17701,14 @@
    "date_fin": "2029-09-30",
    "successeurs": [],
    "formacodes": [
-    "31006",
     "31045",
-    "31038"
+    "31038",
+    "32154"
    ],
    "premiere_vue": "2026-10-06",
-   "dernier_changement": "2026-10-06",
+   "dernier_changement": "2026-10-11",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 31006, 31045, 31038 → 31045, 31038, 32154"
   },
   "RNCP40257": {
    "intitule": "Manager d'affaires",
@@ -40766,6 +40783,22 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42401": {
+   "intitule": "Opérateur polyvalent en interventions subaquatiques",
+   "type": "CS",
+   "niveau": "Niveau 4",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "22067",
+    "15480"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP36816": {
    "intitule": "Opérateur polyvalent en interventions subaquatiques",
    "type": "CS",
@@ -40783,22 +40816,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42401"
-  },
-  "RNCP42401": {
-   "intitule": "Opérateur polyvalent en interventions subaquatiques",
-   "type": "CS",
-   "niveau": "Niveau 4",
-   "actif": true,
-   "date_fin": "2031-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "22067",
-    "15480"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP37922": {
    "intitule": "Organisateur de réceptions",
@@ -56873,7 +56890,7 @@
    "intitule": "Agent de fabrication et montage en chaudronnerie",
    "type": "TP",
    "niveau": "Niveau 3",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-10-08",
    "successeurs": [],
    "formacodes": [
@@ -56882,9 +56899,9 @@
     "23016"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-10-11",
+   "evolution": "MODIFIÉ",
+   "detail": "Fiche active : Oui → Non"
   },
   "RNCP37397": {
    "intitule": "Agent de fabrication industrielle",
@@ -96156,6 +96173,34 @@
    "type": "Formacodes modifié",
    "avant": "44593, 44542, 46003",
    "apres": "44593, 46003"
+  },
+  {
+   "date": "2026-10-11",
+   "code": "RNCP42830",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Dessinateur concepteur BIM bâtiment et architecture"
+  },
+  {
+   "date": "2026-10-11",
+   "code": "RNCP35937",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-10-11",
+   "code": "RNCP36018",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42830"
+  },
+  {
+   "date": "2026-10-11",
+   "code": "RNCP42858",
+   "type": "Formacodes modifié",
+   "avant": "31006, 31045, 31038",
+   "apres": "31045, 31038, 32154"
   }
  ],
  "journal": [
@@ -96576,6 +96621,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/38013552933"
+  },
+  {
+   "date": "2026-10-11T02:41",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-10-10.zip",
+   "diplomes": 4264,
+   "ajoutes": 1,
+   "modifies": 3,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/38099298009"
   }
  ]
 }
