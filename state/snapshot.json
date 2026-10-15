@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-10-14T02:54:21.346257+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-10-13.zip",
+ "derniere_execution": "2026-10-15T02:18:10.894959+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-10-14.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -9296,16 +9296,14 @@
    "niveau": "Niveau 6",
    "actif": true,
    "date_fin": "2030-10-27",
-   "successeurs": [
-    "RNCP42802"
-   ],
+   "successeurs": [],
    "formacodes": [
     "46236"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-20",
-   "evolution": "MODIFIÉ",
-   "detail": "Remplacée par :  → RNCP42802"
+   "dernier_changement": "2026-10-15",
+   "evolution": "",
+   "detail": ""
   },
   "RNCP40163": {
    "intitule": "Chef pâtissier",
@@ -16728,21 +16726,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP42867": {
-   "intitule": "Graphiste motion designer",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2031-09-30",
-   "successeurs": [],
-   "formacodes": [
-    "46003"
-   ],
-   "premiere_vue": "2026-10-04",
-   "dernier_changement": "2026-10-04",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP40243": {
    "intitule": "Graphiste motion designer",
    "type": "",
@@ -16759,6 +16742,21 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42867": {
+   "intitule": "Graphiste motion designer",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2031-09-30",
+   "successeurs": [],
+   "formacodes": [
+    "46003"
+   ],
+   "premiere_vue": "2026-10-04",
+   "dernier_changement": "2026-10-04",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -17291,6 +17289,21 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP40401": {
+   "intitule": "Journaliste",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2030-03-28",
+   "successeurs": [],
+   "formacodes": [
+    "46325"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP38950": {
    "intitule": "Journaliste",
    "type": "",
@@ -17312,21 +17325,6 @@
    "niveau": "Niveau 6",
    "actif": true,
    "date_fin": "2027-11-28",
-   "successeurs": [],
-   "formacodes": [
-    "46325"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP40401": {
-   "intitule": "Journaliste",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2030-03-28",
    "successeurs": [],
    "formacodes": [
     "46325"
@@ -28736,6 +28734,23 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42907": {
+   "intitule": "Acheteur public",
+   "type": "Autre",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2030-07-08",
+   "successeurs": [],
+   "formacodes": [
+    "13209",
+    "31660",
+    "34024"
+   ],
+   "premiere_vue": "2026-10-15",
+   "dernier_changement": "2026-10-15",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP40688": {
    "intitule": "Adjoint chef de quart de passerelle",
    "type": "Autre",
@@ -30308,6 +30323,24 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42906": {
+   "intitule": "Spécialiste en achat public, en approvisionnement et en contrôle de prestation",
+   "type": "Autre",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2030-07-08",
+   "successeurs": [],
+   "formacodes": [
+    "13209",
+    "31660",
+    "32652",
+    "34024"
+   ],
+   "premiere_vue": "2026-10-15",
+   "dernier_changement": "2026-10-15",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -34023,6 +34056,22 @@
    ],
    "premiere_vue": "2026-10-06",
    "dernier_changement": "2026-10-06",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42912": {
+   "intitule": "spécialité \"éducateur sportif\" mention \"activités de plongée subaquatique\"",
+   "type": "BPJEPS",
+   "niveau": "Niveau 4",
+   "actif": true,
+   "date_fin": "2031-09-19",
+   "successeurs": [],
+   "formacodes": [
+    "15436",
+    "15480"
+   ],
+   "premiere_vue": "2026-10-15",
+   "dernier_changement": "2026-10-15",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -58057,7 +58106,7 @@
    "intitule": "Conducteur d'engins de grands terrassements",
    "type": "TP",
    "niveau": "Niveau 3",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-10-12",
    "successeurs": [
     "RNCP42764"
@@ -58067,9 +58116,9 @@
     "22002"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-10-15",
    "evolution": "MODIFIÉ",
-   "detail": "Remplacée par :  → RNCP42764"
+   "detail": "Remplacée par :  → RNCP42764 ; Fiche active : Oui → Non"
   },
   "RNCP37398": {
    "intitule": "Conducteur d'installation et de machines automatisées",
@@ -61784,7 +61833,7 @@
    "intitule": "conducteur d'engins de chantiers urbains",
    "type": "TP",
    "niveau": "Niveau 3",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-10-12",
    "successeurs": [
     "RNCP42797"
@@ -61793,9 +61842,9 @@
     "31717"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-13",
+   "dernier_changement": "2026-10-15",
    "evolution": "MODIFIÉ",
-   "detail": "Remplacée par :  → RNCP42797"
+   "detail": "Remplacée par :  → RNCP42797 ; Fiche active : Oui → Non"
   },
   "RNCP41030": {
    "intitule": "Diplôme d'ingénieur d'Efrei Paris (Université Paris- Panthéon Assas)",
@@ -68766,6 +68815,25 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42911": {
+   "intitule": "Ingénieur diplômé de l’Institut national universitaire Jean-François-Champollion, spécialité informatique pour la santé",
+   "type": "Titre ingénieur",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "31054",
+    "31094",
+    "31028",
+    "31023",
+    "32012"
+   ],
+   "premiere_vue": "2026-10-15",
+   "dernier_changement": "2026-10-15",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -96282,6 +96350,55 @@
    "type": "Formacodes modifié",
    "avant": "24136, 24147, 31606, 23551",
    "apres": "24106, 31606, 23551"
+  },
+  {
+   "date": "2026-10-15",
+   "code": "RNCP42906",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Spécialiste en achat public, en approvisionnement et en contrôle de prestation"
+  },
+  {
+   "date": "2026-10-15",
+   "code": "RNCP42907",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Acheteur public"
+  },
+  {
+   "date": "2026-10-15",
+   "code": "RNCP42911",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Ingénieur diplômé de l’Institut national universitaire Jean-François-Champollion, spécialité informatique pour la santé"
+  },
+  {
+   "date": "2026-10-15",
+   "code": "RNCP42912",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "spécialité \"éducateur sportif\" mention \"activités de plongée subaquatique\""
+  },
+  {
+   "date": "2026-10-15",
+   "code": "RNCP35824",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-10-15",
+   "code": "RNCP35827",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-10-15",
+   "code": "RNCP41429",
+   "type": "Remplacée par modifié",
+   "avant": "RNCP42802",
+   "apres": ""
   }
  ],
  "journal": [
@@ -96746,6 +96863,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/38492757971"
+  },
+  {
+   "date": "2026-10-15T02:18",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-10-14.zip",
+   "diplomes": 4270,
+   "ajoutes": 4,
+   "modifies": 3,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/38659224786"
   }
  ]
 }
