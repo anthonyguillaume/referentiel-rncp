@@ -153,7 +153,7 @@ fetch("runs.json?t="+Date.now(),{cache:"no-store"}).then(function(r){
       '<td class="num">',r.statut==="erreur"?"—":nb(r.modifies,'o'),'</td>',
       '<td class="num">',r.statut==="erreur"?"—":nb(r.supprimes,'r'),'</td>',
       '<td class="msg">',detail,'</td>',
-      '<td class="col-lien lien">',r.run_url?'<a href="'+esc(r.run_url)+'" target="_blank" rel="noopener">Run ↗</a>':"",'</td>',
+      '<td class="col-lien lien">',r.run_url?'<a href="'+esc(r.run_url)+'" target="_blank" rel="noopener">'+(r.run_url.indexOf('/actions/')>=0?'Run':'Rapport')+' ↗</a>':"",'</td>',
       '</tr>');
   }
   document.getElementById("corps").innerHTML=html.join("");

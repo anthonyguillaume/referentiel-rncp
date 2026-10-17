@@ -28,7 +28,7 @@ supprimé) sont **cumulées depuis une référence de départ**, actuellement le
 | `site/index.html` | Gabarit du site (format « bundler » Claude Design, voir §6). Recopié dans `docs/` à chaque run |
 | `site/runs.html` | Page Historique des générations (HTML classique) |
 | `state/snapshot.json` | État versionné : codes suivis avec évolution cumulée, historique des événements, journal des runs, référence |
-| `docs/` | Sortie publiée par le bot : `index.html`, `runs.html`, `data.json`, `runs.json`, `diplomes_rncp.xlsx`, `summary.*` |
+| `docs/` | Sortie publiée par le bot : `index.html`, `runs.html`, `data.json`, `runs.json`, `diplomes_rncp.xlsx`, `summary.*`, `rapports/` (un `.md` par run hors Actions) |
 | `outils/generer_vps.sh` | Génération quotidienne sur le VPS (cron) : pull, Docker, commit, push — mêmes étapes que le workflow |
 | `.github/workflows/controle-rncp.yml` | Secours : `workflow_dispatch` seul depuis le 17/10/2026 (cron commenté, ne pas réactiver tant que le VPS tourne) |
 | `tests/generation-1.xml`, `-2.xml` | Exports simulés (1 412 fiches ; la 2 contient 2 ajouts, 3 modifs, 2 suppressions) |
@@ -62,7 +62,7 @@ Champs comparés : intitulé, type (ABREGE), niveau, actif, date de fin d'enregi
 
 ### Journal des runs et erreurs
 Chaque run ajoute une entrée dans `journal` (date, statut initialisation / changements / sans_changement / erreur,
-export, diplômes, ajoutés, modifiés, supprimés, lien vers le run Actions) → `docs/runs.json` → page `runs.html`.
+export, diplômes, ajoutés, modifiés, supprimés, lien vers le run Actions ou, hors Actions, vers `docs/rapports/AAAA-MM-JJ_HHMMSS.md` sur GitHub — libellé « Rapport ↗ ») → `docs/runs.json` → page `runs.html`.
 Le workflow **committe à chaque run**, même sans changement (sinon le journal ne serait pas persisté).
 En cas d'échec, `journaliser_erreur.py` inscrit les 3 dernières lignes du log et le commit a lieu quand même ;
 le site affiche alors un point rouge sur « Généré le » et un bandeau d'alerte (orange si aucune génération depuis > 48 h).
@@ -197,3 +197,5 @@ par rapport à la référence, 6 générations au journal, prochain run automati
 15. Crédit GitHub Actions épuisé : génération déplacée sur le VPS Infomaniak (Ubuntu, Docker) via `outils/generer_vps.sh` et cron
     `5 0 * * *` (VPS ubuntu@179.237.121.234 en Europe/Paris ; le cron Ubuntu ignore `CRON_TZ`) avec `flock`. Push par deploy key SSH (écriture, ce dépôt seul). Le workflow GitHub reste en
     `workflow_dispatch` seul. Sur le VPS, `run_url` du journal est vide (pas de run Actions) ; log dans `~/rncp.log`.
+16. Lien « Détail » de l'historique : hors GitHub Actions, chaque run écrit son résumé Markdown (ou la fin du log en cas d'échec)
+    dans `docs/rapports/` et le journal pointe vers la page GitHub de ce fichier (`ecrire_rapport`). Rapport du run VPS de 17:48 rattaché à la main.

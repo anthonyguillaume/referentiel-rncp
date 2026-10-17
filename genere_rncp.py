@@ -627,6 +627,7 @@ def copier_gabarits(outdir: Path, gabarit: Path) -> None:
 # --------------------------------------------------------------------------- #
 
 JOURNAL_MAX = 1500
+DEPOT_URL = "https://github.com/anthonyguillaume/referentiel-rncp"
 HISTORIQUE_MAX = 10000
 
 
@@ -635,6 +636,14 @@ def url_run_actions() -> str:
     depot = os.environ.get("GITHUB_REPOSITORY", "")
     run_id = os.environ.get("GITHUB_RUN_ID", "")
     return f"{serveur}/{depot}/actions/runs/{run_id}" if serveur and depot and run_id else ""
+
+
+def ecrire_rapport(outdir: Path, maintenant: datetime, md: str) -> str:
+    """Rapport Markdown du run dans docs/rapports/ ; renvoie son URL GitHub (lien du journal hors Actions)."""
+    nom = maintenant.strftime("%Y-%m-%d_%H%M%S") + ".md"
+    (outdir / "rapports").mkdir(parents=True, exist_ok=True)
+    (outdir / "rapports" / nom).write_text(md, encoding="utf-8")
+    return f"{DEPOT_URL}/blob/main/docs/rapports/{nom}"
 
 
 def entree_journal(statut: str, maintenant: datetime, **champs) -> dict:
@@ -908,7 +917,8 @@ def main() -> None:
         "initialisation" if premiere else ("changements" if changements else "sans_changement"),
         maintenant, export=source, diplomes=len(lignes),
         ajoutes=compteurs_jour["AJOUTÉ"], modifies=compteurs_jour["MODIFIÉ"],
-        supprimes=compteurs_jour["SUPPRIMÉ"]))
+        supprimes=compteurs_jour["SUPPRIMÉ"],
+        run_url=url_run_actions() or ecrire_rapport(outdir, maintenant, md)))
     journal = journal[-JOURNAL_MAX:]
     ecrire_runs_json(outdir, journal, maintenant)
 

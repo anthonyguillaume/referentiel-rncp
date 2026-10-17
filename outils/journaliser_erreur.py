@@ -18,7 +18,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from genere_rncp import (JOURNAL_MAX, charger_journal, copier_gabarits,  # noqa: E402
-                         ecrire_runs_json, entree_journal, log)
+                         ecrire_rapport, ecrire_runs_json, entree_journal, log,
+                         url_run_actions)
 
 
 def main() -> None:
@@ -35,7 +36,7 @@ def main() -> None:
     except Exception:  # noqa: BLE001
         maintenant = datetime.now(timezone.utc)
 
-    message = "Échec de la génération (voir le run GitHub Actions)."
+    message = "Échec de la génération (voir le rapport)."
     if args.log and Path(args.log).exists():
         lignes = [l.strip() for l in Path(args.log).read_text(encoding="utf-8",
                                                                errors="replace").splitlines()
@@ -45,7 +46,12 @@ def main() -> None:
 
     chemin = Path(args.state)
     journal = charger_journal(chemin)
-    journal.append(entree_journal("erreur", maintenant, message=message))
+    outdir = Path(args.outdir)
+    fin_log = "\n".join(lignes[-30:]) if args.log and Path(args.log).exists() else message
+    md = (f"# Diplômes RNCP — échec de la génération du {maintenant.strftime('%d/%m/%Y %H:%M')}\n\n"
+          f"Fin du journal d'exécution :\n\n```\n{fin_log}\n```\n")
+    journal.append(entree_journal("erreur", maintenant, message=message,
+                                  run_url=url_run_actions() or ecrire_rapport(outdir, maintenant, md)))
     journal = journal[-JOURNAL_MAX:]
 
     contenu = {"version": 2, "codes": {}, "historique": []}
@@ -60,7 +66,6 @@ def main() -> None:
     chemin.parent.mkdir(parents=True, exist_ok=True)
     chemin.write_text(json.dumps(contenu, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    outdir = Path(args.outdir)
     ecrire_runs_json(outdir, journal, maintenant)
     copier_gabarits(outdir, Path(args.site))
     log(f"Échec journalisé : {message}")
