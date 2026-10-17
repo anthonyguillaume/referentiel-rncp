@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-10-17T02:10:15.855609+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-10-15.zip",
+ "derniere_execution": "2026-10-17T17:48:35.357661+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-10-17.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -1467,24 +1467,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP41993": {
-   "intitule": "Architecte en intelligence artificielle",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2029-02-27",
-   "successeurs": [],
-   "formacodes": [
-    "31026",
-    "31028",
-    "31008",
-    "31085"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP38777": {
    "intitule": "Architecte en intelligence artificielle",
    "type": "",
@@ -1505,21 +1487,21 @@
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41993"
   },
-  "RNCP38474": {
-   "intitule": "Architecte internet des objets",
+  "RNCP41993": {
+   "intitule": "Architecte en intelligence artificielle",
    "type": "",
    "niveau": "Niveau 7",
    "actif": true,
-   "date_fin": "2026-12-21",
+   "date_fin": "2029-02-27",
    "successeurs": [],
    "formacodes": [
-    "31009",
-    "31082",
-    "24231",
-    "31028"
+    "31026",
+    "31028",
+    "31008",
+    "31085"
    ],
-   "premiere_vue": "2026-09-11",
-   "dernier_changement": "2026-09-11",
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -1539,6 +1521,24 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
+  },
+  "RNCP38474": {
+   "intitule": "Architecte internet des objets",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2026-12-21",
+   "successeurs": [],
+   "formacodes": [
+    "31009",
+    "31082",
+    "24231",
+    "31028"
+   ],
+   "premiere_vue": "2026-09-11",
+   "dernier_changement": "2026-09-11",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP38140": {
    "intitule": "Architecte réseaux et cybersécurité (MS)",
@@ -2118,6 +2118,21 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP36611": {
+   "intitule": "Attaché de recherche clinique",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2027-07-01",
+   "successeurs": [],
+   "formacodes": [
+    "43001"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP38481": {
    "intitule": "Attaché de recherche clinique",
    "type": "",
@@ -2147,21 +2162,6 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
-  },
-  "RNCP36611": {
-   "intitule": "Attaché de recherche clinique",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2027-07-01",
-   "successeurs": [],
-   "formacodes": [
-    "43001"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP40610": {
    "intitule": "Auditeur et contrôleur de gestion",
@@ -2227,12 +2227,12 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP42178": {
+  "RNCP40580": {
    "intitule": "Auxiliaire spécialisé vétérinaire",
    "type": "",
    "niveau": "Niveau 4",
    "actif": true,
-   "date_fin": "2029-04-30",
+   "date_fin": "2028-04-30",
    "successeurs": [],
    "formacodes": [
     "42022",
@@ -2243,12 +2243,12 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP40580": {
+  "RNCP42178": {
    "intitule": "Auxiliaire spécialisé vétérinaire",
    "type": "",
    "niveau": "Niveau 4",
    "actif": true,
-   "date_fin": "2028-04-30",
+   "date_fin": "2029-04-30",
    "successeurs": [],
    "formacodes": [
     "42022",
@@ -3712,21 +3712,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
-  "RNCP42529": {
-   "intitule": "CQP Conducteur de téléporté à attaches fixes",
-   "type": "",
-   "niveau": "Niveau 3",
-   "actif": true,
-   "date_fin": "2031-06-26",
-   "successeurs": [],
-   "formacodes": [
-    "31842"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP38032": {
    "intitule": "CQP Conducteur de téléporté à attaches fixes",
    "type": "",
@@ -3744,8 +3729,8 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
-  "RNCP42527": {
-   "intitule": "CQP Conducteur de téléski",
+  "RNCP42529": {
+   "intitule": "CQP Conducteur de téléporté à attaches fixes",
    "type": "",
    "niveau": "Niveau 3",
    "actif": true,
@@ -3775,6 +3760,21 @@
    "dernier_changement": "2026-09-23",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
+  },
+  "RNCP42527": {
+   "intitule": "CQP Conducteur de téléski",
+   "type": "",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2031-06-26",
+   "successeurs": [],
+   "formacodes": [
+    "31842"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP39346": {
    "intitule": "CQP Conducteur d’agroéquipements",
@@ -5123,7 +5123,7 @@
    "intitule": "CQP Opérateur de levage et manutention complexe en milieu industriel",
    "type": "",
    "niveau": "Niveau 3",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-10-15",
    "successeurs": [
     "RNCP42869"
@@ -5132,9 +5132,9 @@
     "31747"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-10-06",
+   "dernier_changement": "2026-10-17",
    "evolution": "MODIFIÉ",
-   "detail": "Remplacée par :  → RNCP42869"
+   "detail": "Remplacée par :  → RNCP42869 ; Fiche active : Oui → Non"
   },
   "RNCP39968": {
    "intitule": "CQP Opérateur de production du secteur alimentaire",
@@ -5869,21 +5869,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP38786": {
-   "intitule": "CQP Responsable d'équipe",
-   "type": "",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2028-03-27",
-   "successeurs": [],
-   "formacodes": [
-    "32154"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP41785": {
    "intitule": "CQP Responsable d'équipe",
    "type": "",
@@ -5894,6 +5879,21 @@
    "formacodes": [
     "32110",
     "23021"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
+  },
+  "RNCP38786": {
+   "intitule": "CQP Responsable d'équipe",
+   "type": "",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2028-03-27",
+   "successeurs": [],
+   "formacodes": [
+    "32154"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "",
@@ -7242,6 +7242,23 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP40172": {
+   "intitule": "Chargé de développement commercial",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2028-01-31",
+   "successeurs": [],
+   "formacodes": [
+    "34085",
+    "34254",
+    "34582"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
+  },
   "RNCP41672": {
    "intitule": "Chargé de développement commercial",
    "type": "",
@@ -7274,23 +7291,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP40172": {
-   "intitule": "Chargé de développement commercial",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2028-01-31",
-   "successeurs": [],
-   "formacodes": [
-    "34085",
-    "34254",
-    "34582"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
   },
   "RNCP38025": {
    "intitule": "Chargé de développement commercial et marketing",
@@ -7394,21 +7394,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP41128": {
-   "intitule": "Chargé de développement des ressources humaines",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2028-07-18",
-   "successeurs": [],
-   "formacodes": [
-    "33054"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP38438": {
    "intitule": "Chargé de développement des ressources humaines",
    "type": "",
@@ -7419,6 +7404,21 @@
    "formacodes": [
     "33052",
     "33036"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
+  },
+  "RNCP41128": {
+   "intitule": "Chargé de développement des ressources humaines",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2028-07-18",
+   "successeurs": [],
+   "formacodes": [
+    "33054"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "",
@@ -8169,6 +8169,23 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP35878": {
+   "intitule": "Chargé des ressources humaines",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": false,
+   "date_fin": "2026-09-15",
+   "successeurs": [
+    "RNCP42313"
+   ],
+   "formacodes": [
+    "33054"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-17",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42313 ; Fiche active : Oui → Non"
+  },
   "RNCP36143": {
    "intitule": "Chargé des ressources humaines",
    "type": "",
@@ -8234,23 +8251,6 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
-  },
-  "RNCP35878": {
-   "intitule": "Chargé des ressources humaines",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": false,
-   "date_fin": "2026-09-15",
-   "successeurs": [
-    "RNCP42313"
-   ],
-   "formacodes": [
-    "33054"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-17",
-   "evolution": "MODIFIÉ",
-   "detail": "Remplacée par :  → RNCP42313 ; Fiche active : Oui → Non"
   },
   "RNCP40265": {
    "intitule": "Chargé d’affaires en travail temporaire et en recrutement",
@@ -8678,6 +8678,24 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP40393": {
+   "intitule": "Chef de projet en rénovation énergétique",
+   "type": "",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2028-03-28",
+   "successeurs": [],
+   "formacodes": [
+    "42105",
+    "22215",
+    "22485",
+    "22210"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP38939": {
    "intitule": "Chef de projet en rénovation énergétique",
    "type": "",
@@ -8776,24 +8794,6 @@
    "formacodes": [
     "22485",
     "22215",
-    "22210"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP40393": {
-   "intitule": "Chef de projet en rénovation énergétique",
-   "type": "",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2028-03-28",
-   "successeurs": [],
-   "formacodes": [
-    "42105",
-    "22215",
-    "22485",
     "22210"
    ],
    "premiere_vue": "2026-09-09",
@@ -8927,7 +8927,7 @@
    "intitule": "Chef de projet informatique",
    "type": "",
    "niveau": "Niveau 6",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-10-15",
    "successeurs": [],
    "formacodes": [
@@ -8935,9 +8935,9 @@
     "46339"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-10-17",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
   "RNCP38523": {
    "intitule": "Chef de projet innovation par le design",
@@ -9383,6 +9383,55 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP39870": {
+   "intitule": "Coach professionnel",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2026-11-28",
+   "successeurs": [],
+   "formacodes": [
+    "32150"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42477": {
+   "intitule": "Coach professionnel",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-06-26",
+   "successeurs": [],
+   "formacodes": [
+    "32150",
+    "44517",
+    "32043"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP40569": {
+   "intitule": "Coach professionnel",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2027-04-30",
+   "successeurs": [],
+   "formacodes": [
+    "32150",
+    "44517",
+    "32043"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP40663": {
    "intitule": "Coach professionnel",
    "type": "",
@@ -9483,71 +9532,6 @@
    "evolution": "MODIFIÉ",
    "detail": "Remplacée par :  → RNCP42473"
   },
-  "RNCP39870": {
-   "intitule": "Coach professionnel",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2026-11-28",
-   "successeurs": [],
-   "formacodes": [
-    "32150"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP42477": {
-   "intitule": "Coach professionnel",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2029-06-26",
-   "successeurs": [],
-   "formacodes": [
-    "32150",
-    "44517",
-    "32043"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP40569": {
-   "intitule": "Coach professionnel",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2027-04-30",
-   "successeurs": [],
-   "formacodes": [
-    "32150",
-    "44517",
-    "32043"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP42351": {
-   "intitule": "Coiffeur (BM)",
-   "type": "",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2028-05-29",
-   "successeurs": [],
-   "formacodes": [
-    "42050",
-    "32097"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP37528": {
    "intitule": "Coiffeur (BM)",
    "type": "",
@@ -9564,6 +9548,22 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42351"
+  },
+  "RNCP42351": {
+   "intitule": "Coiffeur (BM)",
+   "type": "",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2028-05-29",
+   "successeurs": [],
+   "formacodes": [
+    "42050",
+    "32097"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP39361": {
    "intitule": "Collaborateur comptable",
@@ -10794,7 +10794,7 @@
    "intitule": "Contrôleur de gestion",
    "type": "",
    "niveau": "Niveau 6",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-10-15",
    "successeurs": [
     "RNCP42524"
@@ -10803,9 +10803,9 @@
     "32652"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-10-17",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
   "RNCP42524": {
    "intitule": "Contrôleur de gestion",
@@ -11504,6 +11504,21 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP38012": {
+   "intitule": "Designer en architecture d'intérieur",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": false,
+   "date_fin": "2026-09-20",
+   "successeurs": [],
+   "formacodes": [
+    "45015"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-23",
+   "evolution": "MODIFIÉ",
+   "detail": "Fiche active : Oui → Non"
+  },
   "RNCP41112": {
    "intitule": "Designer en architecture d'intérieur",
    "type": "",
@@ -11529,21 +11544,6 @@
    "formacodes": [
     "45015",
     "22212"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-23",
-   "evolution": "MODIFIÉ",
-   "detail": "Fiche active : Oui → Non"
-  },
-  "RNCP38012": {
-   "intitule": "Designer en architecture d'intérieur",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": false,
-   "date_fin": "2026-09-20",
-   "successeurs": [],
-   "formacodes": [
-    "45015"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-23",
@@ -11599,21 +11599,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP41710": {
-   "intitule": "Designer graphique",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2028-11-27",
-   "successeurs": [],
-   "formacodes": [
-    "46081"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP40367": {
    "intitule": "Designer graphique",
    "type": "",
@@ -11631,6 +11616,21 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP41710": {
+   "intitule": "Designer graphique",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2028-11-27",
+   "successeurs": [],
+   "formacodes": [
+    "46081"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
   },
   "RNCP40366": {
    "intitule": "Designer produits, services et innovation",
@@ -11766,6 +11766,23 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP40567": {
+   "intitule": "Diagnostiqueur de produits, équipements, matériaux et déchets issus du bâtiment",
+   "type": "",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2028-04-30",
+   "successeurs": [],
+   "formacodes": [
+    "12592",
+    "12533",
+    "22269"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
+  },
   "RNCP38285": {
    "intitule": "Diagnostiqueur de produits, équipements, matériaux et déchets issus du bâtiment",
    "type": "",
@@ -11783,22 +11800,50 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP40567": {
-   "intitule": "Diagnostiqueur de produits, équipements, matériaux et déchets issus du bâtiment",
+  "RNCP38818": {
+   "intitule": "Diagnostiqueur immobilier",
    "type": "",
    "niveau": "Niveau 5",
    "actif": true,
-   "date_fin": "2028-04-30",
+   "date_fin": "2027-03-27",
    "successeurs": [],
    "formacodes": [
-    "12592",
-    "12533",
-    "22269"
+    "42101"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP37790": {
+   "intitule": "Diagnostiqueur immobilier",
+   "type": "",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2028-07-19",
+   "successeurs": [],
+   "formacodes": [
+    "42101"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP38036": {
+   "intitule": "Diagnostiqueur immobilier",
+   "type": "",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2028-09-20",
+   "successeurs": [],
+   "formacodes": [
+    "42101"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP38933": {
    "intitule": "Diagnostiqueur immobilier",
@@ -11922,51 +11967,6 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
-  },
-  "RNCP38818": {
-   "intitule": "Diagnostiqueur immobilier",
-   "type": "",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2027-03-27",
-   "successeurs": [],
-   "formacodes": [
-    "42101"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP37790": {
-   "intitule": "Diagnostiqueur immobilier",
-   "type": "",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2028-07-19",
-   "successeurs": [],
-   "formacodes": [
-    "42101"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP38036": {
-   "intitule": "Diagnostiqueur immobilier",
-   "type": "",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2028-09-20",
-   "successeurs": [],
-   "formacodes": [
-    "42101"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP40671": {
    "intitule": "Diagnostiqueur produits, équipements, matériaux et déchets issus du bâtiment",
@@ -12824,22 +12824,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP41409": {
-   "intitule": "Délégué à la protection des données (DPO)",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2028-10-27",
-   "successeurs": [],
-   "formacodes": [
-    "13238",
-    "71654"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP40652": {
    "intitule": "Délégué à la protection des données (DPO)",
    "type": "",
@@ -12855,6 +12839,22 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP41409": {
+   "intitule": "Délégué à la protection des données (DPO)",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2028-10-27",
+   "successeurs": [],
+   "formacodes": [
+    "13238",
+    "71654"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
   },
   "RNCP38585": {
    "intitule": "Délégué à la protection des données (MS)",
@@ -13191,7 +13191,7 @@
    "intitule": "Développeur web",
    "type": "",
    "niveau": "Niveau 5",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-10-15",
    "successeurs": [],
    "formacodes": [
@@ -13201,9 +13201,9 @@
     "30805"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-10-17",
+   "evolution": "MODIFIÉ",
+   "detail": "Fiche active : Oui → Non"
   },
   "RNCP40598": {
    "intitule": "Développeur économique territorial (MS)",
@@ -14384,23 +14384,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP41445": {
-   "intitule": "Expert en cybersécurité (MS)",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2030-10-27",
-   "successeurs": [],
-   "formacodes": [
-    "31006",
-    "31038",
-    "24220"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP40640": {
    "intitule": "Expert en cybersécurité (MS)",
    "type": "",
@@ -14412,6 +14395,23 @@
     "31045",
     "31038",
     "31025"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP41445": {
+   "intitule": "Expert en cybersécurité (MS)",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2030-10-27",
+   "successeurs": [],
+   "formacodes": [
+    "31006",
+    "31038",
+    "24220"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
@@ -14759,21 +14759,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP39583": {
-   "intitule": "Expert en développement logiciel",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2029-10-01",
-   "successeurs": [],
-   "formacodes": [
-    "31057"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP41330": {
    "intitule": "Expert en développement logiciel",
    "type": "",
@@ -14785,6 +14770,21 @@
     "31057",
     "31067",
     "31094"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
+  },
+  "RNCP39583": {
+   "intitule": "Expert en développement logiciel",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2029-10-01",
+   "successeurs": [],
+   "formacodes": [
+    "31057"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "",
@@ -16323,6 +16323,21 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42343": {
+   "intitule": "Fumiste, option ramoneur, option poêlier-âtrier (CTM)",
+   "type": "",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2031-05-29",
+   "successeurs": [],
+   "formacodes": [
+    "22657"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP37659": {
    "intitule": "Fumiste, option ramoneur, option poêlier-âtrier (CTM)",
    "type": "",
@@ -16339,21 +16354,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42343"
-  },
-  "RNCP42343": {
-   "intitule": "Fumiste, option ramoneur, option poêlier-âtrier (CTM)",
-   "type": "",
-   "niveau": "Niveau 3",
-   "actif": true,
-   "date_fin": "2031-05-29",
-   "successeurs": [],
-   "formacodes": [
-    "22657"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP36744": {
    "intitule": "Game designer concepteur en gamification",
@@ -16402,6 +16402,23 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP41800": {
+   "intitule": "Gestionnaire d'affaires immobilières",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2027-12-18",
+   "successeurs": [],
+   "formacodes": [
+    "13297",
+    "42184",
+    "42133"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP37435": {
    "intitule": "Gestionnaire d'affaires immobilières",
    "type": "",
@@ -16420,23 +16437,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41800"
-  },
-  "RNCP41800": {
-   "intitule": "Gestionnaire d'affaires immobilières",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2027-12-18",
-   "successeurs": [],
-   "formacodes": [
-    "13297",
-    "42184",
-    "42133"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP41727": {
    "intitule": "Gestionnaire d'une entreprise artisanale du bâtiment",
@@ -17077,22 +17077,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP42506": {
-   "intitule": "Initiateur aux arts du cirque",
-   "type": "",
-   "niveau": "Niveau 3",
-   "actif": true,
-   "date_fin": "2031-06-26",
-   "successeurs": [],
-   "formacodes": [
-    "44067",
-    "45020"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP37742": {
    "intitule": "Initiateur aux arts du cirque",
    "type": "",
@@ -17110,6 +17094,22 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42506"
+  },
+  "RNCP42506": {
+   "intitule": "Initiateur aux arts du cirque",
+   "type": "",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2031-06-26",
+   "successeurs": [],
+   "formacodes": [
+    "44067",
+    "45020"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP42615": {
    "intitule": "Installateur en équipement électrique (BTM)",
@@ -17334,6 +17334,21 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP40161": {
+   "intitule": "Journaliste plurimédia",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2030-01-31",
+   "successeurs": [],
+   "formacodes": [
+    "46325"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39872": {
    "intitule": "Journaliste plurimédia",
    "type": "",
@@ -17351,21 +17366,6 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
-  },
-  "RNCP40161": {
-   "intitule": "Journaliste plurimédia",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2030-01-31",
-   "successeurs": [],
-   "formacodes": [
-    "46325"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP42498": {
    "intitule": "Journaliste reporter tous médias",
@@ -17415,6 +17415,22 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42328": {
+   "intitule": "Juriste d'affaires",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2029-05-29",
+   "successeurs": [],
+   "formacodes": [
+    "13261",
+    "13256"
+   ],
+   "premiere_vue": "2026-09-17",
+   "dernier_changement": "2026-09-17",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP40682": {
    "intitule": "Juriste d'affaires",
    "type": "",
@@ -17448,22 +17464,6 @@
    "dernier_changement": "2026-10-04",
    "evolution": "MODIFIÉ",
    "detail": "Remplacée par :  → RNCP42328 ; Fiche active : Oui → Non"
-  },
-  "RNCP42328": {
-   "intitule": "Juriste d'affaires",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2029-05-29",
-   "successeurs": [],
-   "formacodes": [
-    "13261",
-    "13256"
-   ],
-   "premiere_vue": "2026-09-17",
-   "dernier_changement": "2026-09-17",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP40844": {
    "intitule": "Juriste d'entreprise",
@@ -17573,7 +17573,7 @@
    "intitule": "Manager Produits et Marketing",
    "type": "",
    "niveau": "Niveau 7",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-10-15",
    "successeurs": [
     "RNCP42647"
@@ -17583,9 +17583,9 @@
     "34052"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-10-17",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
   "RNCP37170": {
    "intitule": "Manager Supply Chain",
@@ -17913,6 +17913,21 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP41774": {
+   "intitule": "Manager de business unit",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2028-12-18",
+   "successeurs": [],
+   "formacodes": [
+    "32024"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP42642": {
    "intitule": "Manager de business unit",
    "type": "",
@@ -17923,21 +17938,6 @@
    "formacodes": [
     "34254",
     "32074",
-    "32024"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP41774": {
-   "intitule": "Manager de business unit",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2028-12-18",
-   "successeurs": [],
-   "formacodes": [
     "32024"
    ],
    "premiere_vue": "2026-09-09",
@@ -17956,25 +17956,6 @@
     "32024",
     "32094",
     "32047"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP42321": {
-   "intitule": "Manager de commerce et de centre de profit",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2029-05-29",
-   "successeurs": [],
-   "formacodes": [
-    "32024",
-    "32145",
-    "32079",
-    "32025",
-    "34554"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
@@ -18001,6 +17982,25 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42321"
+  },
+  "RNCP42321": {
+   "intitule": "Manager de commerce et de centre de profit",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2029-05-29",
+   "successeurs": [],
+   "formacodes": [
+    "32024",
+    "32145",
+    "32079",
+    "32025",
+    "34554"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP39396": {
    "intitule": "Manager de grands projets de changement (MS)",
@@ -18209,6 +18209,23 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP37658": {
+   "intitule": "Manager de la communication",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": false,
+   "date_fin": "2026-05-31",
+   "successeurs": [
+    "RNCP42474"
+   ],
+   "formacodes": [
+    "46301"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "MODIFIÉ",
+   "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42474"
+  },
   "RNCP38498": {
    "intitule": "Manager de la communication",
    "type": "",
@@ -18277,23 +18294,6 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
-  },
-  "RNCP37658": {
-   "intitule": "Manager de la communication",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": false,
-   "date_fin": "2026-05-31",
-   "successeurs": [
-    "RNCP42474"
-   ],
-   "formacodes": [
-    "46301"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "MODIFIÉ",
-   "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42474"
   },
   "RNCP37775": {
    "intitule": "Manager de la communication de marque",
@@ -18656,24 +18656,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP42488": {
-   "intitule": "Manager de la stratégie digitale",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2031-06-26",
-   "successeurs": [],
-   "formacodes": [
-    "34093",
-    "32066",
-    "46347",
-    "34057"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP37793": {
    "intitule": "Manager de la stratégie digitale",
    "type": "",
@@ -18692,6 +18674,24 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42488"
+  },
+  "RNCP42488": {
+   "intitule": "Manager de la stratégie digitale",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2031-06-26",
+   "successeurs": [],
+   "formacodes": [
+    "34093",
+    "32066",
+    "46347",
+    "34057"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP41475": {
    "intitule": "Manager de la stratégie digitale marketing et commerciale",
@@ -18745,23 +18745,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP38586": {
-   "intitule": "Manager de la stratégie marketing",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2027-02-09",
-   "successeurs": [],
-   "formacodes": [
-    "34093",
-    "34057",
-    "46359"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP40592": {
    "intitule": "Manager de la stratégie marketing",
    "type": "",
@@ -18773,6 +18756,23 @@
     "34093",
     "34260",
     "34057"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
+  },
+  "RNCP38586": {
+   "intitule": "Manager de la stratégie marketing",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2027-02-09",
+   "successeurs": [],
+   "formacodes": [
+    "34093",
+    "34057",
+    "46359"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "",
@@ -21147,6 +21147,21 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP38460": {
+   "intitule": "Manager en ressources humaines",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2026-12-21",
+   "successeurs": [],
+   "formacodes": [
+    "33054"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
+  },
   "RNCP38824": {
    "intitule": "Manager en ressources humaines",
    "type": "",
@@ -21183,21 +21198,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP38460": {
-   "intitule": "Manager en ressources humaines",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2026-12-21",
-   "successeurs": [],
-   "formacodes": [
-    "33054"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
   },
   "RNCP42832": {
    "intitule": "Manager en santé (MS)",
@@ -21646,22 +21646,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP42500": {
-   "intitule": "Manager international en marketing du luxe",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2029-06-26",
-   "successeurs": [],
-   "formacodes": [
-    "34254",
-    "34052"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP39579": {
    "intitule": "Manager international en marketing du luxe",
    "type": "",
@@ -21679,6 +21663,22 @@
    "dernier_changement": "2026-10-04",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
+  },
+  "RNCP42500": {
+   "intitule": "Manager international en marketing du luxe",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2029-06-26",
+   "successeurs": [],
+   "formacodes": [
+    "34254",
+    "34052"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP42346": {
    "intitule": "Manager logistique achats industrie",
@@ -21786,6 +21786,23 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
+  "RNCP40349": {
+   "intitule": "Manager marketing et communication",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2027-03-28",
+   "successeurs": [],
+   "formacodes": [
+    "46301",
+    "34052",
+    "34085"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP40360": {
    "intitule": "Manager marketing et communication",
    "type": "",
@@ -21803,17 +21820,17 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP40349": {
-   "intitule": "Manager marketing et communication",
+  "RNCP36017": {
+   "intitule": "Manager marketing et communication (MS)",
    "type": "",
    "niveau": "Niveau 7",
    "actif": true,
-   "date_fin": "2027-03-28",
+   "date_fin": "2026-11-10",
    "successeurs": [],
    "formacodes": [
-    "46301",
     "34052",
-    "34085"
+    "34085",
+    "46301"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
@@ -21832,23 +21849,6 @@
     "46301",
     "15004",
     "32154"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP36017": {
-   "intitule": "Manager marketing et communication (MS)",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2026-11-10",
-   "successeurs": [],
-   "formacodes": [
-    "34052",
-    "34085",
-    "46301"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
@@ -23303,6 +23303,23 @@
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41815"
   },
+  "RNCP39980": {
+   "intitule": "Photographe",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-12-18",
+   "successeurs": [],
+   "formacodes": [
+    "46278",
+    "46006",
+    "46392"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
+  },
   "RNCP42817": {
    "intitule": "Photographe",
    "type": "",
@@ -23354,23 +23371,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP39980": {
-   "intitule": "Photographe",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2029-12-18",
-   "successeurs": [],
-   "formacodes": [
-    "46278",
-    "46006",
-    "46392"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
   },
   "RNCP41086": {
    "intitule": "Photographe Plurimédia (BTM)",
@@ -23473,63 +23473,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP42179": {
-   "intitule": "Product builder no code",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2029-04-30",
-   "successeurs": [],
-   "formacodes": [
-    "31086",
-    "46334",
-    "31094",
-    "72454",
-    "32012"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP42148": {
-   "intitule": "Product builder no code",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2029-04-30",
-   "successeurs": [],
-   "formacodes": [
-    "31086",
-    "46334",
-    "31094",
-    "72454",
-    "31008"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP42200": {
-   "intitule": "Product builder no code",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2029-04-30",
-   "successeurs": [],
-   "formacodes": [
-    "31086",
-    "46334",
-    "31094",
-    "72454",
-    "31002"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP40593": {
    "intitule": "Product builder no code",
    "type": "",
@@ -23587,19 +23530,57 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP41483": {
-   "intitule": "Product builder no-code",
+  "RNCP42179": {
+   "intitule": "Product builder no code",
    "type": "",
    "niveau": "Niveau 6",
    "actif": true,
-   "date_fin": "2028-10-27",
+   "date_fin": "2029-04-30",
    "successeurs": [],
    "formacodes": [
     "31086",
     "46334",
     "31094",
     "72454",
-    "24472"
+    "32012"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42148": {
+   "intitule": "Product builder no code",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-04-30",
+   "successeurs": [],
+   "formacodes": [
+    "31086",
+    "46334",
+    "31094",
+    "72454",
+    "31008"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42200": {
+   "intitule": "Product builder no code",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-04-30",
+   "successeurs": [],
+   "formacodes": [
+    "31086",
+    "46334",
+    "31094",
+    "72454",
+    "31002"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
@@ -23624,6 +23605,25 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
+  },
+  "RNCP41483": {
+   "intitule": "Product builder no-code",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2028-10-27",
+   "successeurs": [],
+   "formacodes": [
+    "31086",
+    "46334",
+    "31094",
+    "72454",
+    "24472"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP41141": {
    "intitule": "Product manager",
@@ -23727,7 +23727,7 @@
    "intitule": "Pâtissier-chocolatier-confiseur-glacier-traiteur (BM)",
    "type": "",
    "niveau": "Niveau 5",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-10-15",
    "successeurs": [],
    "formacodes": [
@@ -23735,9 +23735,9 @@
     "32097"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-10-17",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
   "RNCP41998": {
    "intitule": "Pâtissier-glacier-chocolatier-confiseur-traiteur (BTM)",
@@ -24073,7 +24073,7 @@
    "intitule": "Responsable conformité",
    "type": "",
    "niveau": "Niveau 7",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-10-15",
    "successeurs": [],
    "formacodes": [
@@ -24082,9 +24082,9 @@
     "41050"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-10-17",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
   "RNCP40660": {
    "intitule": "Responsable d' affaires en immobilier",
@@ -24204,23 +24204,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP42475": {
-   "intitule": "Responsable d'agence et de commerce",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2029-06-26",
-   "successeurs": [],
-   "formacodes": [
-    "34554",
-    "32154",
-    "32079"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP39395": {
    "intitule": "Responsable d'agence et de commerce",
    "type": "",
@@ -24239,6 +24222,23 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42475"
+  },
+  "RNCP42475": {
+   "intitule": "Responsable d'agence et de commerce",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-06-26",
+   "successeurs": [],
+   "formacodes": [
+    "34554",
+    "32154",
+    "32079"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP38516": {
    "intitule": "Responsable d'animation en structure d'accueil touristique et de loisirs",
@@ -24977,6 +24977,24 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
+  "RNCP37849": {
+   "intitule": "Responsable du développement commercial",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": false,
+   "date_fin": "2026-07-19",
+   "successeurs": [
+    "RNCP42841"
+   ],
+   "formacodes": [
+    "34026",
+    "34582"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-10-06",
+   "evolution": "MODIFIÉ",
+   "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42841"
+  },
   "RNCP42841": {
    "intitule": "Responsable du développement commercial",
    "type": "",
@@ -25040,24 +25058,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP37849": {
-   "intitule": "Responsable du développement commercial",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": false,
-   "date_fin": "2026-07-19",
-   "successeurs": [
-    "RNCP42841"
-   ],
-   "formacodes": [
-    "34026",
-    "34582"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-10-06",
-   "evolution": "MODIFIÉ",
-   "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42841"
   },
   "RNCP39209": {
    "intitule": "Responsable du développement de produits dans le secteur de la mode",
@@ -25972,6 +25972,21 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP40563": {
+   "intitule": "Responsable qualité sécurité environnement",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2028-04-30",
+   "successeurs": [],
+   "formacodes": [
+    "31407"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP41446": {
    "intitule": "Responsable qualité sécurité environnement",
    "type": "",
@@ -26003,21 +26018,6 @@
     "31407",
     "42866",
     "12587"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP40563": {
-   "intitule": "Responsable qualité sécurité environnement",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2028-04-30",
-   "successeurs": [],
-   "formacodes": [
-    "31407"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
@@ -26369,6 +26369,23 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42043": {
+   "intitule": "Régisseur général du spectacle et de l'évènementiel",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2031-04-01",
+   "successeurs": [],
+   "formacodes": [
+    "45052",
+    "45060",
+    "45011"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP37611": {
    "intitule": "Régisseur général du spectacle et de l'évènementiel",
    "type": "",
@@ -26387,23 +26404,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42043"
-  },
-  "RNCP42043": {
-   "intitule": "Régisseur général du spectacle et de l'évènementiel",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2031-04-01",
-   "successeurs": [],
-   "formacodes": [
-    "45052",
-    "45060",
-    "45011"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP37634": {
    "intitule": "Régisseur technique du spectacle et de l'évènementiel",
@@ -26756,6 +26756,23 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP37987": {
+   "intitule": "Spécialiste en cybersécurité",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": false,
+   "date_fin": "2026-09-20",
+   "successeurs": [
+    "RNCP42503"
+   ],
+   "formacodes": [
+    "31045"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-23",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42503 ; Fiche active : Oui → Non"
+  },
   "RNCP42503": {
    "intitule": "Spécialiste en cybersécurité",
    "type": "",
@@ -26773,23 +26790,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP37987": {
-   "intitule": "Spécialiste en cybersécurité",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": false,
-   "date_fin": "2026-09-20",
-   "successeurs": [
-    "RNCP42503"
-   ],
-   "formacodes": [
-    "31045"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-23",
-   "evolution": "MODIFIÉ",
-   "detail": "Remplacée par :  → RNCP42503 ; Fiche active : Oui → Non"
   },
   "RNCP38434": {
    "intitule": "Spécialiste en cybersécurité (MS)",
@@ -26906,22 +26906,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP42348": {
-   "intitule": "Superviseur de production virtuelle",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2029-05-29",
-   "successeurs": [],
-   "formacodes": [
-    "46244",
-    "46264"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP41811": {
    "intitule": "Superviseur de production virtuelle",
    "type": "",
@@ -26933,6 +26917,22 @@
     "46244",
     "46264",
     "46274"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42348": {
+   "intitule": "Superviseur de production virtuelle",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-05-29",
+   "successeurs": [],
+   "formacodes": [
+    "46244",
+    "46264"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
@@ -27056,24 +27056,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP39225": {
-   "intitule": "Technicien chef de projet en rénovation énergétique",
-   "type": "",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2027-06-27",
-   "successeurs": [],
-   "formacodes": [
-    "24154",
-    "22215",
-    "22210",
-    "22485"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP40392": {
    "intitule": "Technicien chef de projet en rénovation énergétique",
    "type": "",
@@ -27107,6 +27089,24 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP39225": {
+   "intitule": "Technicien chef de projet en rénovation énergétique",
+   "type": "",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2027-06-27",
+   "successeurs": [],
+   "formacodes": [
+    "24154",
+    "22215",
+    "22210",
+    "22485"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
   },
   "RNCP39207": {
    "intitule": "Technicien cordiste - superviseur",
@@ -34265,6 +34265,21 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP41816": {
+   "intitule": "Bâtiment",
+   "type": "BTS",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "22274"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39801": {
    "intitule": "Bâtiment",
    "type": "BTS",
@@ -34281,21 +34296,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Remplacée par :  → RNCP41816"
-  },
-  "RNCP41816": {
-   "intitule": "Bâtiment",
-   "type": "BTS",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2031-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "22274"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP36685": {
    "intitule": "Collaborateur juriste notarial",
@@ -35060,6 +35060,25 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP41826": {
+   "intitule": "Management économique de la construction",
+   "type": "BTS",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "22293",
+    "22279",
+    "22259",
+    "22230",
+    "22374"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP35802": {
    "intitule": "Management économique de la construction",
    "type": "BTS",
@@ -35080,25 +35099,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41826"
-  },
-  "RNCP41826": {
-   "intitule": "Management économique de la construction",
-   "type": "BTS",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2031-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "22293",
-    "22279",
-    "22259",
-    "22230",
-    "22374"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP36966": {
    "intitule": "Motorisations toutes énergies",
@@ -35198,6 +35198,23 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP41832": {
+   "intitule": "Métiers de la mesure",
+   "type": "BTS",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "11523",
+    "11421",
+    "24351"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP35803": {
    "intitule": "Métiers de la mesure",
    "type": "BTS",
@@ -35216,23 +35233,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41832"
-  },
-  "RNCP41832": {
-   "intitule": "Métiers de la mesure",
-   "type": "BTS",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2031-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "11523",
-    "11421",
-    "24351"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP36776": {
    "intitule": "Métiers de la mode – chaussure et maroquinerie »",
@@ -35294,15 +35294,15 @@
    "date_fin": "2030-08-31",
    "successeurs": [],
    "formacodes": [
-    "21823",
-    "21838",
     "21867",
-    "21882"
+    "21882",
+    "21838",
+    "21823"
    ],
    "premiere_vue": "2026-10-06",
-   "dernier_changement": "2026-10-06",
+   "dernier_changement": "2026-10-17",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 21823, 21838, 21867, 21882 → 21867, 21882, 21838, 21823"
   },
   "RNCP37019": {
    "intitule": "Métiers de l’audiovisuel option gestion de la production",
@@ -38687,6 +38687,22 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP41830": {
+   "intitule": "Maçon",
+   "type": "CAP",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "22395",
+    "22334"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP35715": {
    "intitule": "Maçon",
    "type": "CAP",
@@ -38704,22 +38720,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41830"
-  },
-  "RNCP41830": {
-   "intitule": "Maçon",
-   "type": "CAP",
-   "niveau": "Niveau 3",
-   "actif": true,
-   "date_fin": "2031-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "22395",
-    "22334"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP37893": {
    "intitule": "Menuisier aluminium-verre",
@@ -38905,6 +38905,21 @@
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42114"
   },
+  "RNCP41831": {
+   "intitule": "Métallier",
+   "type": "CAP",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "22478"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP37897": {
    "intitule": "Métallier",
    "type": "CAP",
@@ -38921,21 +38936,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41831"
-  },
-  "RNCP41831": {
-   "intitule": "Métallier",
-   "type": "CAP",
-   "niveau": "Niveau 3",
-   "actif": true,
-   "date_fin": "2031-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "22478"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP39703": {
    "intitule": "Métiers de l'enseigne et de la signalétique",
@@ -40604,6 +40604,21 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42019": {
+   "intitule": "Education et travail des jeunes équidés",
+   "type": "CS",
+   "niveau": "Niveau 4",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "21088"
+   ],
+   "premiere_vue": "2026-09-17",
+   "dernier_changement": "2026-09-17",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39679": {
    "intitule": "Education et travail des jeunes équidés",
    "type": "CS",
@@ -40620,21 +40635,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42019"
-  },
-  "RNCP42019": {
-   "intitule": "Education et travail des jeunes équidés",
-   "type": "CS",
-   "niveau": "Niveau 4",
-   "actif": true,
-   "date_fin": "2031-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "21088"
-   ],
-   "premiere_vue": "2026-09-17",
-   "dernier_changement": "2026-09-17",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP37566": {
    "intitule": "Employé traiteur",
@@ -41299,21 +41299,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP42138": {
-   "intitule": "Technicien des services à l'énergie",
-   "type": "CS",
-   "niveau": "Niveau 4",
-   "actif": true,
-   "date_fin": "2031-09-01",
-   "successeurs": [],
-   "formacodes": [
-    "24162"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP36334": {
    "intitule": "Technicien des services à l'énergie",
    "type": "CS",
@@ -41330,6 +41315,21 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42138"
+  },
+  "RNCP42138": {
+   "intitule": "Technicien des services à l'énergie",
+   "type": "CS",
+   "niveau": "Niveau 4",
+   "actif": true,
+   "date_fin": "2031-09-01",
+   "successeurs": [],
+   "formacodes": [
+    "24162"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP38224": {
    "intitule": "Technicien en chaudronnerie aéronautique et spatiale",
@@ -41599,6 +41599,23 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42423": {
+   "intitule": "Accompagnant éducatif et social",
+   "type": "DE",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2027-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "44028",
+    "44079",
+    "44089"
+   ],
+   "premiere_vue": "2026-09-17",
+   "dernier_changement": "2026-09-17",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP36004": {
    "intitule": "Accompagnant éducatif et social",
    "type": "DE",
@@ -41617,23 +41634,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42423"
-  },
-  "RNCP42423": {
-   "intitule": "Accompagnant éducatif et social",
-   "type": "DE",
-   "niveau": "Niveau 3",
-   "actif": true,
-   "date_fin": "2027-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "44028",
-    "44079",
-    "44089"
-   ],
-   "premiere_vue": "2026-09-17",
-   "dernier_changement": "2026-09-17",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP40692": {
    "intitule": "Aide-Soignant",
@@ -41682,22 +41682,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP41748": {
-   "intitule": "Assistant de service social",
-   "type": "DE",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2031-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "44083",
-    "44056"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP37675": {
    "intitule": "Assistant de service social",
    "type": "DE",
@@ -41715,6 +41699,22 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41748"
+  },
+  "RNCP41748": {
+   "intitule": "Assistant de service social",
+   "type": "DE",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "44083",
+    "44056"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP41758": {
    "intitule": "Assistant familial",
@@ -42198,7 +42198,7 @@
    "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP38343": {
-   "intitule": "DEEA - Diplôme d'études en architecture",
+   "intitule": "Diplôme d'études en architecture",
    "type": "DEEA",
    "niveau": "Niveau 6",
    "actif": true,
@@ -42210,9 +42210,9 @@
     "22357"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-10-17",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Intitulé : DEEA - Diplôme d'études en architecture → Diplôme d'études en architecture"
   },
   "RNCP37193": {
    "intitule": "DE - Diplôme d’Etat de la jeunesse, de l’éducation populaire et du sport spécialité « perfectionnement sportif » mention \"vol libre\"",
@@ -44512,41 +44512,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP41192": {
-   "intitule": "Diplôme Supérieur en Marketing, Commerce et Gestion",
-   "type": "DIPLOVIS",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2030-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "34554",
-    "34052",
-    "32054"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP41195": {
-   "intitule": "Diplôme Supérieur en Marketing, Commerce et Gestion",
-   "type": "DIPLOVIS",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2030-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "32054",
-    "32154",
-    "34085",
-    "34052"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP41194": {
    "intitule": "Diplôme Supérieur en Marketing, Commerce et Gestion",
    "type": "DIPLOVIS",
@@ -44577,6 +44542,41 @@
     "34554",
     "34052",
     "34085"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP41192": {
+   "intitule": "Diplôme Supérieur en Marketing, Commerce et Gestion",
+   "type": "DIPLOVIS",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2030-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "34554",
+    "34052",
+    "32054"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP41195": {
+   "intitule": "Diplôme Supérieur en Marketing, Commerce et Gestion",
+   "type": "DIPLOVIS",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2030-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "32054",
+    "32154",
+    "34085",
+    "34052"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
@@ -46596,25 +46596,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP39189": {
-   "intitule": "Diplôme d’études supérieures en management international",
-   "type": "DipViGrL",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2029-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "32006",
-    "32136",
-    "34254",
-    "34052",
-    "31637"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP42371": {
    "intitule": "Diplôme d’études supérieures en management international",
    "type": "DipViGrL",
@@ -46628,6 +46609,25 @@
     "32654",
     "34052",
     "34085"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP39189": {
+   "intitule": "Diplôme d’études supérieures en management international",
+   "type": "DipViGrL",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "32006",
+    "32136",
+    "34254",
+    "34052",
+    "31637"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
@@ -47926,6 +47926,24 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP41234": {
+   "intitule": "Programme Grande Ecole",
+   "type": "DipViGrM",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2030-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "32154",
+    "32025",
+    "32008",
+    "32623"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39160": {
    "intitule": "Programme Grande Ecole",
    "type": "DipViGrM",
@@ -48129,24 +48147,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP41234": {
-   "intitule": "Programme Grande Ecole",
-   "type": "DipViGrM",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2030-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "32154",
-    "32025",
-    "32008",
-    "32623"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP41040": {
    "intitule": "Programme Grande Ecole EDHEC",
    "type": "DipViGrM",
@@ -48178,6 +48178,24 @@
     "32145",
     "32008",
     "32135"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42391": {
+   "intitule": "Programme grande école",
+   "type": "DipViGrM",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2029-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "32110",
+    "34052",
+    "32054",
+    "34254"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
@@ -48341,24 +48359,6 @@
     "41054",
     "34052",
     "34554"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP42391": {
-   "intitule": "Programme grande école",
-   "type": "DipViGrM",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2029-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "32110",
-    "34052",
-    "32054",
-    "34254"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
@@ -48706,6 +48706,22 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42808": {
+   "intitule": "Sciences et Ingénierie - Informatique",
+   "type": "Grade_Licence",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2028-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "31087",
+    "31028"
+   ],
+   "premiere_vue": "2026-09-25",
+   "dernier_changement": "2026-09-26",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 31067, 31028, 31087 → 31087, 31028"
+  },
   "RNCP39549": {
    "intitule": "Sciences et Ingénierie - Informatique",
    "type": "Grade_Licence",
@@ -48723,22 +48739,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP42808": {
-   "intitule": "Sciences et Ingénierie - Informatique",
-   "type": "Grade_Licence",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2028-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "31087",
-    "31028"
-   ],
-   "premiere_vue": "2026-09-25",
-   "dernier_changement": "2026-09-26",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 31067, 31028, 31087 → 31087, 31028"
   },
   "RNCP40741": {
    "intitule": "Sciences et Ingénierie - Informatique et Cybersécurité",
@@ -51437,15 +51437,13 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP40030": {
+  "RNCP42407": {
    "intitule": "Gestion et maintenance des installations énergétiques (fiche nationale)",
    "type": "Licence Professionnelle",
    "niveau": "Niveau 6",
    "actif": true,
-   "date_fin": "2026-12-31",
-   "successeurs": [
-    "RNCP42407"
-   ],
+   "date_fin": "2031-08-31",
+   "successeurs": [],
    "formacodes": [
     "12522",
     "24147",
@@ -51457,13 +51455,15 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP42407": {
+  "RNCP40030": {
    "intitule": "Gestion et maintenance des installations énergétiques (fiche nationale)",
    "type": "Licence Professionnelle",
    "niveau": "Niveau 6",
    "actif": true,
-   "date_fin": "2031-08-31",
-   "successeurs": [],
+   "date_fin": "2026-12-31",
+   "successeurs": [
+    "RNCP42407"
+   ],
    "formacodes": [
     "12522",
     "24147",
@@ -57559,6 +57559,21 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42139": {
+   "intitule": "Carreleur-chapiste",
+   "type": "TP",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2031-05-23",
+   "successeurs": [],
+   "formacodes": [
+    "22440"
+   ],
+   "premiere_vue": "2026-09-17",
+   "dernier_changement": "2026-09-17",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP35509": {
    "intitule": "Carreleur-chapiste",
    "type": "TP",
@@ -57575,21 +57590,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42139"
-  },
-  "RNCP42139": {
-   "intitule": "Carreleur-chapiste",
-   "type": "TP",
-   "niveau": "Niveau 3",
-   "actif": true,
-   "date_fin": "2031-05-23",
-   "successeurs": [],
-   "formacodes": [
-    "22440"
-   ],
-   "premiere_vue": "2026-09-17",
-   "dernier_changement": "2026-09-17",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP41532": {
    "intitule": "Carrossier réparateur",
@@ -58658,6 +58658,21 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42281": {
+   "intitule": "Dessinateur projeteur en béton armé",
+   "type": "TP",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2031-06-11",
+   "successeurs": [],
+   "formacodes": [
+    "22252"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP40214": {
    "intitule": "Dessinateur projeteur en béton armé",
    "type": "TP",
@@ -58674,21 +58689,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42281"
-  },
-  "RNCP42281": {
-   "intitule": "Dessinateur projeteur en béton armé",
-   "type": "TP",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2031-06-11",
-   "successeurs": [],
-   "formacodes": [
-    "22252"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP37290": {
    "intitule": "Dessinateur projeteur en construction métallique",
@@ -58977,6 +58977,21 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP41862": {
+   "intitule": "Enseignant de la conduite et de la sécurité routière",
+   "type": "TP",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2027-04-28",
+   "successeurs": [],
+   "formacodes": [
+    "31802"
+   ],
+   "premiere_vue": "2026-09-17",
+   "dernier_changement": "2026-09-17",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP35329": {
    "intitule": "Enseignant de la conduite et de la sécurité routière",
    "type": "TP",
@@ -58993,21 +59008,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41862"
-  },
-  "RNCP41862": {
-   "intitule": "Enseignant de la conduite et de la sécurité routière",
-   "type": "TP",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2027-04-28",
-   "successeurs": [],
-   "formacodes": [
-    "31802"
-   ],
-   "premiere_vue": "2026-09-17",
-   "dernier_changement": "2026-09-17",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP37701": {
    "intitule": "Etancheur toiture bâtiment",
@@ -59173,6 +59173,21 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42801": {
+   "intitule": "Gouvernant en hôtellerie",
+   "type": "TP",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2031-12-17",
+   "successeurs": [],
+   "formacodes": [
+    "42797"
+   ],
+   "premiere_vue": "2026-09-19",
+   "dernier_changement": "2026-09-19",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39533": {
    "intitule": "Gouvernant en hôtellerie",
    "type": "TP",
@@ -59189,21 +59204,6 @@
    "dernier_changement": "2026-09-19",
    "evolution": "MODIFIÉ",
    "detail": "Remplacée par :  → RNCP42801"
-  },
-  "RNCP42801": {
-   "intitule": "Gouvernant en hôtellerie",
-   "type": "TP",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2031-12-17",
-   "successeurs": [],
-   "formacodes": [
-    "42797"
-   ],
-   "premiere_vue": "2026-09-19",
-   "dernier_changement": "2026-09-19",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP39532": {
    "intitule": "Graphiste",
@@ -59602,23 +59602,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP35828": {
-   "intitule": "Monteur de réseaux électriques aéro-souterrains",
-   "type": "TP",
-   "niveau": "Niveau 3",
-   "actif": false,
-   "date_fin": "2026-08-31",
-   "successeurs": [
-    "RNCP42768"
-   ],
-   "formacodes": [
-    "24086"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "MODIFIÉ",
-   "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42768"
-  },
   "RNCP42768": {
    "intitule": "Monteur de réseaux électriques aéro-souterrains",
    "type": "TP",
@@ -59635,6 +59618,23 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP35828": {
+   "intitule": "Monteur de réseaux électriques aéro-souterrains",
+   "type": "TP",
+   "niveau": "Niveau 3",
+   "actif": false,
+   "date_fin": "2026-08-31",
+   "successeurs": [
+    "RNCP42768"
+   ],
+   "formacodes": [
+    "24086"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "MODIFIÉ",
+   "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42768"
   },
   "RNCP37876": {
    "intitule": "Monteur dépanneur frigoriste",
@@ -60088,6 +60088,23 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42790": {
+   "intitule": "Ouvrier du génie écologique",
+   "type": "TP",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "12526",
+    "12510",
+    "12549"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-11",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 12526, 12547, 12510, 12549, 12554 → 12526, 12510, 12549"
+  },
   "RNCP35934": {
    "intitule": "Ouvrier du génie écologique",
    "type": "TP",
@@ -60106,23 +60123,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42790"
-  },
-  "RNCP42790": {
-   "intitule": "Ouvrier du génie écologique",
-   "type": "TP",
-   "niveau": "Niveau 3",
-   "actif": true,
-   "date_fin": "2031-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "12526",
-    "12510",
-    "12549"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-11",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 12526, 12547, 12510, 12549, 12554 → 12526, 12510, 12549"
   },
   "RNCP37875": {
    "intitule": "Ouvrier paysagiste",
@@ -60890,21 +60890,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP42086": {
-   "intitule": "Technicien d'intervention en froid et équipements de cuisines professionnelles",
-   "type": "TP",
-   "niveau": "Niveau 4",
-   "actif": true,
-   "date_fin": "2031-02-26",
-   "successeurs": [],
-   "formacodes": [
-    "22624"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP35525": {
    "intitule": "Technicien d'intervention en froid et équipements de cuisines professionnelles",
    "type": "TP",
@@ -60921,6 +60906,21 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42086"
+  },
+  "RNCP42086": {
+   "intitule": "Technicien d'intervention en froid et équipements de cuisines professionnelles",
+   "type": "TP",
+   "niveau": "Niveau 4",
+   "actif": true,
+   "date_fin": "2031-02-26",
+   "successeurs": [],
+   "formacodes": [
+    "22624"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP38869": {
    "intitule": "Technicien d'intervention en froid industriel",
@@ -96444,6 +96444,69 @@
    "type": "Formacodes modifié",
    "avant": "31054, 31094, 31028, 31023, 32012",
    "apres": "31054, 43479, 32062, 15099"
+  },
+  {
+   "date": "2026-10-17",
+   "code": "RNCP35959",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-10-17",
+   "code": "RNCP35960",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-10-17",
+   "code": "RNCP35963",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-10-17",
+   "code": "RNCP35966",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-10-17",
+   "code": "RNCP35970",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-10-17",
+   "code": "RNCP35988",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-10-17",
+   "code": "RNCP35989",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-10-17",
+   "code": "RNCP38343",
+   "type": "Intitulé modifié",
+   "avant": "DEEA - Diplôme d'études en architecture",
+   "apres": "Diplôme d'études en architecture"
+  },
+  {
+   "date": "2026-10-17",
+   "code": "RNCP42904",
+   "type": "Formacodes modifié",
+   "avant": "21823, 21838, 21867, 21882",
+   "apres": "21867, 21882, 21838, 21823"
   }
  ],
  "journal": [
@@ -96941,6 +97004,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/actions/runs/38985096121"
+  },
+  {
+   "date": "2026-10-17T17:48",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-10-17.zip",
+   "diplomes": 4271,
+   "ajoutes": 0,
+   "modifies": 9,
+   "supprimes": 0,
+   "message": "",
+   "run_url": ""
   }
  ]
 }
