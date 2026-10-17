@@ -5,7 +5,7 @@ Il décrit ce qui existe, pourquoi, et comment intervenir sans casser la chaîne
 
 ## 1. Le projet en trois phrases
 
-Chaque jour à 22:05 UTC (minuit à Paris l'été, 23:05 l'hiver), un workflow GitHub Actions télécharge l'export open data du RNCP
+Chaque jour à 00:05 heure de Paris, un cron sur le VPS Infomaniak de l'utilisateur (`outils/generer_vps.sh`, Docker) télécharge l'export open data du RNCP
 (France compétences, data.gouv.fr, ~75 Mo zip / ~470 Mo XML, ~25 700 fiches dont ~5 000 actives),
 le filtre sur un périmètre de formacodes, compare avec l'état de la veille, puis publie un
 classeur Excel colorisé et un site statique sur GitHub Pages. Les couleurs (ajouté / modifié /
@@ -29,7 +29,8 @@ supprimé) sont **cumulées depuis une référence de départ**, actuellement le
 | `site/runs.html` | Page Historique des générations (HTML classique) |
 | `state/snapshot.json` | État versionné : codes suivis avec évolution cumulée, historique des événements, journal des runs, référence |
 | `docs/` | Sortie publiée par le bot : `index.html`, `runs.html`, `data.json`, `runs.json`, `diplomes_rncp.xlsx`, `summary.*` |
-| `.github/workflows/controle-rncp.yml` | Workflow quotidien + `workflow_dispatch` |
+| `outils/generer_vps.sh` | Génération quotidienne sur le VPS (cron) : pull, Docker, commit, push — mêmes étapes que le workflow |
+| `.github/workflows/controle-rncp.yml` | Secours : `workflow_dispatch` seul depuis le 17/10/2026 (cron commenté, ne pas réactiver tant que le VPS tourne) |
 | `tests/generation-1.xml`, `-2.xml` | Exports simulés (1 412 fiches ; la 2 contient 2 ajouts, 3 modifs, 2 suppressions) |
 | `tests/test_selection.py` | Tests unitaires de la règle de sélection : `python -m unittest discover tests` (dans l'image Docker) |
 | `Dockerfile`, `.dockerignore` | Image de test locale alignée sur le runner (Python 3.12) |
@@ -110,6 +111,7 @@ Pour éviter de retélécharger 75 Mo à chaque essai : extraire une fois `expor
 Le site se teste en servant un dossier contenant `index.html`, `runs.html`, `data.json`, `runs.json` : `python3 -m http.server 8766`.
 
 ### Lancer un run à la demande
+Sur le VPS : `~/referentiel-rncp/outils/generer_vps.sh`. Secours GitHub :
 `gh workflow run "Contrôle RNCP" -R anthonyguillaume/referentiel-rncp` puis `gh run watch <id>`, puis `git pull`.
 
 ### Changer le périmètre
@@ -189,3 +191,9 @@ la copie manuelle permet une mise en ligne immédiate.
 
 État au 10/09/2026 11:00 : 4 116 codes suivis (3 919 actifs, 197 inactifs), 2 704 ajoutés / 229 modifiés / 0 supprimé
 par rapport à la référence, 6 générations au journal, prochain run automatique attendu le 11/09/2026 à 04:30 UTC (à vérifier, voir §6).
+
+### 17/10/2026
+
+15. Crédit GitHub Actions épuisé : génération déplacée sur le VPS Infomaniak (Ubuntu, Docker) via `outils/generer_vps.sh` et cron
+    `5 0 * * *` (VPS ubuntu@179.237.121.234 en Europe/Paris ; le cron Ubuntu ignore `CRON_TZ`) avec `flock`. Push par deploy key SSH (écriture, ce dépôt seul). Le workflow GitHub reste en
+    `workflow_dispatch` seul. Sur le VPS, `run_url` du journal est vide (pas de run Actions) ; log dans `~/rncp.log`.
