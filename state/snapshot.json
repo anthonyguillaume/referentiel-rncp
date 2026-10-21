@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-10-21T00:05:09.868559+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-10-20.zip",
+ "derniere_execution": "2026-10-22T00:05:24.343848+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-10-21.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -20477,22 +20477,6 @@
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42518"
   },
-  "RNCP39864": {
-   "intitule": "Manager du développement des ressources humaines",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2027-11-28",
-   "successeurs": [],
-   "formacodes": [
-    "33054",
-    "32154"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP39997": {
    "intitule": "Manager du développement des ressources humaines",
    "type": "",
@@ -20508,6 +20492,22 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP39864": {
+   "intitule": "Manager du développement des ressources humaines",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2027-11-28",
+   "successeurs": [],
+   "formacodes": [
+    "33054",
+    "32154"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
   },
   "RNCP42518": {
    "intitule": "Manager du développement des ressources humaines (MDRH)",
@@ -21146,21 +21146,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP38460": {
-   "intitule": "Manager en ressources humaines",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2026-12-21",
-   "successeurs": [],
-   "formacodes": [
-    "33054"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP38824": {
    "intitule": "Manager en ressources humaines",
    "type": "",
@@ -21174,6 +21159,21 @@
     "33047",
     "32015",
     "33091"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
+  },
+  "RNCP38460": {
+   "intitule": "Manager en ressources humaines",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2026-12-21",
+   "successeurs": [],
+   "formacodes": [
+    "33054"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "",
@@ -34109,21 +34109,39 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42917": {
+   "intitule": "spécialité « éducateur sportif » mention « natation et activités aquatiques »",
+   "type": "BPJEPS",
+   "niveau": "Niveau 4",
+   "actif": true,
+   "date_fin": "2031-08-18",
+   "successeurs": [],
+   "formacodes": [
+    "15436",
+    "15491"
+   ],
+   "premiere_vue": "2026-10-22",
+   "dernier_changement": "2026-10-22",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP36248": {
    "intitule": "spécialité « éducateur sportif » mention «Activités aquatiques et de la natation »",
    "type": "BPJEPS",
    "niveau": "Niveau 4",
    "actif": true,
    "date_fin": "2027-01-01",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42917"
+   ],
    "formacodes": [
     "15436",
     "15491"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-10-22",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Remplacée par :  → RNCP42917"
   },
   "RNCP38218": {
    "intitule": "Architectures en métal : conception et réalisation",
@@ -34832,6 +34850,21 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42914": {
+   "intitule": "Fonderie",
+   "type": "BTS",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2030-08-30",
+   "successeurs": [],
+   "formacodes": [
+    "23090"
+   ],
+   "premiere_vue": "2026-10-21",
+   "dernier_changement": "2026-10-21",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP37956": {
    "intitule": "Fonderie",
    "type": "BTS",
@@ -34848,21 +34881,6 @@
    "dernier_changement": "2026-10-21",
    "evolution": "MODIFIÉ",
    "detail": "Remplacée par :  → RNCP42914"
-  },
-  "RNCP42914": {
-   "intitule": "Fonderie",
-   "type": "BTS",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2030-08-30",
-   "successeurs": [],
-   "formacodes": [
-    "23090"
-   ],
-   "premiere_vue": "2026-10-21",
-   "dernier_changement": "2026-10-21",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP37465": {
    "intitule": "Forge",
@@ -41773,15 +41791,15 @@
    "date_fin": "2026-12-31",
    "successeurs": [],
    "formacodes": [
+    "43495",
     "14405",
     "44074",
-    "43435",
-    "43495"
+    "43435"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-10-22",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 14405, 44074, 43435, 43495 → 43495, 14405, 44074, 43435"
   },
   "RNCP40743": {
    "intitule": "Auxiliaire de puériculture",
@@ -66694,6 +66712,25 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42918": {
+   "intitule": "Ingénieur diplômé de l'école nationale de la météorologie",
+   "type": "Titre ingénieur",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "12261",
+    "12548",
+    "32062",
+    "11020",
+    "15099"
+   ],
+   "premiere_vue": "2026-10-22",
+   "dernier_changement": "2026-10-22",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -96708,6 +96745,34 @@
    "type": "Formacodes modifié",
    "avant": "31034, 24231, 31006, 31009, 31045",
    "apres": "31034, 24231, 31009, 31045"
+  },
+  {
+   "date": "2026-10-22",
+   "code": "RNCP42917",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "spécialité « éducateur sportif » mention « natation et activités aquatiques »"
+  },
+  {
+   "date": "2026-10-22",
+   "code": "RNCP42918",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Ingénieur diplômé de l'école nationale de la météorologie"
+  },
+  {
+   "date": "2026-10-22",
+   "code": "RNCP36110",
+   "type": "Formacodes modifié",
+   "avant": "14405, 44074, 43435, 43495",
+   "apres": "43495, 14405, 44074, 43435"
+  },
+  {
+   "date": "2026-10-22",
+   "code": "RNCP36248",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42917"
   }
  ],
  "journal": [
@@ -97260,6 +97325,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-10-21_000509.md"
+  },
+  {
+   "date": "2026-10-22T00:05",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-10-21.zip",
+   "diplomes": 4275,
+   "ajoutes": 2,
+   "modifies": 2,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-10-22_000524.md"
   }
  ]
 }
