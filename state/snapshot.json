@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-10-24T00:05:13.404993+02:00",
- "source_export": "export-fiches-rncp-v4-1-2026-10-23.zip",
+ "derniere_execution": "2026-10-25T00:05:07.104959+02:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-10-24.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -19849,21 +19849,6 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
-  "RNCP38489": {
-   "intitule": "Manager des ressources humaines",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2026-12-21",
-   "successeurs": [],
-   "formacodes": [
-    "33054"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP42638": {
    "intitule": "Manager des ressources humaines",
    "type": "",
@@ -19879,6 +19864,21 @@
    "dernier_changement": "2026-09-17",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP38489": {
+   "intitule": "Manager des ressources humaines",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2026-12-21",
+   "successeurs": [],
+   "formacodes": [
+    "33054"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
   },
   "RNCP39777": {
    "intitule": "Manager des ressources humaines",
@@ -45733,16 +45733,18 @@
    "intitule": "Responsable du marketing et du développement commercial",
    "type": "DIPLOVIS",
    "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2030-08-31",
-   "successeurs": [],
+   "actif": false,
+   "date_fin": "2026-08-31",
+   "successeurs": [
+    "RNCP42388"
+   ],
    "formacodes": [
     "34056"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-10-25",
+   "evolution": "MODIFIÉ",
+   "detail": "Fiche active : Oui → Non ; Échéance : 31/08/2030 → 31/08/2026 ; Remplacée par :  → RNCP42388"
   },
   "RNCP36677": {
    "intitule": "Responsable en marketing, commercialisation et gestion",
@@ -50692,13 +50694,12 @@
    "successeurs": [],
    "formacodes": [
     "44583",
-    "44542",
-    "44534"
+    "44542"
    ],
    "premiere_vue": "2026-10-24",
-   "dernier_changement": "2026-10-24",
+   "dernier_changement": "2026-10-25",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 44583, 44542, 44534 → 44583, 44542"
   },
   "RNCP38183": {
    "intitule": "Science politique (fiche nationale)",
@@ -96937,6 +96938,34 @@
    "type": "Remplacée par modifié",
    "avant": "",
    "apres": "RNCP42921"
+  },
+  {
+   "date": "2026-10-25",
+   "code": "RNCP41060",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-10-25",
+   "code": "RNCP41060",
+   "type": "Échéance modifié",
+   "avant": "31/08/2030",
+   "apres": "31/08/2026"
+  },
+  {
+   "date": "2026-10-25",
+   "code": "RNCP41060",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42388"
+  },
+  {
+   "date": "2026-10-25",
+   "code": "RNCP42922",
+   "type": "Formacodes modifié",
+   "avant": "44583, 44542, 44534",
+   "apres": "44583, 44542"
   }
  ],
  "journal": [
@@ -97522,6 +97551,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-10-24_000513.md"
+  },
+  {
+   "date": "2026-10-25T00:05",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-10-24.zip",
+   "diplomes": 4280,
+   "ajoutes": 0,
+   "modifies": 2,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-10-25_000507.md"
   }
  ]
 }
