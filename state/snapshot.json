@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-10-26T00:05:06.170078+01:00",
- "source_export": "export-fiches-rncp-v4-1-2026-10-25.zip",
+ "derniere_execution": "2026-10-27T00:05:06.963424+01:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-10-26.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -59658,7 +59658,7 @@
    "intitule": "Menuisier de fabrication bois et dérivés",
    "type": "TP",
    "niveau": "Niveau 3",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-10-24",
    "successeurs": [
     "RNCP42767"
@@ -59667,9 +59667,9 @@
     "22416"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-10-27",
    "evolution": "MODIFIÉ",
-   "detail": "Remplacée par :  → RNCP42767"
+   "detail": "Remplacée par :  → RNCP42767 ; Fiche active : Oui → Non"
   },
   "RNCP42767": {
    "intitule": "Menuisier de fabrication bois et dérivés",
@@ -96966,6 +96966,13 @@
    "type": "Formacodes modifié",
    "avant": "44583, 44542, 44534",
    "apres": "44583, 44542"
+  },
+  {
+   "date": "2026-10-27",
+   "code": "RNCP35823",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
   }
  ],
  "journal": [
@@ -97573,6 +97580,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-10-26_000506.md"
+  },
+  {
+   "date": "2026-10-27T00:05",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-10-26.zip",
+   "diplomes": 4280,
+   "ajoutes": 0,
+   "modifies": 1,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-10-27_000506.md"
   }
  ]
 }
