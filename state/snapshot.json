@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-10-28T00:05:17.910035+01:00",
- "source_export": "export-fiches-rncp-v4-1-2026-10-27.zip",
+ "derniere_execution": "2026-10-29T00:05:25.115358+01:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-10-28.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -23336,6 +23336,22 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP41491": {
+   "intitule": "Photographe",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2030-10-27",
+   "successeurs": [],
+   "formacodes": [
+    "46278",
+    "46006"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP37333": {
    "intitule": "Photographe",
    "type": "",
@@ -23354,22 +23370,6 @@
    "dernier_changement": "2026-10-04",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42817"
-  },
-  "RNCP41491": {
-   "intitule": "Photographe",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2030-10-27",
-   "successeurs": [],
-   "formacodes": [
-    "46278",
-    "46006"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP41086": {
    "intitule": "Photographe Plurimédia (BTM)",
@@ -49349,14 +49349,14 @@
    "formacodes": [
     "31054",
     "32145",
-    "32654",
-    "15099",
-    "11052"
+    "32626",
+    "11052",
+    "15099"
    ],
    "premiere_vue": "2026-10-24",
-   "dernier_changement": "2026-10-24",
+   "dernier_changement": "2026-10-29",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 31054, 32145, 32654, 15099, 11052 → 31054, 32145, 32626, 11052, 15099"
   },
   "RNCP42268": {
    "intitule": "Sciences et ingénierie - Intelligence artificielle",
@@ -59045,15 +59045,12 @@
    "successeurs": [],
    "formacodes": [
     "15447",
-    "31852",
-    "23635",
-    "15412",
-    "15472"
+    "23635"
    ],
    "premiere_vue": "2026-10-24",
-   "dernier_changement": "2026-10-24",
+   "dernier_changement": "2026-10-29",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 15447, 31852, 23635, 15412, 15472 → 15447, 23635"
   },
   "RNCP35992": {
    "intitule": "Employé technicien-vendeur en matériel de sport",
@@ -96973,6 +96970,20 @@
    "type": "Fiche active modifié",
    "avant": "Oui",
    "apres": "Non"
+  },
+  {
+   "date": "2026-10-29",
+   "code": "RNCP42921",
+   "type": "Formacodes modifié",
+   "avant": "15447, 31852, 23635, 15412, 15472",
+   "apres": "15447, 23635"
+  },
+  {
+   "date": "2026-10-29",
+   "code": "RNCP42923",
+   "type": "Formacodes modifié",
+   "avant": "31054, 32145, 32654, 15099, 11052",
+   "apres": "31054, 32145, 32626, 11052, 15099"
   }
  ],
  "journal": [
@@ -97602,6 +97613,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-10-28_000517.md"
+  },
+  {
+   "date": "2026-10-29T00:05",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-10-28.zip",
+   "diplomes": 4280,
+   "ajoutes": 0,
+   "modifies": 2,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-10-29_000525.md"
   }
  ]
 }
