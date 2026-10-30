@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-10-30T00:05:08.062023+01:00",
- "source_export": "export-fiches-rncp-v4-1-2026-10-29.zip",
+ "derniere_execution": "2026-10-31T00:05:07.531405+01:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-10-30.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -58067,22 +58067,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP41905": {
-   "intitule": "Coffreur bancheur",
-   "type": "TP",
-   "niveau": "Niveau 3",
-   "actif": true,
-   "date_fin": "2031-03-03",
-   "successeurs": [],
-   "formacodes": [
-    "22311",
-    "22395"
-   ],
-   "premiere_vue": "2026-09-17",
-   "dernier_changement": "2026-09-17",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP35312": {
    "intitule": "Coffreur bancheur",
    "type": "TP",
@@ -58100,6 +58084,22 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41905"
+  },
+  "RNCP41905": {
+   "intitule": "Coffreur bancheur",
+   "type": "TP",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2031-03-03",
+   "successeurs": [],
+   "formacodes": [
+    "22311",
+    "22395"
+   ],
+   "premiere_vue": "2026-09-17",
+   "dernier_changement": "2026-09-17",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP38722": {
    "intitule": "Commis de cuisine",
@@ -60804,6 +60804,22 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP42924": {
+   "intitule": "Serveur en restauration",
+   "type": "TP",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2032-01-06",
+   "successeurs": [],
+   "formacodes": [
+    "42757",
+    "42716"
+   ],
+   "premiere_vue": "2026-10-30",
+   "dernier_changement": "2026-10-30",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39534": {
    "intitule": "Serveur en restauration",
    "type": "TP",
@@ -60821,22 +60837,6 @@
    "dernier_changement": "2026-10-30",
    "evolution": "MODIFIÉ",
    "detail": "Remplacée par :  → RNCP42924"
-  },
-  "RNCP42924": {
-   "intitule": "Serveur en restauration",
-   "type": "TP",
-   "niveau": "Niveau 3",
-   "actif": true,
-   "date_fin": "2032-01-06",
-   "successeurs": [],
-   "formacodes": [
-    "42757",
-    "42716"
-   ],
-   "premiere_vue": "2026-10-30",
-   "dernier_changement": "2026-10-30",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP36259": {
    "intitule": "Solier moquettiste",
@@ -97690,6 +97690,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-10-30_000508.md"
+  },
+  {
+   "date": "2026-10-31T00:05",
+   "statut": "sans_changement",
+   "export": "export-fiches-rncp-v4-1-2026-10-30.zip",
+   "diplomes": 4282,
+   "ajoutes": 0,
+   "modifies": 0,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-10-31_000507.md"
   }
  ]
 }
