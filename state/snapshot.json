@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-10-31T00:05:07.531405+01:00",
- "source_export": "export-fiches-rncp-v4-1-2026-10-30.zip",
+ "derniere_execution": "2026-11-01T00:05:06.916579+01:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-10-31.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -49269,6 +49269,24 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42929": {
+   "intitule": "Sciences et ingénierie - Génie énergétique",
+   "type": "Grade_Licence",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "24162",
+    "24054",
+    "24147",
+    "11470"
+   ],
+   "premiere_vue": "2026-11-01",
+   "dernier_changement": "2026-11-01",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP41279": {
    "intitule": "Sciences et ingénierie - Génie énergétique pour l'environnement",
    "type": "Grade_Licence",
@@ -54592,6 +54610,22 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42930": {
+   "intitule": "Enseignement et éducation (M2E) : Conseiller principal d'éducation (fiche nationale)",
+   "type": "MASTER",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "44542",
+    "44530"
+   ],
+   "premiere_vue": "2026-11-01",
+   "dernier_changement": "2026-11-01",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP42925": {
    "intitule": "Enseignement et éducation (M2E) : Professorat des écoles (fiche nationale)",
    "type": "MASTER",
@@ -54605,6 +54639,22 @@
    ],
    "premiere_vue": "2026-10-30",
    "dernier_changement": "2026-10-30",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42926": {
+   "intitule": "Enseignement et éducation (M2E) : Professorat du second degré (fiche nationale)",
+   "type": "MASTER",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "44542",
+    "44530"
+   ],
+   "premiere_vue": "2026-11-01",
+   "dernier_changement": "2026-11-01",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -56665,7 +56715,9 @@
    "niveau": "Niveau 7",
    "actif": true,
    "date_fin": "2026-11-30",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42927"
+   ],
    "formacodes": [
     "43479",
     "24392",
@@ -56673,7 +56725,26 @@
     "24101"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-11-01",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre ; Remplacée par :  → RNCP42927"
+  },
+  "RNCP42927": {
+   "intitule": "Sciences et numérique pour la santé (fiche nationale)",
+   "type": "MASTER",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2031-10-09",
+   "successeurs": [],
+   "formacodes": [
+    "24101",
+    "24392",
+    "43061",
+    "43479",
+    "43051"
+   ],
+   "premiere_vue": "2026-11-01",
+   "dernier_changement": "2026-11-01",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -62647,6 +62718,25 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42928": {
+   "intitule": "Ingénieur diplômé de CY Tech de CY Cergy Paris Université, spécialité Biotechnologies et chimie",
+   "type": "Titre ingénieur",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2030-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "12081",
+    "12046",
+    "11554",
+    "32062",
+    "15099"
+   ],
+   "premiere_vue": "2026-11-01",
+   "dernier_changement": "2026-11-01",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -97039,6 +97129,48 @@
    "type": "Remplacée par modifié",
    "avant": "",
    "apres": "RNCP42924"
+  },
+  {
+   "date": "2026-11-01",
+   "code": "RNCP42926",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Enseignement et éducation (M2E) : Professorat du second degré (fiche nationale)"
+  },
+  {
+   "date": "2026-11-01",
+   "code": "RNCP42927",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Sciences et numérique pour la santé (fiche nationale)"
+  },
+  {
+   "date": "2026-11-01",
+   "code": "RNCP42928",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Ingénieur diplômé de CY Tech de CY Cergy Paris Université, spécialité Biotechnologies et chimie"
+  },
+  {
+   "date": "2026-11-01",
+   "code": "RNCP42929",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Sciences et ingénierie - Génie énergétique"
+  },
+  {
+   "date": "2026-11-01",
+   "code": "RNCP42930",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Enseignement et éducation (M2E) : Conseiller principal d'éducation (fiche nationale)"
+  },
+  {
+   "date": "2026-11-01",
+   "code": "RNCP36050",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42927"
   }
  ],
  "journal": [
@@ -97701,6 +97833,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-10-31_000507.md"
+  },
+  {
+   "date": "2026-11-01T00:05",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-10-31.zip",
+   "diplomes": 4287,
+   "ajoutes": 5,
+   "modifies": 1,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-01_000506.md"
   }
  ]
 }
