@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-11-03T00:05:14.887532+01:00",
- "source_export": "export-fiches-rncp-v4-1-2026-11-02.zip",
+ "derniere_execution": "2026-11-04T00:05:12.177844+01:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-11-03.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -8528,7 +8528,9 @@
    "niveau": "Niveau 6",
    "actif": false,
    "date_fin": "2026-09-20",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42934"
+   ],
    "formacodes": [
     "31054",
     "34093",
@@ -8537,9 +8539,9 @@
     "46333"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-23",
+   "dernier_changement": "2026-11-04",
    "evolution": "MODIFIÉ",
-   "detail": "Fiche active : Oui → Non"
+   "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42934"
   },
   "RNCP39602": {
    "intitule": "Chef de projet digital",
@@ -8954,6 +8956,25 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42934": {
+   "intitule": "Chef de projet marketing et communication digitale",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-10-30",
+   "successeurs": [],
+   "formacodes": [
+    "34093",
+    "46339",
+    "46336",
+    "46347",
+    "46354"
+   ],
+   "premiere_vue": "2026-11-04",
+   "dernier_changement": "2026-11-04",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -9838,6 +9859,22 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42932": {
+   "intitule": "Concepteur développeur d'applications informatiques sécurisées",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-10-30",
+   "successeurs": [],
+   "formacodes": [
+    "31057",
+    "31067"
+   ],
+   "premiere_vue": "2026-11-04",
+   "dernier_changement": "2026-11-04",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -14731,14 +14768,31 @@
    "niveau": "Niveau 7",
    "actif": true,
    "date_fin": "2026-12-21",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42939"
+   ],
    "formacodes": [
     "31045"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-11-04",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42939"
+  },
+  "RNCP42939": {
+   "intitule": "Expert en développement de solutions de cybersécurité",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2029-10-30",
+   "successeurs": [],
+   "formacodes": [
+    "31045"
+   ],
+   "premiere_vue": "2026-11-04",
+   "dernier_changement": "2026-11-04",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP40166": {
    "intitule": "Expert en développement et déploiement de solutions numériques sécurisées",
@@ -22690,6 +22744,22 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42935": {
+   "intitule": "Operating partner",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2029-10-30",
+   "successeurs": [],
+   "formacodes": [
+    "32043",
+    "32025"
+   ],
+   "premiere_vue": "2026-11-04",
+   "dernier_changement": "2026-11-04",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP35753": {
    "intitule": "Opérateur Technique en Pharmacie et Cosmétique Industrielles",
    "type": "",
@@ -23349,6 +23419,23 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42936": {
+   "intitule": "Photographe",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-10-30",
+   "successeurs": [],
+   "formacodes": [
+    "46278",
+    "32025",
+    "46006"
+   ],
+   "premiere_vue": "2026-11-04",
+   "dernier_changement": "2026-11-04",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -26808,6 +26895,25 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42940": {
+   "intitule": "Spécialiste en jumeau numérique",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2029-10-30",
+   "successeurs": [],
+   "formacodes": [
+    "31059",
+    "31028",
+    "24426",
+    "31025",
+    "24491"
+   ],
+   "premiere_vue": "2026-11-04",
+   "dernier_changement": "2026-11-04",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39998": {
    "intitule": "Spécialiste en maîtrise d’ouvrage des SI",
    "type": "",
@@ -27169,6 +27275,25 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
+  },
+  "RNCP42933": {
+   "intitule": "Technicien d'infrastructures informatiques sécurisées",
+   "type": "",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2031-10-30",
+   "successeurs": [],
+   "formacodes": [
+    "31034",
+    "24220",
+    "31008",
+    "24231",
+    "31051"
+   ],
+   "premiere_vue": "2026-11-04",
+   "dernier_changement": "2026-11-04",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP41773": {
    "intitule": "Technicien d'infrastructures numériques durables, sécurisées et responsables",
@@ -28273,16 +28398,18 @@
    "niveau": "Niveau 5",
    "actif": true,
    "date_fin": "2027-06-01",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42933"
+   ],
    "formacodes": [
     "24220",
     "31034",
     "31006"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-11-04",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Remplacée par :  → RNCP42933"
   },
   "RNCP36462": {
    "intitule": "Technicien systèmes réseaux et sécurité",
@@ -43428,7 +43555,7 @@
    "intitule": "Diplôme d’Etat supérieur de la jeunesse, de l’éducation populaire et du sport spécialité « performance sportive » mention « hockey sur glace »",
    "type": "DESJEPS",
    "niveau": "Niveau 6",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-11-01",
    "successeurs": [],
    "formacodes": [
@@ -43436,9 +43563,9 @@
     "15474"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-11-04",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
   "RNCP36040": {
    "intitule": "Diplôme d’Etat supérieur de la jeunesse, de l’éducation populaire et du sport spécialité « performance sportive » mention « sports de contact »",
@@ -97192,6 +97319,83 @@
    "type": "Fiche active modifié",
    "avant": "Oui",
    "apres": "Non"
+  },
+  {
+   "date": "2026-11-04",
+   "code": "RNCP42932",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Concepteur développeur d'applications informatiques sécurisées"
+  },
+  {
+   "date": "2026-11-04",
+   "code": "RNCP42933",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Technicien d'infrastructures informatiques sécurisées"
+  },
+  {
+   "date": "2026-11-04",
+   "code": "RNCP42934",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Chef de projet marketing et communication digitale"
+  },
+  {
+   "date": "2026-11-04",
+   "code": "RNCP42935",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Operating partner"
+  },
+  {
+   "date": "2026-11-04",
+   "code": "RNCP42936",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Photographe"
+  },
+  {
+   "date": "2026-11-04",
+   "code": "RNCP42939",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Expert en développement de solutions de cybersécurité"
+  },
+  {
+   "date": "2026-11-04",
+   "code": "RNCP42940",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Spécialiste en jumeau numérique"
+  },
+  {
+   "date": "2026-11-04",
+   "code": "RNCP36039",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-11-04",
+   "code": "RNCP36501",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42933"
+  },
+  {
+   "date": "2026-11-04",
+   "code": "RNCP38018",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42934"
+  },
+  {
+   "date": "2026-11-04",
+   "code": "RNCP38463",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42939"
   }
  ],
  "journal": [
@@ -97887,6 +98091,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-03_000514.md"
+  },
+  {
+   "date": "2026-11-04T00:05",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-11-03.zip",
+   "diplomes": 4294,
+   "ajoutes": 7,
+   "modifies": 4,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-04_000512.md"
   }
  ]
 }
