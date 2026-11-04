@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-11-04T00:05:12.177844+01:00",
- "source_export": "export-fiches-rncp-v4-1-2026-11-03.zip",
+ "derniere_execution": "2026-11-05T00:05:07.074421+01:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-11-04.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -929,6 +929,21 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42931": {
+   "intitule": "Animateur d'équipe",
+   "type": "",
+   "niveau": "Niveau 4",
+   "actif": true,
+   "date_fin": "2029-10-30",
+   "successeurs": [],
+   "formacodes": [
+    "32130"
+   ],
+   "premiere_vue": "2026-11-05",
+   "dernier_changement": "2026-11-05",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -1972,14 +1987,31 @@
    "niveau": "Niveau 5",
    "actif": true,
    "date_fin": "2027-02-25",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42943"
+   ],
    "formacodes": [
     "35006"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-11-05",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42943"
+  },
+  "RNCP42943": {
+   "intitule": "Assistant juridique",
+   "type": "",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2031-10-30",
+   "successeurs": [],
+   "formacodes": [
+    "35006"
+   ],
+   "premiere_vue": "2026-11-05",
+   "dernier_changement": "2026-11-05",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP38039": {
    "intitule": "Assistant manager loisirs hébergement restauration",
@@ -4056,6 +4088,21 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
+  },
+  "RNCP42948": {
+   "intitule": "CQP Diagnostiqueur retoucheur électrique électronique sur véhicule en fabrication",
+   "type": "",
+   "niveau": "Niveau 4",
+   "actif": true,
+   "date_fin": "2029-10-30",
+   "successeurs": [],
+   "formacodes": [
+    "24340"
+   ],
+   "premiere_vue": "2026-11-05",
+   "dernier_changement": "2026-11-05",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP39201": {
    "intitule": "CQP Débosseleur sans peinture",
@@ -7046,6 +7093,21 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42942": {
+   "intitule": "Chargé d'études en conception de systèmes mécaniques",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2031-10-30",
+   "successeurs": [],
+   "formacodes": [
+    "31676"
+   ],
+   "premiere_vue": "2026-11-05",
+   "dernier_changement": "2026-11-05",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP39259": {
    "intitule": "Chargé d'études en rénovation énergétique",
    "type": "",
@@ -8192,14 +8254,16 @@
    "niveau": "Niveau 6",
    "actif": true,
    "date_fin": "2027-01-26",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42947"
+   ],
    "formacodes": [
     "33054"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-11-05",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42947"
   },
   "RNCP42313": {
    "intitule": "Chargé des ressources humaines",
@@ -8251,6 +8315,21 @@
    "dernier_changement": "",
    "evolution": "",
    "detail": ""
+  },
+  "RNCP42947": {
+   "intitule": "Chargé des ressources humaines",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2031-10-30",
+   "successeurs": [],
+   "formacodes": [
+    "33054"
+   ],
+   "premiere_vue": "2026-11-05",
+   "dernier_changement": "2026-11-05",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP40265": {
    "intitule": "Chargé d’affaires en travail temporaire et en recrutement",
@@ -11913,21 +11992,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP42201": {
-   "intitule": "Diagnostiqueur immobilier",
-   "type": "",
-   "niveau": "Niveau 5",
-   "actif": true,
-   "date_fin": "2029-04-30",
-   "successeurs": [],
-   "formacodes": [
-    "42101"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP38469": {
    "intitule": "Diagnostiqueur immobilier",
    "type": "",
@@ -11949,6 +12013,21 @@
    "niveau": "Niveau 5",
    "actif": true,
    "date_fin": "2028-04-30",
+   "successeurs": [],
+   "formacodes": [
+    "42101"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42201": {
+   "intitule": "Diagnostiqueur immobilier",
+   "type": "",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2029-04-30",
    "successeurs": [],
    "formacodes": [
     "42101"
@@ -97396,6 +97475,55 @@
    "type": "Remplacée par modifié",
    "avant": "",
    "apres": "RNCP42939"
+  },
+  {
+   "date": "2026-11-05",
+   "code": "RNCP42931",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Animateur d'équipe"
+  },
+  {
+   "date": "2026-11-05",
+   "code": "RNCP42942",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Chargé d'études en conception de systèmes mécaniques"
+  },
+  {
+   "date": "2026-11-05",
+   "code": "RNCP42943",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Assistant juridique"
+  },
+  {
+   "date": "2026-11-05",
+   "code": "RNCP42947",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Chargé des ressources humaines"
+  },
+  {
+   "date": "2026-11-05",
+   "code": "RNCP42948",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "CQP Diagnostiqueur retoucheur électrique électronique sur véhicule en fabrication"
+  },
+  {
+   "date": "2026-11-05",
+   "code": "RNCP36143",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42947"
+  },
+  {
+   "date": "2026-11-05",
+   "code": "RNCP36208",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42943"
   }
  ],
  "journal": [
@@ -98102,6 +98230,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-04_000512.md"
+  },
+  {
+   "date": "2026-11-05T00:05",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-11-04.zip",
+   "diplomes": 4299,
+   "ajoutes": 5,
+   "modifies": 2,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-05_000507.md"
   }
  ]
 }
