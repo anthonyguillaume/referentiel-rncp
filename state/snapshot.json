@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-11-07T00:05:11.276454+01:00",
- "source_export": "export-fiches-rncp-v4-1-2026-11-06.zip",
+ "derniere_execution": "2026-11-08T00:05:10.712632+01:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-11-07.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -20591,6 +20591,23 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP38583": {
+   "intitule": "Manager du développement commercial",
+   "type": "",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2027-02-09",
+   "successeurs": [],
+   "formacodes": [
+    "34085",
+    "34554",
+    "34076"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
+  },
   "RNCP41966": {
    "intitule": "Manager du développement commercial",
    "type": "",
@@ -20624,23 +20641,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
-  },
-  "RNCP38583": {
-   "intitule": "Manager du développement commercial",
-   "type": "",
-   "niveau": "Niveau 7",
-   "actif": true,
-   "date_fin": "2027-02-09",
-   "successeurs": [],
-   "formacodes": [
-    "34085",
-    "34554",
-    "34076"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
   },
   "RNCP37068": {
    "intitule": "Manager du développement d'affaires en agrobusiness",
@@ -98547,6 +98547,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-07_000511.md"
+  },
+  {
+   "date": "2026-11-08T00:05",
+   "statut": "sans_changement",
+   "export": "export-fiches-rncp-v4-1-2026-11-07.zip",
+   "diplomes": 4307,
+   "ajoutes": 0,
+   "modifies": 0,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-08_000510.md"
   }
  ]
 }
