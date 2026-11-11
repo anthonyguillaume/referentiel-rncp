@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-11-11T00:05:06.981079+01:00",
- "source_export": "export-fiches-rncp-v4-1-2026-11-10.zip",
+ "derniere_execution": "2026-11-12T00:05:15.736962+01:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-11-11.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -26846,21 +26846,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP40879": {
-   "intitule": "Secrétaire médical",
-   "type": "",
-   "niveau": "Niveau 4",
-   "actif": true,
-   "date_fin": "2030-06-25",
-   "successeurs": [],
-   "formacodes": [
-    "35015"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
-  },
   "RNCP36734": {
    "intitule": "Secrétaire médical",
    "type": "",
@@ -26870,6 +26855,21 @@
    "successeurs": [],
    "formacodes": [
     "35035"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "",
+   "evolution": "",
+   "detail": ""
+  },
+  "RNCP40879": {
+   "intitule": "Secrétaire médical",
+   "type": "",
+   "niveau": "Niveau 4",
+   "actif": true,
+   "date_fin": "2030-06-25",
+   "successeurs": [],
+   "formacodes": [
+    "35015"
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "",
@@ -38709,21 +38709,39 @@
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
+  "RNCP42965": {
+   "intitule": "Ferronnerie d'art",
+   "type": "CAP",
+   "niveau": "Niveau 3",
+   "actif": true,
+   "date_fin": "2032-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "45558",
+    "22478"
+   ],
+   "premiere_vue": "2026-11-12",
+   "dernier_changement": "2026-11-12",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP38392": {
    "intitule": "Ferronnier d'art",
    "type": "CAP",
    "niveau": "Niveau 3",
    "actif": true,
    "date_fin": "2028-08-31",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42965"
+   ],
    "formacodes": [
     "45558",
     "22478"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-11-12",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42965"
   },
   "RNCP38400": {
    "intitule": "Fleuriste",
@@ -42371,6 +42389,21 @@
    "evolution": "",
    "detail": ""
   },
+  "RNCP41747": {
+   "intitule": "Educateur spécialisé",
+   "type": "DE",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "44092"
+   ],
+   "premiere_vue": "2026-09-17",
+   "dernier_changement": "2026-09-17",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
   "RNCP37676": {
    "intitule": "Educateur spécialisé",
    "type": "DE",
@@ -42387,21 +42420,6 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41747"
-  },
-  "RNCP41747": {
-   "intitule": "Educateur spécialisé",
-   "type": "DE",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2031-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "44092"
-   ],
-   "premiere_vue": "2026-09-17",
-   "dernier_changement": "2026-09-17",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP37677": {
    "intitule": "Educateur technique spécialisé",
@@ -48139,6 +48157,25 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42964": {
+   "intitule": "Diplôme pour cadres en management international des entreprises",
+   "type": "DipViGrM",
+   "niveau": "Niveau 7",
+   "actif": true,
+   "date_fin": "2027-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "32005",
+    "32145",
+    "32654",
+    "32602",
+    "32623"
+   ],
+   "premiere_vue": "2026-11-12",
+   "dernier_changement": "2026-11-12",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -97834,6 +97871,27 @@
    "type": "Fiche ajoutée",
    "avant": "",
    "apres": "Ingénieur diplômé de l’École d’ingénieurs des sciences aérospatiales"
+  },
+  {
+   "date": "2026-11-12",
+   "code": "RNCP42964",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Diplôme pour cadres en management international des entreprises"
+  },
+  {
+   "date": "2026-11-12",
+   "code": "RNCP42965",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Ferronnerie d'art"
+  },
+  {
+   "date": "2026-11-12",
+   "code": "RNCP38392",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42965"
   }
  ],
  "journal": [
@@ -98617,6 +98675,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-11_000506.md"
+  },
+  {
+   "date": "2026-11-12T00:05",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-11-11.zip",
+   "diplomes": 4310,
+   "ajoutes": 2,
+   "modifies": 1,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-12_000515.md"
   }
  ]
 }
