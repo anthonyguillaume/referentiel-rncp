@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-11-12T00:05:15.736962+01:00",
- "source_export": "export-fiches-rncp-v4-1-2026-11-11.zip",
+ "derniere_execution": "2026-11-13T00:05:13.035926+01:00",
+ "source_export": "export-fiches-rncp-v3-0-2026-11-12.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -6145,16 +6145,16 @@
    "intitule": "CQP Retoucheur tôle nue sur ligne de fabrication de véhicules",
    "type": "",
    "niveau": "Niveau 3",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-11-10",
    "successeurs": [],
    "formacodes": [
     "23617"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-11-13",
+   "evolution": "MODIFIÉ",
+   "detail": "Fiche active : Oui → Non"
   },
   "RNCP39732": {
    "intitule": "CQP Régleur de machine de production textile ou confection",
@@ -11923,7 +11923,7 @@
    "intitule": "Dessinateur concepteur BIM bâtiment et architecture",
    "type": "",
    "niveau": "Niveau 5",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-11-10",
    "successeurs": [
     "RNCP42830"
@@ -11932,9 +11932,9 @@
     "22252"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-10-11",
+   "dernier_changement": "2026-11-13",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre ; Remplacée par :  → RNCP42830"
+   "detail": "Nouvelle fiche dans le périmètre ; Remplacée par :  → RNCP42830 ; Fiche active : Oui → Non"
   },
   "RNCP42830": {
    "intitule": "Dessinateur concepteur BIM bâtiment et architecture",
@@ -15505,7 +15505,7 @@
    "intitule": "Expert en ingénierie financière et fiscale (MS)",
    "type": "",
    "niveau": "Niveau 7",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-11-10",
    "successeurs": [],
    "formacodes": [
@@ -15514,9 +15514,9 @@
     "32602"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-11-13",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
   "RNCP42658": {
    "intitule": "Expert en ingénierie informatique",
@@ -18328,16 +18328,16 @@
    "intitule": "Manager de l'assurance",
    "type": "",
    "niveau": "Niveau 7",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-11-10",
    "successeurs": [],
    "formacodes": [
     "41036"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-11-13",
+   "evolution": "MODIFIÉ",
+   "detail": "Fiche active : Oui → Non"
   },
   "RNCP42327": {
    "intitule": "Manager de l'environnement et de l'éco-efficacité énergétique (MS)",
@@ -22112,7 +22112,7 @@
    "intitule": "Manager marketing et communication (MS)",
    "type": "",
    "niveau": "Niveau 7",
-   "actif": true,
+   "actif": false,
    "date_fin": "2026-11-10",
    "successeurs": [],
    "formacodes": [
@@ -22121,9 +22121,9 @@
     "46301"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
+   "dernier_changement": "2026-11-13",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
   },
   "RNCP37814": {
    "intitule": "Manager marketing et développement de solutions innovantes pour les industries et technologies de santé (MS)",
@@ -97892,6 +97892,41 @@
    "type": "Remplacée par modifié",
    "avant": "",
    "apres": "RNCP42965"
+  },
+  {
+   "date": "2026-11-13",
+   "code": "RNCP36012",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-11-13",
+   "code": "RNCP36017",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-11-13",
+   "code": "RNCP36018",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-11-13",
+   "code": "RNCP36019",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
+  },
+  {
+   "date": "2026-11-13",
+   "code": "RNCP36021",
+   "type": "Fiche active modifié",
+   "avant": "Oui",
+   "apres": "Non"
   }
  ],
  "journal": [
@@ -98686,6 +98721,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-12_000515.md"
+  },
+  {
+   "date": "2026-11-13T00:05",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v3-0-2026-11-12.zip",
+   "diplomes": 4310,
+   "ajoutes": 0,
+   "modifies": 5,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-13_000513.md"
   }
  ]
 }
