@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-11-13T00:05:13.035926+01:00",
- "source_export": "export-fiches-rncp-v3-0-2026-11-12.zip",
+ "derniere_execution": "2026-11-14T00:05:24.662834+01:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-11-13.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -48170,14 +48170,12 @@
    "formacodes": [
     "32005",
     "32145",
-    "32654",
-    "32602",
-    "32623"
+    "32654"
    ],
    "premiere_vue": "2026-11-12",
-   "dernier_changement": "2026-11-12",
+   "dernier_changement": "2026-11-14",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
+   "detail": "Nouvelle fiche dans le périmètre ; Formacodes : 32005, 32145, 32654, 32602, 32623 → 32005, 32145, 32654"
   },
   "RNCP39151": {
    "intitule": "Diplôme pour dirigeant en administration des affaires",
@@ -97927,6 +97925,13 @@
    "type": "Fiche active modifié",
    "avant": "Oui",
    "apres": "Non"
+  },
+  {
+   "date": "2026-11-14",
+   "code": "RNCP42964",
+   "type": "Formacodes modifié",
+   "avant": "32005, 32145, 32654, 32602, 32623",
+   "apres": "32005, 32145, 32654"
   }
  ],
  "journal": [
@@ -98732,6 +98737,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-13_000513.md"
+  },
+  {
+   "date": "2026-11-14T00:05",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-11-13.zip",
+   "diplomes": 4310,
+   "ajoutes": 0,
+   "modifies": 1,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-14_000524.md"
   }
  ]
 }
