@@ -1,6 +1,6 @@
-# Diplômes RNCP — génération du 15/11/2026 00:05
+# Diplômes RNCP — génération du 16/11/2026 00:05
 
-Export France compétences : export-fiches-rncp-v4-1-2026-11-14.zip  
+Export France compétences : export-fiches-rncp-v4-1-2026-11-15.zip  
 Périmètre : 700 formacode(s)  
 Diplômes dans le fichier : 4310  
 Bilan de cette génération : **0 ajouté(s), 0 modifié(s), 0 supprimé(s)**  
