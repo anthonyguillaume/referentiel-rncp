@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-11-21T00:05:07.231649+01:00",
- "source_export": "export-fiches-rncp-v4-1-2026-11-19.zip",
+ "derniere_execution": "2026-11-22T00:05:07.501832+01:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-11-21.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -33157,14 +33157,31 @@
    "niveau": "Niveau 4",
    "actif": true,
    "date_fin": "2026-12-31",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42966"
+   ],
    "formacodes": [
     "22437"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "",
-   "evolution": "",
-   "detail": ""
+   "dernier_changement": "2026-11-22",
+   "evolution": "MODIFIÉ",
+   "detail": "Remplacée par :  → RNCP42966"
+  },
+  "RNCP42966": {
+   "intitule": "Couvreur",
+   "type": "BP",
+   "niveau": "Niveau 4",
+   "actif": true,
+   "date_fin": "2028-12-31",
+   "successeurs": [],
+   "formacodes": [
+    "22437"
+   ],
+   "premiere_vue": "2026-11-22",
+   "dernier_changement": "2026-11-22",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP37560": {
    "intitule": "Educateur canin",
@@ -98065,6 +98082,20 @@
    "type": "Fiche active modifié",
    "avant": "Oui",
    "apres": "Non"
+  },
+  {
+   "date": "2026-11-22",
+   "code": "RNCP42966",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "Couvreur"
+  },
+  {
+   "date": "2026-11-22",
+   "code": "RNCP38725",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42966"
   }
  ],
  "journal": [
@@ -98958,6 +98989,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-21_000507.md"
+  },
+  {
+   "date": "2026-11-22T00:05",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-11-21.zip",
+   "diplomes": 4311,
+   "ajoutes": 1,
+   "modifies": 1,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-22_000507.md"
   }
  ]
 }
