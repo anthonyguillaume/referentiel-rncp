@@ -1,7 +1,7 @@
 {
  "version": 2,
- "derniere_execution": "2026-11-26T00:05:11.296502+01:00",
- "source_export": "export-fiches-rncp-v4-1-2026-11-25.zip",
+ "derniere_execution": "2026-11-27T00:05:08.205747+01:00",
+ "source_export": "export-fiches-rncp-v4-1-2026-11-26.zip",
  "reference": {
   "nom": "Liens CPF par formacode et diplômes.xlsx",
   "date": "2026-09-09"
@@ -9600,23 +9600,6 @@
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP42477"
   },
-  "RNCP42477": {
-   "intitule": "Coach professionnel",
-   "type": "",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2029-06-26",
-   "successeurs": [],
-   "formacodes": [
-    "32150",
-    "44517",
-    "32043"
-   ],
-   "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-09-09",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP41713": {
    "intitule": "Coach professionnel",
    "type": "",
@@ -9653,6 +9636,23 @@
    "dernier_changement": "2026-11-03",
    "evolution": "MODIFIÉ",
    "detail": "Remplacée par :  → RNCP42473 ; Fiche active : Oui → Non"
+  },
+  "RNCP42477": {
+   "intitule": "Coach professionnel",
+   "type": "",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2029-06-26",
+   "successeurs": [],
+   "formacodes": [
+    "32150",
+    "44517",
+    "32043"
+   ],
+   "premiere_vue": "2026-09-09",
+   "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP39870": {
    "intitule": "Coach professionnel",
@@ -42423,21 +42423,6 @@
    "evolution": "",
    "detail": ""
   },
-  "RNCP41747": {
-   "intitule": "Educateur spécialisé",
-   "type": "DE",
-   "niveau": "Niveau 6",
-   "actif": true,
-   "date_fin": "2031-08-31",
-   "successeurs": [],
-   "formacodes": [
-    "44092"
-   ],
-   "premiere_vue": "2026-09-17",
-   "dernier_changement": "2026-09-17",
-   "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre"
-  },
   "RNCP37676": {
    "intitule": "Educateur spécialisé",
    "type": "DE",
@@ -42454,6 +42439,21 @@
    "dernier_changement": "2026-09-09",
    "evolution": "MODIFIÉ",
    "detail": "Fiche active : Oui → Non ; Remplacée par :  → RNCP41747"
+  },
+  "RNCP41747": {
+   "intitule": "Educateur spécialisé",
+   "type": "DE",
+   "niveau": "Niveau 6",
+   "actif": true,
+   "date_fin": "2031-08-31",
+   "successeurs": [],
+   "formacodes": [
+    "44092"
+   ],
+   "premiere_vue": "2026-09-17",
+   "dernier_changement": "2026-09-17",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
   },
   "RNCP37677": {
    "intitule": "Educateur technique spécialisé",
@@ -42886,15 +42886,17 @@
    "niveau": "Niveau 5",
    "actif": false,
    "date_fin": "2026-10-01",
-   "successeurs": [],
+   "successeurs": [
+    "RNCP42967"
+   ],
    "formacodes": [
     "15436",
     "15429"
    ],
    "premiere_vue": "2026-09-09",
-   "dernier_changement": "2026-10-04",
+   "dernier_changement": "2026-11-27",
    "evolution": "AJOUTÉ",
-   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non"
+   "detail": "Nouvelle fiche dans le périmètre ; Fiche active : Oui → Non ; Remplacée par :  → RNCP42967"
   },
   "RNCP36786": {
    "intitule": "Diplôme d’Etat de la jeunesse, de l’éducation populaire et du sport spécialité « perfectionnement sportif » mention \"sport automobile\"",
@@ -43624,6 +43626,22 @@
    ],
    "premiere_vue": "2026-09-09",
    "dernier_changement": "2026-09-09",
+   "evolution": "AJOUTÉ",
+   "detail": "Nouvelle fiche dans le périmètre"
+  },
+  "RNCP42967": {
+   "intitule": "« Entraînement et perfectionnement sportif » mention « Rugby à XIII »",
+   "type": "DEJEPS",
+   "niveau": "Niveau 5",
+   "actif": true,
+   "date_fin": "2031-06-14",
+   "successeurs": [],
+   "formacodes": [
+    "15436",
+    "15429"
+   ],
+   "premiere_vue": "2026-11-27",
+   "dernier_changement": "2026-11-27",
    "evolution": "AJOUTÉ",
    "detail": "Nouvelle fiche dans le périmètre"
   },
@@ -98134,6 +98152,20 @@
    "type": "Remplacée par modifié",
    "avant": "",
    "apres": "RNCP42944"
+  },
+  {
+   "date": "2026-11-27",
+   "code": "RNCP42967",
+   "type": "Fiche ajoutée",
+   "avant": "",
+   "apres": "« Entraînement et perfectionnement sportif » mention « Rugby à XIII »"
+  },
+  {
+   "date": "2026-11-27",
+   "code": "RNCP35906",
+   "type": "Remplacée par modifié",
+   "avant": "",
+   "apres": "RNCP42967"
   }
  ],
  "journal": [
@@ -99082,6 +99114,17 @@
    "supprimes": 0,
    "message": "",
    "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-26_000511.md"
+  },
+  {
+   "date": "2026-11-27T00:05",
+   "statut": "changements",
+   "export": "export-fiches-rncp-v4-1-2026-11-26.zip",
+   "diplomes": 4313,
+   "ajoutes": 1,
+   "modifies": 1,
+   "supprimes": 0,
+   "message": "",
+   "run_url": "https://github.com/anthonyguillaume/referentiel-rncp/blob/main/docs/rapports/2026-11-27_000508.md"
   }
  ]
 }
